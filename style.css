@@ -1,6 +1,57 @@
+@font-face {
+    font-family: "Manrope-Bold";
+    src: url(/fonts/otf/Manrope-Bold.otf) format("otf");
+    src: url(/fonts/ttf/Manrope-Bold.ttf) format("ttf");
+    src: url(/fonts/webfonts/Manrope-Bold.woff2) format("woff2");
+}
+
+@font-face {
+    font-family: "Manrope-ExtraBold";
+    src: url(/fonts/otf/Manrope-ExtraBold.otf) format("otf");
+    src: url(/fonts/ttf/Manrope-ExtraBold.ttf) format("ttf");
+    src: url(/fonts/webfonts/Manrope-ExtraBold.woff2) format("woff2");
+}
+
+@font-face {
+    font-family: "Manrope-ExtraLight";
+    src: url(/fonts/otf/Manrope-ExtraLight.otf) format("otf");
+    src: url(/fonts/ttf/Manrope-ExtraLight.ttf) format("ttf");
+    src: url(/fonts/webfonts/Manrope-ExtraLight.woff2) format("woff2");
+}
+
+@font-face {
+    font-family: "Manrope-Light";
+    src: url(/fonts/otf/Manrope-Light.otf) format("otf");
+    src: url(/fonts/ttf/Manrope-Light.ttf) format("ttf");
+    src: url(/fonts/webfonts/Manrope-Light.woff2) format("woff2");
+}
+
+@font-face {
+    font-family: "Manrope-Medium";
+    src: url(/fonts/otf/Manrope-Medium.otf) format("otf");
+    src: url(/fonts/ttf/Manrope-Medium.ttf) format("ttf");
+    src: url(/fonts/webfonts/Manrope-Medium.woff2) format("woff2");
+}
+
+@font-face {
+    font-family: "Manrope-Regular";
+    src: url(/fonts/otf/Manrope-Regular.otf) format("otf");
+    src: url(/fonts/ttf/Manrope-Regular.ttf) format("ttf");
+    src: url(/fonts/webfonts/Manrope-Regular.woff2) format("woff2");
+}
+
+@font-face {
+    font-family: "Manrope-SemiBold";
+    src: url(/fonts/otf/Manrope-SemiBold.otf) format("otf");
+    src: url(/fonts/ttf/Manrope-SemiBold.ttf) format("ttf");
+    src: url(/fonts/webfonts/Manrope-SemiBold.woff2) format("woff2");
+}
+
 * {
     margin: 0;
     padding: 0;
+
+    font-family: "Manrope-Medium", sans-serif;
 }
 
 .memo-header {
@@ -11,10 +62,7 @@
 
 .memo-content {
     width: 1110px;
-
     margin: auto;
-
-    padding-top: 109px;
 }
 
 .memo-big-rectangle {
@@ -27,8 +75,19 @@
 
 .memo-title {
     font-size: 74px;
+    font-family: "Manrope-Bold", sans-serif;
+    font-weight: 700;
+    line-height: 36px;
 
     background: radial-gradient(100% 1051.94% at 93.45% 0%, #7CACFC 0%, rgba(124, 172, 252, 0) 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */, linear-gradient(90.33deg, #838CFC -0.11%, #618DFA 50.03%, #6092FA 101.23%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+}
+
+.memo-text {
+    font-size: 20px;
+    font-family: "Manrope-Bold", sans-serif;
+    font-weight: 700;
+    line-height: 27px;
+
 }
