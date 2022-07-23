@@ -3,13 +3,13 @@
     padding: 0;
 }
 
-header {
+.memo-header {
     position: fixed;
     top: 0;
     width: 100vw;
 }
 
-.content {
+.memo-content {
     width: 1110px;
 
     margin: auto;
@@ -17,7 +17,7 @@ header {
     padding-top: 109px;
 }
 
-.big-rectangle {
+.memo-big-rectangle {
     padding: 166px 260px;
     text-align: center;
 
@@ -25,7 +25,7 @@ header {
     border-radius: 30px;
 }
 
-.title {
+.memo-title {
     font-size: 74px;
 
     background: radial-gradient(100% 1051.94% at 93.45% 0%, #7CACFC 0%, rgba(124, 172, 252, 0) 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */, linear-gradient(90.33deg, #838CFC -0.11%, #618DFA 50.03%, #6092FA 101.23%);
