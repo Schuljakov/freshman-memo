@@ -1,36 +1,36 @@
 @font-face {
     font-family: "Manrope-Bold";
-    src: url(/fonts/otf/Manrope-Bold.otf) format("otf");
-    src: url(/fonts/ttf/Manrope-Bold.ttf) format("ttf");
-    src: url(/fonts/webfonts/Manrope-Bold.woff2) format("woff2");
+    src: url(/Manrope-Bold.otf) format("otf");
+    src: url(/Manrope-Bold.ttf) format("ttf");
+    src: url(/Manrope-Bold.woff2) format("woff2");
 }
 
 @font-face {
     font-family: "Manrope-ExtraBold";
-    src: url(/fonts/otf/Manrope-ExtraBold.otf) format("otf");
-    src: url(/fonts/ttf/Manrope-ExtraBold.ttf) format("ttf");
-    src: url(/fonts/webfonts/Manrope-ExtraBold.woff2) format("woff2");
+    src: url(/Manrope-ExtraBold.otf) format("otf");
+    src: url(/Manrope-ExtraBold.ttf) format("ttf");
+    src: url(/Manrope-ExtraBold.woff2) format("woff2");
 }
 
 @font-face {
     font-family: "Manrope-ExtraLight";
-    src: url(/fonts/otf/Manrope-ExtraLight.otf) format("otf");
-    src: url(/fonts/ttf/Manrope-ExtraLight.ttf) format("ttf");
-    src: url(/fonts/webfonts/Manrope-ExtraLight.woff2) format("woff2");
+    src: url(/Manrope-ExtraLight.otf) format("otf");
+    src: url(/Manrope-ExtraLight.ttf) format("ttf");
+    src: url(/Manrope-ExtraLight.woff2) format("woff2");
 }
 
 @font-face {
     font-family: "Manrope-Light";
-    src: url(/fonts/otf/Manrope-Light.otf) format("otf");
-    src: url(/fonts/ttf/Manrope-Light.ttf) format("ttf");
+    src: url(/Manrope-Light.otf) format("otf");
+    src: url(/Manrope-Light.ttf) format("ttf");
     src: url(/fonts/webfonts/Manrope-Light.woff2) format("woff2");
 }
 
 @font-face {
     font-family: "Manrope-Medium";
-    src: url(/fonts/otf/Manrope-Medium.otf) format("otf");
-    src: url(/fonts/ttf/Manrope-Medium.ttf) format("ttf");
-    src: url(/fonts/webfonts/Manrope-Medium.woff2) format("woff2");
+    src: url(/Manrope-Medium.otf) format("otf");
+    src: url(/Manrope-Medium.ttf) format("ttf");
+    src: url(/Manrope-Medium.woff2) format("woff2");
 }
 
 @font-face {
