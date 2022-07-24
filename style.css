@@ -1,8 +1,8 @@
 @font-face {
     font-family: "Manrope-Bold";
-    src: url(/Manrope-Bold.otf) format("otf");
-    src: url(/Manrope-Bold.ttf) format("ttf");
-    src: url(/Manrope-Bold.woff2) format("woff2");
+    src: url(fonts/otf/Manrope-Bold.otf) format("otf");
+    src: url(fonts/ttf/Manrope-Bold.ttf) format("ttf");
+    src: url(fonts/webfonts/Manrope-Bold.woff2) format("woff2");
 }
 
 @font-face {
@@ -52,4 +52,12 @@
     padding: 0;
 
     font-family: "Manrope-Medium", sans-serif;
+}
+
+
+.memo-title {
+    font-family: 'Manrope-Bold', sans-serif;
+    font-size: 70px;
+    text-align: center;
+    font-weight: 700;
 }
