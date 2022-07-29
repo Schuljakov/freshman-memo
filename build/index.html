@@ -10,10 +10,14 @@
 </head>
 
 <body>
+    <!-- DELETE THIS -->
     <header>
         <img src="img/header.png" alt="Header" width="100%">
     </header>
+    <!-- END DELETE BLOCK -->
+    <!-- Container -->
     <section class="memo-container">
+        <!-- Header -->
         <header class="memo-header">
             <div class="memo-header__title">Твой навигатор</div>
             <div class="memo-header__small-text">Нажми на плитку, чтобы быстро перейти к нужному разделу...</div>
@@ -23,6 +27,7 @@
                     stroke-linejoin="round" />
             </svg>
         </header>
+        <!-- Menu -->
         <div class="memo-menu">
             <div class="memo-menu__top-row">
                 <div class="memo-menu__main"><span>Главное</span></div>
@@ -34,17 +39,30 @@
                 <div class="memo-menu__digital-system"><span>Цифровая система</span></div>
             </div>
         </div>
-        <div class="memo-tip">
-            <div class="memo-tip__icon"></div>
-            <div class="memo-tip__title">Как пользоваться?</div>
-            <div class="memo-tip__text">
-                Мы сделали удобную навигацию, чтобы ты мог быстро перемещаться по студенческому навигатору.
-                <br> <br>
-                Используй «<span class="memo-tip__small-icon"></span>» , чтобы быстро переходить к нужным разделам.
-                С помощью «<span class="memo-tip__small-icon"></span>» перемещайся по разделам/категориям, а нажав на «
-                <span class="memo-tip__small-icon"></span>» возвращайся в начало навигатора.
+        <!-- Tip -->
+        <div class="memo-tip margin">
+            <div class="memo-tip__row">
+                <div class="memo-tip__icon">
+                    <img src="img/icons/nav.svg" alt="">
+                </div>
+                <div class="memo-tip__text-block">
+                    <div class="memo-tip__title">Как пользоваться?</div>
+                    <div class="memo-tip__text">
+                        Мы сделали удобную навигацию, чтобы ты мог быстро перемещаться по студенческому навигатору.
+                        <br> <br>
+                        Используй «<img class="memo-tip__small-icon" src="img/icons/mini-nav.svg" alt="">» , чтобы
+                        быстро переходить к нужным
+                        разделам.
+                        С помощью «<img class="memo-tip__small-icon" src="img/icons/mini-arrow.svg" alt="">» перемещайся
+                        по разделам/категориям, <br>
+                        а нажав на «<img class="memo-tip__small-icon memo-tip__small-icon_wide" src="img/icons/mini-squares.svg" alt="">»
+                        возвращайся в начало навигатора.
+                    </div>
+
+                </div>
             </div>
-            <div class="close-icon"></div>
+
+            <div class="close-icon"><img src="img/icons/close.svg" alt=""></div>
         </div>
     </section>
 

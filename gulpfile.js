@@ -36,7 +36,7 @@ gulp.task('browserSync', function() {
 gulp.task('watch', function() {
     gulp.watch('src/**/*.scss', gulp.series('default')).on('change', reload),
     gulp.watch('src/*.html', gulp.series('htmlCopy')).on('change', reload);
-    gulp.watch('./src/img/*', gulp.series("imageCopy")).on("change", reload);
+    gulp.watch('./src/img/**', gulp.series("imageCopy")).on("change", reload);
 });
 
 // Copy img folder from ~ to build

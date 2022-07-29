@@ -45,14 +45,14 @@
   padding: 0;
 }
 
-.memo-header__small-text {
+.memo-tip__text, .memo-header__small-text {
   font-family: "Manrope-Bold", sans-serif;
   font-style: normal;
   font-size: 20px;
   line-height: 27px;
 }
 
-.memo-menu {
+.memo-tip__title, .memo-menu {
   font-family: "Manrope-ExtraBold", sans-serif;
   font-style: normal;
   font-size: 60px;
@@ -111,6 +111,7 @@
 .memo-menu__main, .memo-menu__education, .memo-menu__help, .memo-menu__non-education, .memo-menu__digital-system {
   background-color: #6092FA;
   border-radius: 30px;
+  cursor: pointer;
 }
 .memo-menu__main {
   padding: 55px 0 55px 30px;
@@ -136,6 +137,47 @@
   padding: 69px 0 71px 30px;
   width: 505px;
   background-image: url("/img/mesh/digital-system-gradient.svg");
+}
+.memo-tip {
+  background: radial-gradient(105% 1036.66% at 89.06% 16.54%, rgba(217, 232, 255, 0.6) 0%, rgba(217, 232, 255, 0.6) 0.01%, rgba(222, 245, 244, 0.6) 100%, rgba(241, 245, 250, 0.6) 100%);
+  padding: 40px 40px 41px 40px;
+  border-radius: 30px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.memo-tip__row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.memo-tip__icon {
+  margin-right: 35px;
+}
+.memo-tip__title {
+  background: radial-gradient(100% 1051.94% at 93.45% 0%, #7CACFC 0%, rgba(124, 172, 252, 0) 100%), linear-gradient(90.33deg, #838CFC -0.11%, #618DFA 50.03%, #6092FA 101.23%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  margin-bottom: 6px;
+}
+.memo-tip__text {
+  color: #1D1D1F;
+  max-width: 650px;
+}
+.memo-tip__small-icon {
+  margin-bottom: -3px;
+  padding: 0 2px;
+}
+.memo-tip__small-icon_wide {
+  padding: 0 5px;
+}
+.memo-tip .close-icon {
+  cursor: pointer;
+}
+
+.margin {
+  margin-bottom: 300px;
 }
 
 @media only screen and (max-width: 600px) {
