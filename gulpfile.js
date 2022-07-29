@@ -45,7 +45,7 @@ gulp.task('imageCopy', function() {
         .pipe(gulp.dest('./build/img'));
 });
 
-// Copy img folder from ~ to build
+// Copy index.html folder from ~ to build
 gulp.task('htmlCopy', function() {
     return gulp.src('./src/*.html')
         .pipe(gulp.dest('./build/'));
