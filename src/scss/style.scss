@@ -159,7 +159,7 @@
     transition: 300ms;
 }
 
-.container{
+.container {
     max-width: 1110px;
 
     margin: auto;
@@ -170,7 +170,7 @@
 .memo-menu {
     display: grid;
     gap: 20px;
-    
+
 }
 
 .memo-menu__button {
@@ -181,8 +181,8 @@
     padding: 55px 0 55px 0;
     border-radius: 30px;
     border: outset 4px;
-    border-color: linear-gradient(rgba(247, 247, 247, 0.4), rgba(251, 251, 251, 0),rgba(255, 255, 255, 0.3),);
-    
+    border-color: linear-gradient(rgba(247, 247, 247, 0.4), rgba(251, 251, 251, 0), rgba(255, 255, 255, 0.3), );
+
 }
 
 .memo-menu__button-title {
@@ -198,23 +198,11 @@
 .memo-menu__button_type_main {
     background: #5486F9;
 
- 
+
 }
 
 .memo-menu__button_type_education {
     background: radial-gradient(122.33% 172.17% at 16.5% 126.76%, #65B844 0%, rgba(115, 210, 78, 0) 100%), radial-gradient(109.76% 108.95% at 33.5% -23.53%, #69BF47 0%, rgba(115, 210, 78, 0) 100%), radial-gradient(78.82% 179.24% at 82.38% 21.18%, rgba(53, 189, 162, 0.2) 0%, rgba(60, 185, 198, 0) 100%), linear-gradient(0deg, rgba(0, 163, 113, 0.05), rgba(0, 163, 113, 0.05));
-    
-}
-
-.memo-menu__button_type_help {
-    
-}
-
-.memo-menu__button_type_not-edu {
-   
-}
-
-.memo-menu__button_type_digital {
 
 }
 
@@ -233,18 +221,10 @@
     }
 }
 
-@media only screen and (min-width: 600px) {
+@media only screen and (min-width: 600px) {}
 
-}
+@media only screen and (min-width: 768px) {}
 
-@media only screen and (min-width: 768px) {
-    
-}
+@media only screen and (min-width: 992px) {}
 
-@media only screen and (min-width: 992px) {
-
-}
-
-@media only screen and (min-width: 1200px) {
-
-}
+@media only screen and (min-width: 1200px) {}
