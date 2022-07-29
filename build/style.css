@@ -43,7 +43,6 @@
 * {
   margin: 0;
   padding: 0;
-  font-family: "Manrope-Regular", sans-serif;
 }
 
 .memo-header__small-text {
@@ -51,6 +50,13 @@
   font-style: normal;
   font-size: 20px;
   line-height: 27px;
+}
+
+.memo-menu {
+  font-family: "Manrope-ExtraBold", sans-serif;
+  font-style: normal;
+  font-size: 60px;
+  line-height: 60px;
 }
 
 .memo-header {
@@ -89,10 +95,48 @@
   margin: 0 0 59px 0;
   transition: 300ms;
 }
+.memo-menu {
+  color: white;
+  margin-bottom: 30px;
+}
 .memo-menu__top-row, .memo-menu__bottom-row {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.memo-menu__main, .memo-menu__education, .memo-menu__help, .memo-menu__non-education, .memo-menu__digital-system {
+  background-color: #6092FA;
+  border-radius: 30px;
+}
+.memo-menu__main {
+  padding: 55px 0 55px 30px;
+  width: 290px;
+  margin: 0 15px 15px 0;
+  background-image: url("/img/mesh/main-gradient.svg");
+}
+.memo-menu__education {
+  padding: 55px 0 55px 30px;
+  width: 370px;
+  margin: 0 15px 15px 15px;
+  background-image: url("/img/mesh/education-gradient.svg");
+}
+.memo-menu__help {
+  padding: 55px 0 55px 30px;
+  width: 290px;
+  margin: 0 0 15px 15px;
+  background-image: url("/img/mesh/help-gradient.svg");
+}
+.memo-menu__non-education {
+  padding: 69px 0 71px 30px;
+  width: 505px;
+  margin: 15px 15px 0 0;
+  background-image: url("/img/mesh/non-education-gradient.svg");
+}
+.memo-menu__digital-system {
+  padding: 69px 0 71px 30px;
+  width: 505px;
+  margin: 15px 0 0 15px;
+  background-image: url("/img/mesh/digital-system-gradient.svg");
 }
 
 @media only screen and (max-width: 600px) {

@@ -50,8 +50,6 @@
 * {
     margin: 0;
     padding: 0;
-
-    font-family: "Manrope-Regular", sans-serif;
 }
 
 %Paragraph {
@@ -158,13 +156,61 @@
 
     &menu {
 
+        @extend %Head;
+        color: white;
+        margin-bottom: 30px;
+
         &__top-row,
         &__bottom-row {
             display: flex;
             flex-direction: row;
-            justify-content: space-between;
+            
+            flex-wrap: wrap;
         }
 
+        &__main,
+        &__education,
+        &__help,
+        &__non-education,
+        &__digital-system {
+            background-color: #6092FA;
+            border-radius: 30px;
+        }
+
+        &__main {
+            padding:  55px 0 55px 30px;
+            width: 290px;
+            margin: 0 15px 15px 0;
+            background-image: url("/img/mesh/main-gradient.svg");
+        }
+
+        &__education {
+            padding:  55px 0 55px 30px;
+            width: 370px;
+            margin: 0 15px 15px 15px;
+            background-image: url("/img/mesh/education-gradient.svg");
+        }
+
+        &__help {
+            padding:  55px 0 55px 30px;
+            width: 290px;
+            margin: 0 0 15px 15px;
+            background-image: url("/img/mesh/help-gradient.svg");
+        }
+
+        &__non-education {
+            padding:  69px 0 71px 30px;
+            width: 505px;
+            margin: 15px 15px 0 0;
+            background-image: url("/img/mesh/non-education-gradient.svg");
+        }
+
+        &__digital-system {
+            padding:  69px 0 71px 30px;
+            width: 505px;
+            margin: 15px 0 0 15px;
+            background-image: url("/img/mesh/digital-system-gradient.svg");
+        }
 
     }
 }
@@ -173,7 +219,7 @@
     .memo- {
         &header {
             padding: 70px 60px 20px 60px;
-        
+
             &__title {
                 font-size: 50px;
             }
