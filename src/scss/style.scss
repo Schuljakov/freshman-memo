@@ -164,8 +164,12 @@
         &__bottom-row {
             display: flex;
             flex-direction: row;
-            
+            justify-content: space-between;
             flex-wrap: wrap;
+        }
+
+        &__top-row {
+            margin-bottom: 30px;
         }
 
         &__main,
@@ -180,35 +184,35 @@
         &__main {
             padding:  55px 0 55px 30px;
             width: 290px;
-            margin: 0 15px 15px 0;
+            // margin: 0 15px 15px 0;
             background-image: url("/img/mesh/main-gradient.svg");
         }
 
         &__education {
             padding:  55px 0 55px 30px;
             width: 370px;
-            margin: 0 15px 15px 15px;
+            // margin: 0 15px 15px 15px;
             background-image: url("/img/mesh/education-gradient.svg");
         }
 
         &__help {
             padding:  55px 0 55px 30px;
             width: 290px;
-            margin: 0 0 15px 15px;
+            // margin: 0 0 15px 15px;
             background-image: url("/img/mesh/help-gradient.svg");
         }
 
         &__non-education {
             padding:  69px 0 71px 30px;
             width: 505px;
-            margin: 15px 15px 0 0;
+            // margin: 15px 15px 0 0;
             background-image: url("/img/mesh/non-education-gradient.svg");
         }
 
         &__digital-system {
             padding:  69px 0 71px 30px;
             width: 505px;
-            margin: 15px 0 0 15px;
+            // margin: 15px 0 0 15px;
             background-image: url("/img/mesh/digital-system-gradient.svg");
         }
 
