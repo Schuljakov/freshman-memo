@@ -99,10 +99,10 @@
   .memo-header {
     padding: 70px 60px 20px 60px;
   }
-  .memo-__title {
+  .memo-header__title {
     font-size: 50px;
   }
-  .memo-__small-text {
+  .memo-header__small-text {
     font-size: 15px;
     line-height: 20px;
   }
