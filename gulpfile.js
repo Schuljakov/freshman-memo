@@ -53,7 +53,7 @@ gulp.task('htmlCopy', function() {
 
 // The default task
 gulp.task('default', 
-    gulp.series("compiler"), function (done) {
+    gulp.series("compiler", 'htmlCopy'), function (done) {
         done();
     }
 );
