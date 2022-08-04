@@ -65,6 +65,9 @@
   align-items: center;
 }
 
+.memo-body {
+  background-color: #F6FAFF;
+}
 .memo-container {
   max-width: 1110px;
   margin: auto;

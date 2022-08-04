@@ -108,6 +108,10 @@
 }
 
 .memo- {
+    &body {
+        background-color: #F6FAFF;
+    }
+
     &container {
         max-width: 1110px;
         margin: auto;
