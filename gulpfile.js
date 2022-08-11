@@ -7,6 +7,8 @@ const {
 const sass = require('gulp-sass')(require('sass'));
 const concat = require('gulp-concat');
 const browserSync = require('browser-sync');
+const fileinclude = require('gulp-file-include');
+
 
 // For live-reloading
 const reload = browserSync.reload;
