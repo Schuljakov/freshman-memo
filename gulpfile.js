@@ -22,7 +22,7 @@ gulp.task('compiler', function() {
         .pipe(concat('style.css'))
         .pipe(dest('./build/'))
 });
-
+ 
 // Starting live-reload server
 gulp.task('browserSync', function() {
     browserSync.init({
@@ -37,7 +37,7 @@ gulp.task('browserSync', function() {
 // For recompilation
 gulp.task('watch', function() {
     gulp.watch('src/**/*.scss', gulp.series('default')).on('change', reload),
-    gulp.watch('src/*.html', gulp.series('htmlCopy')).on('change', reload);
+    gulp.watch('src/*.html', gulp.series('fileinclude')).on('change', reload);
     gulp.watch('./src/img/**', gulp.series("imageCopy")).on("change", reload);
 });
 
@@ -53,16 +53,26 @@ gulp.task('htmlCopy', function() {
         .pipe(gulp.dest('./build/'));
 });
 
+// File include
+gulp.task('fileinclude', async function() {
+    gulp.src(['./src/*.html'])
+      .pipe(fileinclude({
+        prefix: '@@',
+        basepath: '@file'
+      }))
+      .pipe(gulp.dest('./build/'));
+  });
+
 // The default task
 gulp.task('default', 
-    gulp.series("compiler", 'htmlCopy', 'imageCopy'), function (done) {
+    gulp.series("compiler", 'imageCopy', 'fileinclude'), function (done) {
         done();
     }
 );
 
 // For developer
 gulp.task('dev', 
-    gulp.series("imageCopy", "htmlCopy", gulp.parallel("default", "watch", "browserSync" ), function (done) {
+    gulp.series(gulp.parallel("default", "watch", "browserSync"), function (done) {
         done();
     })
 );

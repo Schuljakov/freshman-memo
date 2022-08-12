@@ -16,7 +16,8 @@
   },
   "scripts": {
     "build": "gulp",
-    "dev": "gulp dev"
+    "dev": "gulp dev",
+    "include": "gulp fileinclude"
   },
   "dependencies": {
     "pump": "^3.0.0",
