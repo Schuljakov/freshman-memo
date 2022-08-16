@@ -113,7 +113,8 @@
 }
 .memo-menu__main, .memo-menu__education, .memo-menu__help, .memo-menu__non-education, .memo-menu__digital-system {
   border-radius: 30px;
-  cursor: pointer;
+  text-decoration: none;
+  color: #ffffff;
 }
 .memo-menu__main {
   padding: 55px 0 55px 30px;
