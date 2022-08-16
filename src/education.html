@@ -11,10 +11,20 @@
 
 <body>
     @@include('./header.html')
-    <section class="memo-container">
-        @@include('./title-block.html')
-        
-    </section>
+    <div class="memo-container">
+        @@include('./title-block.html', {
+            "name": "Обучение",
+            "about": "Узнай о том, как учится студент ТвГУ",
+            "buttons": {
+                "1": "Процесс обучения",
+                "2": "Система оценки",
+                "3": "Цифровое образование",
+                "4": "Точка кипения",
+                "5": "Научная работа",
+                "6": "Обучение за рубежом"
+            }
+        })
+    </div>
 </body>
 
 </html>

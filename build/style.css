@@ -43,6 +43,7 @@
 * {
   margin: 0;
   padding: 0;
+  font-family: "Manrope-Medium", sans-serif;
 }
 
 .memo-tip__text, .memo-header__small-text {
@@ -52,7 +53,7 @@
   line-height: 27px;
 }
 
-.memo-tip__title, .memo-menu {
+.memo-tip__title, .memo-menu__main, .memo-menu__education, .memo-menu__help, .memo-menu__non-education, .memo-menu__digital-system, .memo-menu {
   font-family: "Manrope-ExtraBold", sans-serif;
   font-style: normal;
   font-size: 60px;
