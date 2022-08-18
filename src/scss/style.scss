@@ -47,7 +47,7 @@
         transition: 300ms;
 
         &__small-text {
-            @extend %Paragraph;
+            @extend %Paragraph-Desktop-Bold;
 
             text-align: center;
             max-width: 322px;
@@ -76,7 +76,6 @@
     }
 
     &menu {
-        @extend %Head;
         color: white;
         margin-bottom: 30px;
 
@@ -97,7 +96,7 @@
         &__help,
         &__non-education,
         &__digital-system {
-            @extend %Head;
+            @extend %Heading-Desktop-Middle;
             border-radius: 30px;
             text-decoration: none;
             color: #ffffff;
@@ -156,7 +155,7 @@
         }
 
         &__title {
-            @extend %Head;
+            @extend %Heading-Desktop-Middle;
             background: radial-gradient(100% 1051.94% at 93.45% 0%, #7CACFC 0%, rgba(124, 172, 252, 0) 100%), linear-gradient(90.33deg, #838CFC -0.11%, #618DFA 50.03%, #6092FA 101.23%);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
@@ -165,7 +164,7 @@
         }
 
         &__text {
-            @extend %Paragraph;
+            @extend %Paragraph-Desktop-Bold;
             color: #1D1D1F;
             max-width: 650px;
         }
@@ -219,12 +218,12 @@
         margin: 0 0 32px 0;
 
         &__article {
-            @extend %Desktop-Contacts;
+            @extend %Other-Desktop-Contacts;
             color: #8692A4;
         }
 
         &__title {
-            @extend %Desktop-Middle;
+            @extend %Heading-Desktop-Middle;
 
             margin: 0 0 16px 0;
 
@@ -238,7 +237,7 @@
         }
 
         &__about {
-            @extend %Desktop-Bold
+            @extend %Paragraph-Desktop-Bold;
         }
 
     }

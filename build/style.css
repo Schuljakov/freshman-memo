@@ -52,18 +52,19 @@ a {
   display: block;
 }
 
-.memo-tip__text, .memo-header__small-text {
+.memo-title-block__title, .memo-tip__title, .memo-menu__main, .memo-menu__education, .memo-menu__help, .memo-menu__non-education, .memo-menu__digital-system {
+  font-family: "Manrope-ExtraBold", sans-serif;
+  font-style: normal;
+  font-size: 64px;
+  line-height: 64px;
+}
+
+.memo-title-block__about, .memo-tip__text, .memo-header__small-text {
   font-family: "Manrope-Bold", sans-serif;
   font-style: normal;
   font-size: 20px;
-  line-height: 27px;
-}
-
-.memo-tip__title, .memo-menu__main, .memo-menu__education, .memo-menu__help, .memo-menu__non-education, .memo-menu__digital-system, .memo-menu {
-  font-family: "Manrope-ExtraBold", sans-serif;
-  font-style: normal;
-  font-size: 60px;
-  line-height: 60px;
+  line-height: 138%;
+  letter-spacing: 0.03em;
 }
 
 .memo-title-block__article {
@@ -72,21 +73,6 @@ a {
   font-size: 20px;
   line-height: 24px;
   letter-spacing: 0.03em;
-}
-
-.memo-title-block__about {
-  font-family: "Manrope-Bold", sans-serif;
-  font-style: normal;
-  font-size: 20px;
-  line-height: 138%;
-  letter-spacing: 0.03em;
-}
-
-.memo-title-block__title {
-  font-family: "Manrope-ExtraBold", sans-serif;
-  font-style: normal;
-  font-size: 64px;
-  line-height: 64px;
 }
 
 .memo-header {
