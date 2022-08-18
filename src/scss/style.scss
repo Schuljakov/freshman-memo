@@ -54,6 +54,12 @@
     font-family: "Manrope-Medium", sans-serif;
 }
 
+a {
+    text-decoration: none;
+    color: #000000;
+    display: block;
+}
+
 %Paragraph {
     font-family: 'Manrope-Bold', sans-serif;
     font-style: normal;
@@ -106,7 +112,6 @@
 %Desktop-Bold {
     font-family: 'Manrope-Bold', sans-serif;
     font-style: normal;
-    font-weight: 700;
     font-size: 20px;
     line-height: 138%;
 

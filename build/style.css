@@ -46,6 +46,12 @@
   font-family: "Manrope-Medium", sans-serif;
 }
 
+a {
+  text-decoration: none;
+  color: #000000;
+  display: block;
+}
+
 .memo-tip__text, .memo-header__small-text {
   font-family: "Manrope-Bold", sans-serif;
   font-style: normal;
@@ -71,7 +77,6 @@
 .memo-title-block__about {
   font-family: "Manrope-Bold", sans-serif;
   font-style: normal;
-  font-weight: 700;
   font-size: 20px;
   line-height: 138%;
   letter-spacing: 0.03em;

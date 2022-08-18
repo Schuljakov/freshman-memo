@@ -10,7 +10,9 @@
 </head>
 
 <body>
-    @@include('./header.html')
+    <header>
+        <img src="img/header.png" alt="Header" width="100%">
+    </header>
     <div class="memo-container">
         <section class="memo-header memo-header_education">
             <div class="nav-icon"></div>
@@ -19,19 +21,19 @@
             <div class="memo-header__subtitle">Узнай о том, как учится студент ТвГУ</div>
             <div class="down-arrow"></div>
             <div class="memo-header__buttons-section">
-                <div class="memo-header__article-button">Процесс обучения</div>
-                <div class="memo-header__article-button">Система оценки</div>
-                <div class="memo-header__article-button">Цифровое образование</div>
-                <div class="memo-header__article-button">Точка кипения</div>
-                <div class="memo-header__article-button">Научная работа</div>
-                <div class="memo-header__article-button">Обучение за рубежом</div>
+                <a href="#education-process" class="memo-header__article-button">Процесс обучения</a>
+                <a href="#evaluation-system" class="memo-header__article-button">Система оценки</a>
+                <a href="#digital-education" class="memo-header__article-button">Цифровое образование</a>
+                <a href="#boiling-point" class="memo-header__article-button">Точка кипения</a>
+                <a href="#scientific-work" class="memo-header__article-button">Научная работа</a>
+                <a href="#foreign-education" class="memo-header__article-button">Обучение за рубежом</a>
             </div>
         </section>
 
         <section class="memo-article-block">
             <div class="memo-title-block">
                 <div class="memo-title-block__article">Категория</div>
-                <div class="memo-title-block__title memo-title-block__title_education">Процесс обучения</div>
+                <a name="education-process" class="memo-title-block__title memo-title-block__title_education">Процесс обучения</a>
                 <div class="memo-title-block__about">Основное отличие университетского обучения
                     от школьного: в школе – учат, в университете – учатся...</div>
             </div>
@@ -41,7 +43,7 @@
         <section class="memo-article-block">
             <div class="memo-title-block">
                 <div class="memo-title-block__article">Категория</div>
-                <div class="memo-title-block__title memo-title-block__title_education">Система оценки обучения</div>
+                <a name="evaluation-system" class="memo-title-block__title memo-title-block__title_education">Система оценки обучения</a>
                 <div class="memo-title-block__about">В университете действует рейтинговая система
                     оценки обучения.</div>
             </div>
@@ -49,7 +51,7 @@
         <section class="memo-article-block">
             <div class="memo-title-block">
                 <div class="memo-title-block__article">Категория</div>
-                <div class="memo-title-block__title memo-title-block__title_education">Цифровое образование</div>
+                <a name="digital-education" class="memo-title-block__title memo-title-block__title_education">Цифровое образование</a>
                 <div class="memo-title-block__about">Образовательный процесс в ТвГУ осуществляется с использованием
                     современной системы управления</div>
             </div>
@@ -57,7 +59,7 @@
         <section class="memo-article-block">
             <div class="memo-title-block">
                 <div class="memo-title-block__article">Категория</div>
-                <div class="memo-title-block__title memo-title-block__title_education">Точка кипения</div>
+                <a name="boiling-point" class="memo-title-block__title memo-title-block__title_education">Точка кипения</a>
                 <div class="memo-title-block__about">Образовательный процесс в ТвГУ осуществляется с использованием
                     современной системы управления</div>
             </div>
@@ -65,7 +67,7 @@
         <section class="memo-article-block">
             <div class="memo-title-block">
                 <div class="memo-title-block__article">Категория</div>
-                <div class="memo-title-block__title memo-title-block__title_education">Научная работа</div>
+                <a name="scientific-work" class="memo-title-block__title memo-title-block__title_education">Научная работа</a>
                 <div class="memo-title-block__about">При желании заниматься наукой выпускник ТвГУ может остаться
                     в университете — поступить в аспирантуру, защитить диссертацию
                     на соискание учёной степени кандидата наук</div>
@@ -74,7 +76,7 @@
         <section class="memo-article-block">
             <div class="memo-title-block">
                 <div class="memo-title-block__article">Категория</div>
-                <div class="memo-title-block__title memo-title-block__title_education">Обучение за рубежом</div>
+                <a name="foreign-education" class="memo-title-block__title memo-title-block__title_education">Обучение за рубежом</a>
                 <div class="memo-title-block__about">Студенты ТвГУ могут пройти семестровое обучение в одном из
                     зарубежных университетов-партнеров</div>
             </div>
