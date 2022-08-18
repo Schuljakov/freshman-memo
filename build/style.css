@@ -74,7 +74,14 @@ a {
   letter-spacing: 0.03em;
 }
 
-.memo-title-block__article {
+.memo-article-button {
+  font-family: "Manrope-ExtraBold", sans-serif;
+  font-style: normal;
+  font-size: 27px;
+  line-height: 32px;
+}
+
+.memo-title-block__article, .memo-header__up-title {
   font-family: "Manrope-Bold", sans-serif;
   font-style: normal;
   font-size: 20px;
@@ -107,6 +114,9 @@ a {
   background-size: cover;
   background-repeat: no-repeat;
 }
+.memo-header__up-title {
+  color: #8692A4;
+}
 .memo-header__small-text {
   text-align: center;
   max-width: 322px;
@@ -119,8 +129,26 @@ a {
   background-clip: text;
   margin: 0 0 59px 0;
 }
+.memo-header__buttons-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.memo-header__buttons-section__row {
+  display: flex;
+  flex-direction: row;
+  gap: 24px;
+  margin: 0 0 24px 0;
+}
+.memo-article-button {
+  color: #ffffff;
+  padding: 15px 36px 17px 36px;
+  background-image: radial-gradient(100% 187.2% at 100% 100%, #42D987 0%, #78CD59 69.85%, #7BC952 100%);
+  border-radius: 20px;
+  width: max-content;
+}
 .memo-menu {
-  color: white;
+  color: #ffffff;
   margin-bottom: 30px;
 }
 .memo-menu__top-row, .memo-menu__bottom-row {
@@ -167,6 +195,7 @@ a {
   background: radial-gradient(105% 1036.66% at 89.06% 16.54%, rgba(217, 232, 255, 0.6) 0%, rgba(217, 232, 255, 0.6) 0.01%, rgba(222, 245, 244, 0.6) 100%, rgba(241, 245, 250, 0.6) 100%);
   padding: 40px 40px 41px 40px;
   border-radius: 30px;
+  margin-bottom: 300px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -239,10 +268,6 @@ a {
   -webkit-text-fill-color: transparent;
   background-clip: text;
 }
-.margin {
-  margin-bottom: 300px;
-}
-
 @media only screen and (max-width: 600px) {
   .memo-header {
     padding: 70px 60px 20px 60px;
