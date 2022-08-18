@@ -94,13 +94,30 @@
     text-decoration-line: underline;
 }
 
-%Contacts {
-    font-family: 'Manrope-Bold';
+%Desktop-Contacts {
+    font-family: 'Manrope-Bold', sans-serif;
     font-style: normal;
     font-size: 20px;
     line-height: 24px;
 
     letter-spacing: 0.03em;
+}
+
+%Desktop-Bold {
+    font-family: 'Manrope-Bold', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 138%;
+
+    letter-spacing: 0.03em;
+}
+
+%Desktop-Middle {
+    font-family: 'Manrope-ExtraBold', sans-serif;
+    font-style: normal;
+    font-size: 64px;
+    line-height: 64px;
 }
 
 %flex-center {
@@ -121,11 +138,21 @@
         padding: 0 15px;
     }
 
+
     &header {
         @extend %flex-center;
         margin: 0 0 30px 0;
-        background: radial-gradient(104.05% 1175.96% at 6.6% 17.84%, rgba(217, 232, 255, 0.6) 0%, rgba(222, 245, 244, 0.6) 100%, rgba(241, 245, 250, 0.6) 100%);
-        border-radius: 30px;
+        border-radius: 64px;
+        border: 2px solid transparent;
+
+        &_education {
+            background:
+                url("../img/header-background.svg") padding-box,
+                linear-gradient(#fff, #fff) padding-box,
+                linear-gradient(-45deg, #42D987, #78CD59 30%, #7BC952) border-box;
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
 
         padding: 126px 262px 32px 262px;
 
@@ -268,6 +295,43 @@
             cursor: pointer;
         }
     }
+
+    &article-block{
+        margin: 0;
+    }
+
+    &title-block {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        margin: 0 0 32px 0;
+
+        &__article {
+            @extend %Desktop-Contacts;
+            color: #8692A4;
+        }
+
+        &__title {
+            @extend %Desktop-Middle;
+
+            margin: 0 0 16px 0;
+
+            &_education {
+                background: radial-gradient(100% 187.2% at 100% 100%, #42D987 0%, #78CD59 69.85%, #7BC952 100%);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                background-clip: text;
+
+            }
+        }
+
+        &__about {
+            @extend %Desktop-Bold
+        }
+
+    }
+
 }
 
 .margin {
