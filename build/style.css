@@ -52,6 +52,13 @@ a {
   display: block;
 }
 
+.memo-header__title {
+  font-family: "Manrope-ExtraBold", sans-serif;
+  font-style: normal;
+  font-size: 72px;
+  line-height: 72px;
+}
+
 .memo-title-block__title, .memo-tip__title, .memo-menu__main, .memo-menu__education, .memo-menu__help, .memo-menu__non-education, .memo-menu__digital-system {
   font-family: "Manrope-ExtraBold", sans-serif;
   font-style: normal;
@@ -94,10 +101,9 @@ a {
   border-radius: 64px;
   border: 2px solid transparent;
   padding: 126px 262px 32px 262px;
-  transition: 300ms;
 }
 .memo-header_education {
-  background: url("../img/header-background.svg") padding-box, linear-gradient(#fff, #fff) padding-box, linear-gradient(-45deg, #42D987, #78CD59 30%, #7BC952) border-box;
+  background: url("../img/backgrounds/header-background.svg") padding-box, linear-gradient(#fff, #fff) padding-box, radial-gradient(100% 187.2% at 100% 100%, #42D987 0%, #78CD59 69.85%, #7BC952 100%) border-box;
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -105,19 +111,13 @@ a {
   text-align: center;
   max-width: 322px;
   margin: 0 0 15px 0;
-  transition: 300ms;
 }
 .memo-header__title {
-  font-family: "Manrope-Bold";
-  font-size: 74px;
-  text-align: center;
-  text-align: center;
-  background: radial-gradient(100% 1051.94% at 93.45% 0%, #7CACFC 0%, rgba(124, 172, 252, 0) 100%), linear-gradient(90.33deg, #838CFC -0.11%, #618DFA 50.03%, #6092FA 101.23%);
+  background: radial-gradient(100% 187.2% at 100% 100%, #42D987 0%, #78CD59 69.85%, #7BC952 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
   margin: 0 0 59px 0;
-  transition: 300ms;
 }
 .memo-menu {
   color: white;
@@ -134,8 +134,9 @@ a {
 }
 .memo-menu__main, .memo-menu__education, .memo-menu__help, .memo-menu__non-education, .memo-menu__digital-system {
   border-radius: 30px;
-  text-decoration: none;
   color: #ffffff;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 .memo-menu__main {
   padding: 55px 0 55px 30px;

@@ -1,6 +1,8 @@
 @import 'base/fonts';
 @import 'base/reset';
-@import 'base/text-styles';
+
+@import 'styles/text-styles';
+@import 'styles/colors';
 
 @import 'pages/main';
 @import 'pages/education';
@@ -8,11 +10,7 @@
 @import 'pages/digital-system';
 @import 'pages/non-education';
 
-%flex-center {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
+@import 'layouts';
 
 .memo- {
     &body {
@@ -35,16 +33,14 @@
 
         &_education {
             background:
-                url("../img/header-background.svg") padding-box,
+                url("../img/backgrounds/header-background.svg") padding-box,
                 linear-gradient(#fff, #fff) padding-box,
-                linear-gradient(-45deg, #42D987, #78CD59 30%, #7BC952) border-box;
+                $gradient-green border-box;
             background-size: cover;
             background-repeat: no-repeat;
         }
 
         padding: 126px 262px 32px 262px;
-
-        transition: 300ms;
 
         &__small-text {
             @extend %Paragraph-Desktop-Bold;
@@ -54,23 +50,17 @@
 
             margin: 0 0 15px 0;
 
-            transition: 300ms;
         }
 
         &__title {
-            font-family: 'Manrope-Bold';
-            font-size: 74px;
-            text-align: center;
-            text-align: center;
-
-            background: radial-gradient(100% 1051.94% at 93.45% 0%, #7CACFC 0%, rgba(124, 172, 252, 0) 100%), linear-gradient(90.33deg, #838CFC -0.11%, #618DFA 50.03%, #6092FA 101.23%);
+            @extend %Heading-Desktop-Biggest;
+            background: $gradient-green;
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             background-clip: text;
 
             margin: 0 0 59px 0;
 
-            transition: 300ms;
         }
 
     }
@@ -98,8 +88,10 @@
         &__digital-system {
             @extend %Heading-Desktop-Middle;
             border-radius: 30px;
-            text-decoration: none;
             color: #ffffff;
+
+            background-size: cover;
+            background-repeat: no-repeat;
         }
 
         &__main {
@@ -183,7 +175,7 @@
         }
     }
 
-    &article-block{
+    &article-block {
         margin: 0;
     }
 
@@ -228,7 +220,7 @@
             margin: 0 0 16px 0;
 
             &_education {
-                background: radial-gradient(100% 187.2% at 100% 100%, #42D987 0%, #78CD59 69.85%, #7BC952 100%);
+                background: $gradient-green;
                 -webkit-background-clip: text;
                 -webkit-text-fill-color: transparent;
                 background-clip: text;
