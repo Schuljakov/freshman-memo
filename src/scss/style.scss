@@ -1,129 +1,12 @@
-@font-face {
-    font-family: "Manrope-Bold";
-    src: url(./fonts/otf/Manrope-Bold.otf) format("otf");
-    src: url(./fonts/ttf/Manrope-Bold.ttf) format("ttf");
-    src: url(./fonts/webfonts/Manrope-Bold.woff2) format("woff2");
-}
+@import 'base/fonts';
+@import 'base/reset';
+@import 'base/text-styles';
 
-@font-face {
-    font-family: "Manrope-ExtraBold";
-    src: url(./fonts/otf/Manrope-ExtraBold.otf) format("otf");
-    src: url(./fonts/ttf/Manrope-ExtraBold.ttf) format("ttf");
-    src: url(./fonts/webfonts/Manrope-ExtraBold.woff2) format("woff2");
-}
-
-@font-face {
-    font-family: "Manrope-ExtraLight";
-    src: url(./fonts/otf/Manrope-ExtraLight.otf) format("otf");
-    src: url(./fonts/ttf/Manrope-ExtraLight.ttf) format("ttf");
-    src: url(./fonts/webfonts/Manrope-ExtraLight.woff2) format("woff2");
-}
-
-@font-face {
-    font-family: "Manrope-Light";
-    src: url(./fonts/otf/Manrope-Light.otf) format("otf");
-    src: url(./fonts/ttf/Manrope-Light.ttf) format("ttf");
-    src: url(./fonts/webfonts/Manrope-Light.woff2) format("woff2");
-}
-
-@font-face {
-    font-family: "Manrope-Medium";
-    src: url(./fonts/otf//Manrope-Medium.otf) format("otf");
-    src: url(./fonts/ttf/Manrope-Medium.ttf) format("ttf");
-    src: url(./fonts/webfonts/Manrope-Medium.woff2) format("woff2");
-}
-
-@font-face {
-    font-family: "Manrope-Regular";
-    src: url(./fonts/otf/fonts/otf/Manrope-Regular.otf) format("otf");
-    src: url(./fonts/ttf/Manrope-Regular.ttf) format("ttf");
-    src: url(./fonts/webfonts/Manrope-Regular.woff2) format("woff2");
-}
-
-@font-face {
-    font-family: "Manrope-SemiBold";
-    src: url(./fonts/otf/Manrope-SemiBold.otf) format("otf");
-    src: url(./fonts/ttf/Manrope-SemiBold.ttf) format("ttf");
-    src: url(./fonts/webfonts/Manrope-SemiBold.woff2) format("woff2");
-}
-
-* {
-    margin: 0;
-    padding: 0;
-
-    font-family: "Manrope-Medium", sans-serif;
-}
-
-a {
-    text-decoration: none;
-    color: #000000;
-    display: block;
-}
-
-%Paragraph {
-    font-family: 'Manrope-Bold', sans-serif;
-    font-style: normal;
-    font-size: 20px;
-    line-height: 27px;
-}
-
-%Head {
-    font-family: 'Manrope-ExtraBold', sans-serif;
-    font-style: normal;
-    font-size: 60px;
-    line-height: 60px;
-}
-
-%Small {
-    font-family: 'Manrope-Regular', sans-serif;
-    font-style: normal;
-    font-size: 20px;
-    line-height: 27px;
-
-    letter-spacing: 0.03em;
-}
-
-%Ulta-Small {
-    font-family: 'Manrope-Bold', sans-serif;
-    font-style: normal;
-    font-size: 14px;
-    line-height: 18px;
-}
-
-%Links {
-    font-family: 'Manrope-Bold', sans-serif;
-    font-style: normal;
-    font-size: 20px;
-    line-height: 27px;
-
-    letter-spacing: 0.03em;
-    text-decoration-line: underline;
-}
-
-%Desktop-Contacts {
-    font-family: 'Manrope-Bold', sans-serif;
-    font-style: normal;
-    font-size: 20px;
-    line-height: 24px;
-
-    letter-spacing: 0.03em;
-}
-
-%Desktop-Bold {
-    font-family: 'Manrope-Bold', sans-serif;
-    font-style: normal;
-    font-size: 20px;
-    line-height: 138%;
-
-    letter-spacing: 0.03em;
-}
-
-%Desktop-Middle {
-    font-family: 'Manrope-ExtraBold', sans-serif;
-    font-style: normal;
-    font-size: 64px;
-    line-height: 64px;
-}
+@import 'pages/main';
+@import 'pages/education';
+@import 'pages/help';
+@import 'pages/digital-system';
+@import 'pages/non-education';
 
 %flex-center {
     display: flex;
@@ -303,6 +186,29 @@ a {
 
     &article-block{
         margin: 0;
+    }
+
+    &content-row {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        padding: 0px;
+        gap: 30px;
+        isolation: isolate;
+
+    }
+
+    &content-block {
+        background: rgba(255, 255, 255, 0.65);
+        border-radius: 30px;
+
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 20px 30px 30px;
+        gap: 6px;
+
+        width: 535px;
     }
 
     &title-block {
