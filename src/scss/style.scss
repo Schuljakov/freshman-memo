@@ -36,7 +36,7 @@
         &_education {
             background:
                 url("../img/backgrounds/header-background.svg") padding-box,
-                linear-gradient(#fff, #fff) padding-box,
+                linear-gradient(#F6FAFF, #F6FAFF) padding-box,
                 $gradient-green border-box;
             background-size: cover;
             background-repeat: no-repeat;
@@ -264,11 +264,17 @@
 
     }
 
+    &education-background {
+        position: absolute;
+        width: 1616.31px;
+        height: 10241.9px;
+        left: 212.16px;
+        top: 328.49px;
+        z-index: -1000;
+    }
+
 }
 
-.margin {
-    
-}
 
 @media only screen and (max-width: 600px) {
     .memo- {

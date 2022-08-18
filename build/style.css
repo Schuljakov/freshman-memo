@@ -1,49 +1,8 @@
-@font-face {
-  font-family: "Manrope-Bold";
-  src: url(./fonts/otf/Manrope-Bold.otf) format("otf");
-  src: url(./fonts/ttf/Manrope-Bold.ttf) format("ttf");
-  src: url(./fonts/webfonts/Manrope-Bold.woff2) format("woff2");
-}
-@font-face {
-  font-family: "Manrope-ExtraBold";
-  src: url(./fonts/otf/Manrope-ExtraBold.otf) format("otf");
-  src: url(./fonts/ttf/Manrope-ExtraBold.ttf) format("ttf");
-  src: url(./fonts/webfonts/Manrope-ExtraBold.woff2) format("woff2");
-}
-@font-face {
-  font-family: "Manrope-ExtraLight";
-  src: url(./fonts/otf/Manrope-ExtraLight.otf) format("otf");
-  src: url(./fonts/ttf/Manrope-ExtraLight.ttf) format("ttf");
-  src: url(./fonts/webfonts/Manrope-ExtraLight.woff2) format("woff2");
-}
-@font-face {
-  font-family: "Manrope-Light";
-  src: url(./fonts/otf/Manrope-Light.otf) format("otf");
-  src: url(./fonts/ttf/Manrope-Light.ttf) format("ttf");
-  src: url(./fonts/webfonts/Manrope-Light.woff2) format("woff2");
-}
-@font-face {
-  font-family: "Manrope-Medium";
-  src: url(./fonts/otf//Manrope-Medium.otf) format("otf");
-  src: url(./fonts/ttf/Manrope-Medium.ttf) format("ttf");
-  src: url(./fonts/webfonts/Manrope-Medium.woff2) format("woff2");
-}
-@font-face {
-  font-family: "Manrope-Regular";
-  src: url(./fonts/otf/fonts/otf/Manrope-Regular.otf) format("otf");
-  src: url(./fonts/ttf/Manrope-Regular.ttf) format("ttf");
-  src: url(./fonts/webfonts/Manrope-Regular.woff2) format("woff2");
-}
-@font-face {
-  font-family: "Manrope-SemiBold";
-  src: url(./fonts/otf/Manrope-SemiBold.otf) format("otf");
-  src: url(./fonts/ttf/Manrope-SemiBold.ttf) format("ttf");
-  src: url(./fonts/webfonts/Manrope-SemiBold.woff2) format("woff2");
-}
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap");
 * {
   margin: 0;
   padding: 0;
-  font-family: "Manrope-Medium", sans-serif;
+  font-family: "Manrope", sans-serif;
 }
 
 a {
@@ -52,38 +11,47 @@ a {
   display: block;
 }
 
+body {
+  background-color: #F6FAFF;
+}
+
 .memo-header__title {
-  font-family: "Manrope-ExtraBold", sans-serif;
+  font-family: "Manrope", sans-serif;
   font-style: normal;
+  font-weight: 800;
   font-size: 72px;
   line-height: 72px;
 }
 
 .memo-title-block__title, .memo-tip__title, .memo-menu__main, .memo-menu__education, .memo-menu__help, .memo-menu__non-education, .memo-menu__digital-system {
-  font-family: "Manrope-ExtraBold", sans-serif;
+  font-family: "Manrope", sans-serif;
   font-style: normal;
+  font-weight: 800;
   font-size: 64px;
   line-height: 64px;
 }
 
 .memo-title-block__about, .memo-tip__text, .memo-header__small-text {
-  font-family: "Manrope-Bold", sans-serif;
+  font-family: "Manrope", sans-serif;
   font-style: normal;
+  font-weight: 700;
   font-size: 20px;
   line-height: 138%;
   letter-spacing: 0.03em;
 }
 
 .memo-article-button {
-  font-family: "Manrope-ExtraBold", sans-serif;
+  font-family: "Manrope", sans-serif;
   font-style: normal;
+  font-weight: 800;
   font-size: 27px;
   line-height: 32px;
 }
 
 .memo-title-block__article, .memo-header__up-title {
-  font-family: "Manrope-Bold", sans-serif;
+  font-family: "Manrope", sans-serif;
   font-style: normal;
+  font-weight: 800;
   font-size: 20px;
   line-height: 24px;
   letter-spacing: 0.03em;
@@ -110,7 +78,7 @@ a {
   padding: 126px 262px 32px 262px;
 }
 .memo-header_education {
-  background: url("../img/backgrounds/header-background.svg") padding-box, linear-gradient(#fff, #fff) padding-box, radial-gradient(100% 187.2% at 100% 100%, #42D987 0%, #78CD59 69.85%, #7BC952 100%) border-box;
+  background: url("../img/backgrounds/header-background.svg") padding-box, linear-gradient(#F6FAFF, #F6FAFF) padding-box, radial-gradient(100% 187.2% at 100% 100%, #42D987 0%, #78CD59 69.85%, #7BC952 100%) border-box;
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -268,6 +236,15 @@ a {
   -webkit-text-fill-color: transparent;
   background-clip: text;
 }
+.memo-education-background {
+  position: absolute;
+  width: 1616.31px;
+  height: 10241.9px;
+  left: 212.16px;
+  top: 328.49px;
+  z-index: -1000;
+}
+
 @media only screen and (max-width: 600px) {
   .memo-header {
     padding: 70px 60px 20px 60px;
