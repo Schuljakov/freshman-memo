@@ -31,10 +31,27 @@ body {
   line-height: 64px;
 }
 
+.memo-content-block__title_education {
+  font-family: "Manrope", sans-serif;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 40px;
+  line-height: 48px;
+}
+
 .memo-title-block__about, .memo-tip__text, .memo-header__small-text {
   font-family: "Manrope", sans-serif;
   font-style: normal;
   font-weight: 700;
+  font-size: 20px;
+  line-height: 138%;
+  letter-spacing: 0.03em;
+}
+
+.memo-content-block__text {
+  font-family: "Manrope", sans-serif;
+  font-style: normal;
+  font-weight: 400;
   font-size: 20px;
   line-height: 138%;
   letter-spacing: 0.03em;
@@ -57,6 +74,18 @@ body {
   letter-spacing: 0.03em;
 }
 
+.memo-header_education {
+  background: url("../img/backgrounds/header-background.svg") padding-box, linear-gradient(#F6FAFF, #F6FAFF) padding-box, radial-gradient(100% 187.2% at 100% 100%, #42D987 0%, #78CD59 69.85%, #7BC952 100%) border-box;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.memo-content-block__title_education {
+  background: radial-gradient(100% 187.2% at 100% 100%, #42D987 0%, #78CD59 69.85%, #7BC952 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
 .memo-header {
   display: flex;
   flex-direction: column;
@@ -76,11 +105,6 @@ body {
   border-radius: 64px;
   border: 2px solid transparent;
   padding: 126px 262px 32px 262px;
-}
-.memo-header_education {
-  background: url("../img/backgrounds/header-background.svg") padding-box, linear-gradient(#F6FAFF, #F6FAFF) padding-box, radial-gradient(100% 187.2% at 100% 100%, #42D987 0%, #78CD59 69.85%, #7BC952 100%) border-box;
-  background-size: cover;
-  background-repeat: no-repeat;
 }
 .memo-header__up-title {
   color: #8692A4;
@@ -209,14 +233,20 @@ body {
   isolation: isolate;
 }
 .memo-content-block {
-  background: rgba(255, 255, 255, 0.65);
+  background: #ffffff;
   border-radius: 30px;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   padding: 20px 30px 30px;
   gap: 6px;
+  margin: 0 0 32px 0;
   width: 535px;
+}
+.memo-content-block_long {
+  display: flex;
+  flex-direction: row;
+  width: 1050px;
 }
 .memo-title-block {
   display: flex;

@@ -24,24 +24,11 @@
         padding: 0 15px;
     }
 
-
-
-
     &header {
         @extend %flex-center;
         margin: 0 0 30px 0;
         border-radius: 64px;
         border: 2px solid transparent;
-
-        &_education {
-            background:
-                url("../img/backgrounds/header-background.svg") padding-box,
-                linear-gradient(#F6FAFF, #F6FAFF) padding-box,
-                $gradient-green border-box;
-            background-size: cover;
-            background-repeat: no-repeat;
-        }
-
         padding: 126px 262px 32px 262px;
 
         &__up-title {
@@ -220,7 +207,8 @@
     }
 
     &content-block {
-        background: rgba(255, 255, 255, 0.65);
+        // background: rgba(255, 255, 255, 0.65);
+        background: #ffffff;
         border-radius: 30px;
 
         display: flex;
@@ -229,7 +217,21 @@
         padding: 20px 30px 30px;
         gap: 6px;
 
+        margin: 0 0 32px 0;
+
         width: 535px;
+
+        &__text {
+            @extend %Paragraph-Desktop-Regular;
+        }
+
+    }
+
+    &content-block_long {
+        display: flex;
+        flex-direction: row;
+
+        width: 1050px;
     }
 
     &title-block {

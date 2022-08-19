@@ -1,0 +1,22 @@
+.memo- {
+    &header_education {
+        background:
+            url("../img/backgrounds/header-background.svg") padding-box,
+            linear-gradient(#F6FAFF, #F6FAFF) padding-box,
+            $gradient-green border-box;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    &content-block {
+
+        &__title_education {
+            @extend %Heading-Desktop-Small;
+            background: radial-gradient(100% 187.2% at 100% 100%, #42D987 0%, #78CD59 69.85%, #7BC952 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+    }
+}
