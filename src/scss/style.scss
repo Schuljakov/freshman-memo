@@ -215,11 +215,15 @@
         flex-direction: column;
         align-items: flex-start;
         padding: 20px 30px 30px;
-        gap: 6px;
 
         margin: 0 0 32px 0;
 
         width: 535px;
+
+        &__title {
+            @extend %Heading-Desktop-Small;
+            margin: 0 0 6px 0;
+        }
 
         &__text {
             @extend %Paragraph-Desktop-Regular;
