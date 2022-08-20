@@ -234,8 +234,11 @@
     &content-block_long {
         display: flex;
         flex-direction: row;
+        justify-content: space-between;
+        gap: 51px;
 
-        width: 1050px;
+        padding: 20px 20px 20px 30px;
+        width: calc(100% - 50px);
     }
 
     &title-block {

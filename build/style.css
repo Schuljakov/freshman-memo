@@ -248,7 +248,10 @@ body {
 .memo-content-block_long {
   display: flex;
   flex-direction: row;
-  width: 1050px;
+  justify-content: space-between;
+  gap: 51px;
+  padding: 20px 20px 20px 30px;
+  width: calc(100% - 50px);
 }
 .memo-title-block {
   display: flex;
