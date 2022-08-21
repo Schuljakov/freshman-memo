@@ -54,6 +54,7 @@ body {
   font-weight: 400;
   font-size: 20px;
   line-height: 138%;
+  letter-spacing: 0.03em;
 }
 
 .memo-article-button {
