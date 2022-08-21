@@ -1,4 +1,11 @@
 .memo- {
+    &container_education {
+        background-image: url("../img/backgrounds/education-background.svg");
+        background-size: contain;
+        background-repeat: repeat-y;
+        background-position: center;
+    }
+
     &header_education {
         background:
             url("../img/backgrounds/header-background.svg") padding-box,

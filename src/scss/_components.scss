@@ -1,11 +1,24 @@
 .memo- {
+    &container {
+        max-width: 1110px;
+        margin: auto;
+
+        padding: 0 15px;
+    }
+
+    &title-block {
+        &__about {
+            max-width: 583px;
+            text-align: center;
+        }
+    }
     &article-block {
         &__line {
             width: 100%;
             margin: 32px 0 64px 0;
         }
     }
-
+    
     &content-block {
         &__small-text {
             @extend %Other-Desktop-Regular-Ultra-Small;

@@ -82,6 +82,12 @@ body {
   line-height: 18px;
 }
 
+.memo-container_education {
+  background-image: url("../img/backgrounds/education-background.svg");
+  background-size: contain;
+  background-repeat: repeat-y;
+  background-position: center;
+}
 .memo-header_education {
   background: url("../img/backgrounds/header-background.svg") padding-box, linear-gradient(#F6FAFF, #F6FAFF) padding-box, radial-gradient(100% 187.2% at 100% 100%, #42D987 0%, #78CD59 69.85%, #7BC952 100%) border-box;
   background-size: cover;
@@ -100,6 +106,15 @@ body {
   align-items: center;
 }
 
+.memo-container {
+  max-width: 1110px;
+  margin: auto;
+  padding: 0 15px;
+}
+.memo-title-block__about {
+  max-width: 583px;
+  text-align: center;
+}
 .memo-article-block__line {
   width: 100%;
   margin: 32px 0 64px 0;
@@ -110,11 +125,6 @@ body {
 
 .memo-body {
   background-color: #F6FAFF;
-}
-.memo-container {
-  max-width: 1110px;
-  margin: auto;
-  padding: 0 15px;
 }
 .memo-header {
   margin: 0 0 30px 0;
