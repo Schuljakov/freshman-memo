@@ -104,10 +104,18 @@
     text-decoration-line: underline;
 }
 
-%Other-Desktop-Ulta-Small {
+%Other-Desktop-Bold-Ulta-Small {
     font-family: 'Manrope', sans-serif;
     font-style: normal;
     font-weight: 700;
+    font-size: 14px;
+    line-height: 18px;
+}
+
+%Other-Desktop-Regular-Ultra-Small {
+    font-family: 'Manrope', sans-serif;
+    font-style: normal;
+    font-weight: 400;
     font-size: 14px;
     line-height: 18px;
 }
