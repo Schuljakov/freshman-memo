@@ -11,6 +11,7 @@
 @import 'pages/non-education';
 
 @import 'layouts';
+@import 'components';
 
 .memo- {
     &body {
@@ -199,11 +200,9 @@
     &content-row {
         display: flex;
         flex-direction: row;
-        align-items: flex-start;
         padding: 0px;
         gap: 30px;
         isolation: isolate;
-
     }
 
     &content-block {
@@ -213,8 +212,7 @@
 
         display: flex;
         flex-direction: column;
-        align-items: flex-start;
-        padding: 20px 30px 30px;
+        padding: 20px 30px 30px 32px;
 
         margin: 0 0 32px 0;
 

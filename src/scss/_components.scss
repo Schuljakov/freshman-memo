@@ -1,0 +1,15 @@
+.memo- {
+    &article-block {
+        &__line {
+            width: 100%;
+            margin: 32px 0 64px 0;
+        }
+    }
+
+    &content-block {
+        &__small-text {
+            @extend %Other-Desktop-Regular-Ultra-Small;
+            color: $color-gray;
+        }
+    }
+}

@@ -54,7 +54,6 @@ body {
   font-weight: 400;
   font-size: 20px;
   line-height: 138%;
-  letter-spacing: 0.03em;
 }
 
 .memo-article-button {
@@ -74,6 +73,14 @@ body {
   letter-spacing: 0.03em;
 }
 
+.memo-content-block__small-text {
+  font-family: "Manrope", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+}
+
 .memo-header_education {
   background: url("../img/backgrounds/header-background.svg") padding-box, linear-gradient(#F6FAFF, #F6FAFF) padding-box, radial-gradient(100% 187.2% at 100% 100%, #42D987 0%, #78CD59 69.85%, #7BC952 100%) border-box;
   background-size: cover;
@@ -90,6 +97,14 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+.memo-article-block__line {
+  width: 100%;
+  margin: 32px 0 64px 0;
+}
+.memo-content-block__small-text {
+  color: #8692A4;
 }
 
 .memo-body {
@@ -227,7 +242,6 @@ body {
 .memo-content-row {
   display: flex;
   flex-direction: row;
-  align-items: flex-start;
   padding: 0px;
   gap: 30px;
   isolation: isolate;
@@ -237,8 +251,7 @@ body {
   border-radius: 30px;
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
-  padding: 20px 30px 30px;
+  padding: 20px 30px 30px 32px;
   margin: 0 0 32px 0;
   width: 535px;
 }
