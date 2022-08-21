@@ -11,6 +11,8 @@ a {
     display: block;
 }
 
-body {
-    background-color: #F6FAFF;
+.memo- {
+    &body {
+        background-color: #F6FAFF;
+    }
 }
