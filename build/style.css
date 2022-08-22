@@ -219,7 +219,7 @@ a {
   right: 0;
   bottom: 0;
   border-radius: 30px;
-  border: 3px solid transparent;
+  border: 1px solid transparent;
   background: radial-gradient(100% 187.2% at 100% 100%, #42D987 0%, #78CD59 69.85%, #7BC952 100%) border-box;
   -webkit-mask: linear-gradient(#fff 0 0) padding-box, linear-gradient(#fff 0 0);
   -webkit-mask-composite: destination-out;
@@ -273,7 +273,7 @@ a {
   right: 0;
   bottom: 0;
   border-radius: 30px;
-  border: 3px solid transparent;
+  border: 1px solid transparent;
   background: linear-gradient(116.19deg, #FF9F9D 0%, #F95D65 34.9%, #F5536F 62.5%, #B675D5 100%) border-box;
   -webkit-mask: linear-gradient(#fff 0 0) padding-box, linear-gradient(#fff 0 0);
   -webkit-mask-composite: destination-out;
@@ -355,10 +355,19 @@ a {
   padding: 20px 20px 20px 30px;
   width: calc(100% - 50px);
 }
-
-.memo-article-button_transparent_green,
-.memo-article-button_transparent_red {
-  position: relative;
+.memo-article-button_green::before, .memo-article-button_red::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: 20px;
+  border: 3px solid transparent;
+  background: linear-gradient(92.93deg, rgba(247, 247, 247, 0.4) 0%, rgba(251, 251, 251, 0) 49.64%, rgba(255, 255, 255, 0.3) 100%) border-box;
+  -webkit-mask: linear-gradient(#fff 0 0) padding-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: destination-out;
+  mask-composite: exclude;
 }
 
 .memo-content-block_transparent_green,
@@ -369,26 +378,6 @@ a {
   padding: 20px 30px 30px 32px;
   margin: 0 0 32px 0;
   width: 535px;
-}
-
-.gradient-border-mask {
-  position: relative;
-  padding: 15px 20px;
-}
-
-.gradient-border-mask::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  border-radius: 50px;
-  border: 5px solid transparent;
-  background: linear-gradient(116.19deg, #FF9F9D 0%, #F95D65 34.9%, #F5536F 62.5%, #B675D5 100%) border-box;
-  -webkit-mask: linear-gradient(#fff 0 0) padding-box, linear-gradient(#fff 0 0);
-  -webkit-mask-composite: destination-out;
-  mask-composite: exclude;
 }
 
 @media only screen and (max-width: 600px) {
