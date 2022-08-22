@@ -96,35 +96,51 @@ a {
   margin-bottom: 30px;
 }
 .memo-menu__main, .memo-menu__education, .memo-menu__help, .memo-menu__non-education, .memo-menu__digital-system {
+  position: relative;
   border-radius: 30px;
   color: #ffffff;
-  background-size: cover;
+  background-size: 110%;
+  background-position: center;
   background-repeat: no-repeat;
 }
 .memo-menu__main {
   padding: 55px 0 55px 30px;
   width: 290px;
-  background-image: url("./img/mesh/main-gradient.svg");
+  background-image: url("./img/mesh/main-gradient.png");
 }
 .memo-menu__education {
   padding: 55px 0 55px 30px;
   width: 370px;
-  background-image: url("./img/mesh/education-gradient.svg");
+  background-image: url("./img/mesh/education-gradient.png");
 }
 .memo-menu__help {
   padding: 55px 0 55px 30px;
   width: 290px;
-  background-image: url("./img/mesh/help-gradient.svg");
+  background-image: url("./img/mesh/help-gradient.png");
 }
 .memo-menu__non-education {
   padding: 69px 0 71px 30px;
   width: 505px;
-  background-image: url("./img/mesh/non-education-gradient.svg");
+  background-image: url("./img/mesh/non-education-gradient.png");
 }
 .memo-menu__digital-system {
   padding: 69px 0 71px 30px;
   width: 505px;
-  background-image: url("./img/mesh/digital-system-gradient.svg");
+  background-image: url("./img/mesh/digital-system-gradient.png");
+}
+.memo-menu__main::before, .memo-menu__education::before, .memo-menu__help::before, .memo-menu__non-education::before, .memo-menu__digital-system::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: 30px;
+  border: 3px solid transparent;
+  background: linear-gradient(92.93deg, rgba(247, 247, 247, 0.4) 0%, rgba(251, 251, 251, 0) 49.64%, rgba(255, 255, 255, 0.3) 100%) border-box;
+  -webkit-mask: linear-gradient(#fff 0 0) padding-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: destination-out;
+  mask-composite: exclude;
 }
 .memo-tip {
   background: radial-gradient(105% 1036.66% at 89.06% 16.54%, rgba(217, 232, 255, 0.6) 0%, rgba(217, 232, 255, 0.6) 0.01%, rgba(222, 245, 244, 0.6) 100%, rgba(241, 245, 250, 0.6) 100%);
