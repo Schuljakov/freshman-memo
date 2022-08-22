@@ -175,7 +175,10 @@ a {
   background-position: center;
 }
 .memo-header_green {
-  background: url("../img/backgrounds/header-background.svg") padding-box, linear-gradient(#F6FAFF, #F6FAFF) padding-box, radial-gradient(100% 187.2% at 100% 100%, #42D987 0%, #78CD59 69.85%, #7BC952 100%) border-box;
+  border-radius: 64px;
+  border: 2px solid transparent;
+  padding: 126px 262px 32px 262px;
+  background: url("../img/backgrounds/green-header-background.svg") padding-box, linear-gradient(#F6FAFF, #F6FAFF) padding-box, radial-gradient(100% 187.2% at 100% 100%, #42D987 0%, #78CD59 69.85%, #7BC952 100%) border-box;
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -208,6 +211,14 @@ a {
   margin: 0 0 6px 0;
 }
 
+.memo-header_red {
+  border-radius: 64px;
+  border: 2px solid transparent;
+  padding: 126px 262px 32px 262px;
+  background: url("../img/backgrounds/red-header-background.svg") padding-box, linear-gradient(#F6FAFF, #F6FAFF) padding-box, linear-gradient(116.19deg, #FF9F9D 0%, #F95D65 34.9%, #F5536F 62.5%, #B675D5 100%) border-box;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
 .memo-header__title_red {
   background: linear-gradient(116.19deg, #FF9F9D 0%, #F95D65 34.9%, #F5536F 62.5%, #B675D5 100%);
   -webkit-background-clip: text;
@@ -230,16 +241,16 @@ a {
   width: max-content;
 }
 
-.memo-header {
+.memo-header_green, .memo-header_red {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-.memo-header {
-  border-radius: 64px;
-  border: 2px solid transparent;
-  padding: 126px 262px 32px 262px;
+.memo-container {
+  max-width: 1110px;
+  margin: auto;
+  padding: 0 15px;
 }
 .memo-header__up-title {
   color: #8692A4;

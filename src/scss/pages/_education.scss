@@ -7,16 +7,9 @@
 
     &header {
         &_green {
-            background:
-                url("../img/backgrounds/header-background.svg") padding-box,
-                linear-gradient(#F6FAFF, #F6FAFF) padding-box,
-                $gradient-green border-box;
-            background-size: cover;
-            background-repeat: no-repeat;
+            @include header($gradient-green, "../img/backgrounds/green-header-background.svg")
         }
-    }
 
-    &header {
         &__title {
             &_green {
                 @include header-title($gradient-green);

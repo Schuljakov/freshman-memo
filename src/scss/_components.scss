@@ -1,9 +1,11 @@
 .memo- {
+    &container {
+        max-width: 1110px;
+        margin: auto;
+        padding: 0 15px;
+    }
+
     &header {
-        @extend %flex-center;
-        border-radius: 64px;
-        border: 2px solid transparent;
-        padding: 126px 262px 32px 262px;
 
         &__up-title {
             @extend %Other-Desktop-Contacts;
@@ -33,7 +35,6 @@
                 margin: 0 0 24px 0;
             }
         }
-
     }
 
     &title-block {
