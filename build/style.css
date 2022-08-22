@@ -15,7 +15,7 @@ a {
   background-color: #F6FAFF;
 }
 
-.memo-header__title {
+.memo-header__title_help, .memo-header__title_education {
   font-family: "Manrope", sans-serif;
   font-style: normal;
   font-weight: 800;
@@ -23,7 +23,7 @@ a {
   line-height: 72px;
 }
 
-.memo-title-block__title, .memo-tip__title, .memo-menu__main, .memo-menu__education, .memo-menu__help, .memo-menu__non-education, .memo-menu__digital-system {
+.memo-title-block__title_help, .memo-title-block__title_education, .memo-tip__title, .memo-menu__main, .memo-menu__education, .memo-menu__help, .memo-menu__non-education, .memo-menu__digital-system {
   font-family: "Manrope", sans-serif;
   font-style: normal;
   font-weight: 800;
@@ -31,7 +31,7 @@ a {
   line-height: 64px;
 }
 
-.memo-content-block__title {
+.memo-content-block__title_education {
   font-family: "Manrope", sans-serif;
   font-style: normal;
   font-weight: 800;
@@ -181,12 +181,14 @@ a {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
+  margin: 0 0 59px 0;
 }
 .memo-title-block__title_education {
   background: radial-gradient(100% 187.2% at 100% 100%, #42D987 0%, #78CD59 69.85%, #7BC952 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
+  margin: 0 0 16px 0;
 }
 .memo-article-button_education {
   color: #ffffff;
@@ -200,6 +202,7 @@ a {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
+  margin: 0 0 6px 0;
 }
 
 .memo-header__title_help {
@@ -207,12 +210,14 @@ a {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
+  margin: 0 0 59px 0;
 }
 .memo-title-block__title_help {
   background: linear-gradient(116.19deg, #FF9F9D 0%, #F95D65 34.9%, #F5536F 62.5%, #B675D5 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
+  margin: 0 0 16px 0;
 }
 .memo-article-button_help {
   color: #ffffff;
@@ -247,9 +252,6 @@ a {
   max-width: 322px;
   margin: 0 0 15px 0;
 }
-.memo-header__title {
-  margin: 0 0 59px 0;
-}
 .memo-header__buttons-section {
   display: flex;
   flex-direction: column;
@@ -269,9 +271,6 @@ a {
 }
 .memo-title-block__article {
   color: #8692A4;
-}
-.memo-title-block__title {
-  margin: 0 0 16px 0;
 }
 .memo-title-block__about {
   max-width: 583px;
@@ -296,9 +295,6 @@ a {
   padding: 20px 30px 30px 32px;
   margin: 0 0 32px 0;
   width: 535px;
-}
-.memo-content-block__title {
-  margin: 0 0 6px 0;
 }
 .memo-content-block__small-text {
   color: #8692A4;

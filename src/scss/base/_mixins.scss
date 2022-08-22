@@ -3,7 +3,34 @@
     color: #ffffff;
     padding: 15px 36px 17px 36px;
     border-radius: 20px;
-    background-image: $color; 
-    
+    background-image: $color;
+
     width: max-content;
+}
+
+@mixin header-title($color: $gradient-green) {
+    @extend %Heading-Desktop-Biggest;
+    background: $color;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin: 0 0 59px 0;
+}
+
+@mixin article-title($color: $gradient-green) {
+    @extend %Heading-Desktop-Middle;
+    background: $color;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin: 0 0 16px 0;
+}
+
+@mixin content-title($color: $gradient-green) {
+    @extend %Heading-Desktop-Small;
+    background: $color;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin: 0 0 6px 0;
 }

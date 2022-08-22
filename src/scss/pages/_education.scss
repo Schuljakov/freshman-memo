@@ -18,10 +18,7 @@
     &header {
         &__title {
             &_education {
-                background: $gradient-green;
-                -webkit-background-clip: text;
-                -webkit-text-fill-color: transparent;
-                background-clip: text;
+                @include header-title($gradient-green);
             }
         }
     }
@@ -29,11 +26,7 @@
     &title-block {
         &__title {
             &_education {
-                background: $gradient-green;
-                -webkit-background-clip: text;
-                -webkit-text-fill-color: transparent;
-                background-clip: text;
-    
+                @include article-title($gradient-green);
             }
         }
     }
@@ -45,13 +38,10 @@
     }
 
     &content-block {
-
-        &__title_education {
-            background: radial-gradient(100% 187.2% at 100% 100%, #42D987 0%, #78CD59 69.85%, #7BC952 100%);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
+        &__title {
+            &_education {
+                @include content-title($gradient-green);
+            }
         }
-
     }
 }

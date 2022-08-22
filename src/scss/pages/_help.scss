@@ -2,10 +2,7 @@
     &header {
         &__title {
             &_help {
-                background: $gradient-red;
-                -webkit-background-clip: text;
-                -webkit-text-fill-color: transparent;
-                background-clip: text;
+                @include header-title($gradient-red);
             }
         }
     }
@@ -13,11 +10,7 @@
     &title-block {
         &__title {
             &_help {
-                background: $gradient-red;
-                -webkit-background-clip: text;
-                -webkit-text-fill-color: transparent;
-                background-clip: text;
-    
+                @include article-title($gradient-red);
             }
         }
     }
