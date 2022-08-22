@@ -1,4 +1,27 @@
 .memo- {
+    &header {
+        &__title {
+            &_help {
+                background: $gradient-red;
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                background-clip: text;
+            }
+        }
+    }
+
+    &title-block {
+        &__title {
+            &_help {
+                background: $gradient-red;
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                background-clip: text;
+    
+            }
+        }
+    }
+
     &article-button {
         &_help {
             background-image: $gradient-red; 

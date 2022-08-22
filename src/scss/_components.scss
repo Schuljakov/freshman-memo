@@ -30,10 +30,7 @@
 
         &__title {
             @extend %Heading-Desktop-Biggest;
-            background: $gradient-green;
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
+            
 
             margin: 0 0 59px 0;
 

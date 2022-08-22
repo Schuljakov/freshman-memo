@@ -15,6 +15,17 @@
         background-repeat: no-repeat;
     }
 
+    &header {
+        &__title {
+            &_education {
+                background: $gradient-green;
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                background-clip: text;
+            }
+        }
+    }
+
     &title-block {
         &__title {
             &_education {
