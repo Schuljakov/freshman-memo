@@ -1,7 +1,7 @@
 .memo- {
     &header {
         &__title {
-            &_help {
+            &_red {
                 @include header-title($gradient-red);
             }
         }
@@ -9,14 +9,14 @@
 
     &title-block {
         &__title {
-            &_help {
+            &_red {
                 @include article-title($gradient-red);
             }
         }
     }
 
     &article-button {
-        &_help {
+        &_red {
             @include button($gradient-red);
         }
     }

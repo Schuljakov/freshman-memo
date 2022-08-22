@@ -29,7 +29,7 @@ gulp.task('browserSync', function() {
         server: {
             baseDir: './build'
         },
-        open: true,
+        open: false,
         notify: true
     })
 });

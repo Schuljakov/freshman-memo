@@ -1,23 +1,27 @@
 .memo- {
-    &container_education {
-        background-image: url("../img/backgrounds/education-background.svg");
-        background-size: contain;
-        background-repeat: repeat-y;
-        background-position: center;
+    &container {
+        &_green {
+            background-image: url("../img/backgrounds/education-background.svg");
+            background-size: contain;
+            background-repeat: repeat-y;
+            background-position: center;
+        }
     }
 
-    &header_education {
-        background:
-            url("../img/backgrounds/header-background.svg") padding-box,
-            linear-gradient(#F6FAFF, #F6FAFF) padding-box,
-            $gradient-green border-box;
-        background-size: cover;
-        background-repeat: no-repeat;
+    &header {
+        &_green {
+            background:
+                url("../img/backgrounds/header-background.svg") padding-box,
+                linear-gradient(#F6FAFF, #F6FAFF) padding-box,
+                $gradient-green border-box;
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
     }
 
     &header {
         &__title {
-            &_education {
+            &_green {
                 @include header-title($gradient-green);
             }
         }
@@ -32,7 +36,7 @@
     }
 
     &article-button {
-        &_education {
+        &_green {
             @include button($gradient-green);
         }
     }
