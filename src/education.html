@@ -60,16 +60,13 @@
 
         <!-- Article #1 -->
         <section class="memo-article-block">
-            <!-- Title -->
-            <a name="education-process">
-                <div class="memo-title-block">
-                    <div class="memo-title-block__article">Категория</div>
-                    <div class="memo-title-block__title_education">Процесс обучения</div>
-                    <div class="memo-title-block__about">Основное отличие университетского обучения
-                        от школьного: в школе – учат, в университете – учатся...</div>
-                </div>
-            </a>
-
+            @@include('./components/title-block.html', {
+                "id": "education-process",
+                "modificator": "green",
+                "name": "Процесс обучения",
+                "about": "Основное отличие университетского обучения от школьного: в школе – учат, в университете – учатся...",
+                "width": "auto"
+            })
             <!-- Content -->
             <div class="memo-article-block__content">
 
@@ -77,7 +74,7 @@
                 <div class="memo-content-row">
                     <!-- Content-block -->
                     <div class="memo-content-block">
-                        <div class="memo-content-block__title_education">Семестры</div>
+                        <div class="memo-content-block__title_green">Семестры</div>
                         <div class="memo-content-block__text">Учебный процесс в ТвГУ организован <br> по семестрам. В
                             течение
                             семестра студенты <br> осваивают несколько <b>дисциплин*</b>, <br> затем переходят к
@@ -110,7 +107,7 @@
                     </div>
                     <!-- Content-block -->
                     <div class="memo-content-block">
-                        <div class="memo-content-block__title_education">Модули</div>
+                        <div class="memo-content-block__title_green">Модули</div>
                         <div class="memo-content-block__text">Каждая учебная дисциплина разбивается на модули*.
 
                             Каждый модуль заканчивается рейтинговым контролем — на 9–10-й и последней неделях семестра.
@@ -138,7 +135,7 @@
                 <!-- Long content-block -->
                 <div class="memo-content-block memo-content-block_long">
                     <div class="memo-content-block__lf">
-                        <div class="memo-content-block__title_education">Освоение дисциплин
+                        <div class="memo-content-block__title_green">Освоение дисциплин
                         </div>
                         <div class="memo-content-block__text">
                             Освоение дисциплин предполагает разные виды учебной работы: посещение <b>лекций, семинаров,
@@ -166,7 +163,7 @@
                 <div class="memo-content-row">
                     <!-- Content-block -->
                     <div class="memo-content-block">
-                        <div class="memo-content-block__title_education">Посещение</div>
+                        <div class="memo-content-block__title_green">Посещение</div>
                         <div class="memo-content-block__text" style="max-width: 444px;">Обучение проходит в соответствии
                             с установленным
                             расписанием занятий. Учебный день студента состоит и 1–4 академических <b>пар*</b>. Между
@@ -181,7 +178,7 @@
                     </div>
                     <!-- Content-block -->
                     <div class="memo-content-block">
-                        <div class="memo-content-block__title_education">Дополнительно</div>
+                        <div class="memo-content-block__title_green">Дополнительно</div>
                         <div class="memo-content-block__text">
                             <b>Расписание</b> модульных, <br> и зачётных недель, экзаменов
                             можно найти на сайте вашего факультета. <br>
@@ -195,7 +192,7 @@
                 <div class="memo-content-row">
                     <!-- Content-block -->
                     <div class="memo-content-block" style="width: 604px;">
-                        <div class="memo-content-block__title_education">Что делать,
+                        <div class="memo-content-block__title_green">Что делать,
                             если пропустил(а) пару?</div>
                         <div class="memo-content-block__text">
                             При наличии уважительных причин для отсутствия следует сразу сообщить о них <b>старосте</b>,
@@ -206,7 +203,7 @@
                         </div>
                     </div>
                     <div class="memo-content-block" style="width: 340px;">
-                        <div class="memo-content-block__title_education">Где найти
+                        <div class="memo-content-block__title_green">Где найти
                             тьютора?</div>
                         <div class="memo-content-block__text">
                             Тебе сможет помочь твой <b>староста</b> или <b>деканат</b> факультета. <br>
@@ -222,22 +219,20 @@
 
         <!-- Article #2 -->
         <section class="memo-article-block">
-            <a name="evaluation-system">
-                <div class="memo-title-block">
-                    <div class="memo-title-block__article">Категория</div>
-                    <div class="memo-title-block__title_education">Система оценки обучения</div>
-                    <div class="memo-title-block__about">В университете действует рейтинговая система
-                        оценки обучения.</div>
-                </div>
-            </a>
-
+            @@include('./components/title-block.html', {
+                "id": "evaluation-system",
+                "modificator": "green",
+                "name": "Система оценки обучения",
+                "about": "В университете действует рейтинговая система оценки обучения.",
+                "width": "auto"
+            })
             <!-- Content -->
             <div class="memo-article-block__content">
                 <!-- Row -->
                 <div class="memo-content-row">
                     <!-- Content-block -->
                     <div class="memo-content-block">
-                        <div class=" memo-content-block__title_education">Начало семестра</div>
+                        <div class=" memo-content-block__title_green">Начало семестра</div>
                         <div class="memo-content-block__text">
                             <b>В начале семестра</b> по каждой изучаемой
                             дисциплине преподаватель доводит до студентов сведения о выделении модулей, определении
@@ -257,7 +252,7 @@
                     </div>
                     <!-- Content-block -->
                     <div class="memo-content-block">
-                        <div class=" memo-content-block__title_education">Оценка знаний</div>
+                        <div class=" memo-content-block__title_green">Оценка знаний</div>
                         <div class="memo-content-block__text">
                             На каждом <b>семинарском</b>, <b>практическом занятии</b>,
                             лабораторной работе преподавателями осуществляется текущий контроль формирования
@@ -275,7 +270,7 @@
                 <div class="memo-content-row">
                     <!-- Content-block -->
                     <div class="memo-content-block">
-                        <div class="memo-content-block__title_education">Зачёт</div>
+                        <div class="memo-content-block__title_green">Зачёт</div>
                         <div class="memo-content-block__text">Не менее <b>40 баллов в семестре</b> позволяют студенту
                             получить
                             зачёт «автоматом». <br>
@@ -286,7 +281,7 @@
                     </div>
                     <!-- Content-block -->
                     <div class="memo-content-block">
-                        <div class="memo-content-block__title_education">Экзамен</div>
+                        <div class="memo-content-block__title_green">Экзамен</div>
                         <div class="memo-content-block__text">
                             Максимально в течение семестра студент может набрать <b>до 60 баллов</b>. <br>
                             <br>
@@ -302,58 +297,52 @@
 
         <!-- Article #3 -->
         <section class="memo-article-block">
-            <a name="digital-education">
-                <div class="memo-title-block">
-                    <div class="memo-title-block__article">Категория</div>
-                    <div class="memo-title-block__title_education">Цифровое образование</div>
-                    <div class="memo-title-block__about">Образовательный процесс в ТвГУ осуществляется с использованием
-                        современной системы управления</div>
-                </div>
-            </a>
+            @@include('./components/title-block.html', {
+                "id": "digital-education",
+                "modificator": "green",
+                "name": "Цифровое образование",
+                "about": "Образовательный процесс в ТвГУ осуществляется с использованием современной системы управления",
+                "width": "auto"
+            })
             <!-- Line -->
             <img class="memo-article-block__line" src="img/icons/lines/green-line.svg" width="100%" alt="">
         </section>
 
         <!-- Article #4 -->
         <section class="memo-article-block">
-            <a name="boiling-point">
-                <div class="memo-title-block">
-                    <div class="memo-title-block__article">Категория</div>
-                    <div class="memo-title-block__title_education">Точка кипения</div>
-                    <div class="memo-title-block__about">Образовательный процесс в ТвГУ осуществляется с использованием
-                        современной системы управления</div>
-                </div>
-            </a>
+            @@include('./components/title-block.html', {
+                "id": "boiling-point",
+                "modificator": "green",
+                "name": "Точка кипения",
+                "about": "«Точка кипения ТвГУ» — пространство коллективной работы для студентов, ученых, бизнесменов, госслужащих, общественников.",
+                "width": "auto"
+            })
             <!-- Line -->
             <img class="memo-article-block__line" src="img/icons/lines/green-line.svg" width="100%" alt="">
         </section>
 
         <!-- Article #5 -->
         <section class="memo-article-block">
-            <a name="scientific-work">
-                <div class="memo-title-block">
-                    <div class="memo-title-block__article">Категория</div>
-                    <div class="memo-title-block__title_education">Научная работа</div>
-                    <div class="memo-title-block__about" style="max-width: 723px;">При желании заниматься наукой выпускник
-                        ТвГУ может остаться
-                        в университете — поступить в аспирантуру, защитить диссертацию
-                        на соискание учёной степени кандидата наук</div>
-                </div>
-            </a>
+            @@include('./components/title-block.html', {
+                "id": "scientific-work",
+                "modificator": "green",
+                "name": "Научная работа",
+                "about": "При желании заниматься наукой выпускник ТвГУ может остаться в университете — поступить в аспирантуру, защитить диссертацию на соискание учёной степени кандидата наук",
+                "width": "723px"
+            })
             <!-- Line -->
             <img class="memo-article-block__line" src="img/icons/lines/green-line.svg" width="100%" alt="">
         </section>
 
         <!-- Article #6 -->
         <section class="memo-article-block">
-            <a name="foreign-education">
-                <div class="memo-title-block">
-                    <div class="memo-title-block__article">Категория</div>
-                    <div class="memo-title-block__title_education">Обучение за рубежом</div>
-                    <div class="memo-title-block__about">Студенты ТвГУ могут пройти семестровое обучение в одном из
-                        зарубежных университетов-партнеров</div>
-                </div>
-            </a>
+            @@include('./components/title-block.html', {
+                "id": "foreign-education",
+                "modificator": "green",
+                "name": "Обучение за рубежом",
+                "about": "Студенты ТвГУ могут пройти семестровое обучение в одном из зарубежных университетов-партнеров",
+                "width": "auto"
+            })
         </section>
     </div>
 </body>

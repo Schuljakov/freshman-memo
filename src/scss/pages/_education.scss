@@ -25,7 +25,7 @@
 
     &title-block {
         &__title {
-            &_education {
+            &_green {
                 @include article-title($gradient-green);
             }
         }
@@ -39,7 +39,7 @@
 
     &content-block {
         &__title {
-            &_education {
+            &_green {
                 @include content-title($gradient-green);
             }
         }

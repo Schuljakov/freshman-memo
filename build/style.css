@@ -23,7 +23,7 @@ a {
   line-height: 72px;
 }
 
-.memo-title-block__title_help, .memo-title-block__title_education, .memo-tip__title, .memo-menu__main, .memo-menu__education, .memo-menu__help, .memo-menu__non-education, .memo-menu__digital-system {
+.memo-title-block__title_help, .memo-title-block__title_green, .memo-tip__title, .memo-menu__main, .memo-menu__education, .memo-menu__help, .memo-menu__non-education, .memo-menu__digital-system {
   font-family: "Manrope", sans-serif;
   font-style: normal;
   font-weight: 800;
@@ -31,7 +31,7 @@ a {
   line-height: 64px;
 }
 
-.memo-content-block__title_education {
+.memo-content-block__title_green {
   font-family: "Manrope", sans-serif;
   font-style: normal;
   font-weight: 800;
@@ -183,7 +183,7 @@ a {
   background-clip: text;
   margin: 0 0 59px 0;
 }
-.memo-title-block__title_education {
+.memo-title-block__title_green {
   background: radial-gradient(100% 187.2% at 100% 100%, #42D987 0%, #78CD59 69.85%, #7BC952 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -197,7 +197,7 @@ a {
   background-image: radial-gradient(100% 187.2% at 100% 100%, #42D987 0%, #78CD59 69.85%, #7BC952 100%);
   width: max-content;
 }
-.memo-content-block__title_education {
+.memo-content-block__title_green {
   background: radial-gradient(100% 187.2% at 100% 100%, #42D987 0%, #78CD59 69.85%, #7BC952 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
