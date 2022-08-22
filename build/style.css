@@ -204,7 +204,7 @@ a {
   right: 0;
   bottom: 0;
   border-radius: 30px;
-  border: 3px solid transparent;
+  border: 2px solid transparent;
   background: radial-gradient(99.99% 203.31% at 0% 0%, #9891FC 0%, #5686F9 50%, #73A0FB 100%) border-box;
   -webkit-mask: linear-gradient(#fff 0 0) padding-box, linear-gradient(#fff 0 0);
   -webkit-mask-composite: destination-out;
