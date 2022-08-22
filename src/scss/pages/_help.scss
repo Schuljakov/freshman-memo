@@ -30,4 +30,10 @@
             @include button($gradient-red);
         }
     }
+
+    &content-block_transparent {
+        &_red::before {
+            @include transparent-content-block($gradient-red);
+        }
+    }
 }

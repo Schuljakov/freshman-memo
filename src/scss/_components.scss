@@ -11,7 +11,7 @@
             @extend %Other-Desktop-Contacts;
             color: #8692A4;
         }
-        
+
         &__small-text {
             @extend %Paragraph-Desktop-Bold;
 
@@ -76,7 +76,7 @@
         gap: 30px;
         isolation: isolate;
     }
-    
+
     &content-block {
         background: #ffffff;
         border-radius: 30px;
@@ -92,7 +92,7 @@
         &__text {
             @extend %Paragraph-Desktop-Regular;
         }
-        
+
         &__small-text {
             @extend %Other-Desktop-Regular-Ultra-Small;
             color: $color-gray;
@@ -108,4 +108,47 @@
         padding: 20px 20px 20px 30px;
         width: calc(100% - 50px);
     }
+}
+
+.memo-article-button_transparent_green,
+.memo-article-button_transparent_red {
+    position: relative;
+}
+
+.memo-content-block_transparent_green,
+.memo-content-block_transparent_red {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    padding: 20px 30px 30px 32px;
+
+    margin: 0 0 32px 0;
+
+    width: 535px;
+}
+
+
+.gradient-border-mask {
+    position: relative;
+    padding: 15px 20px;
+    // border: 0;
+    // border-radius: 50px;
+    // background: $gradient-red;
+}
+
+.gradient-border-mask::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: 50px;
+    border: 5px solid transparent;
+    background: $gradient-red border-box;
+    -webkit-mask:
+        linear-gradient(#fff 0 0) padding-box,
+        linear-gradient(#fff 0 0);
+    -webkit-mask-composite: destination-out;
+    mask-composite: exclude;   
 }

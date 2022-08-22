@@ -38,4 +38,10 @@
             }
         }
     }
+
+    &content-block_transparent {
+        &_green::before {
+            @include transparent-content-block($gradient-green);
+        }
+    }
 }
