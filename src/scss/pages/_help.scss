@@ -24,7 +24,7 @@
 
     &article-button {
         &_help {
-            background-image: $gradient-red; 
+            @include button($gradient-red);
         }
     }
 

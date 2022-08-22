@@ -40,7 +40,7 @@
 
     &article-button {
         &_education {
-            background-image: $gradient-green; 
+            @include button($gradient-green);
         }
     }
 

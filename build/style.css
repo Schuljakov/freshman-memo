@@ -57,7 +57,7 @@ a {
   letter-spacing: 0.03em;
 }
 
-.memo-article-button {
+.memo-article-button_help, .memo-article-button_education {
   font-family: "Manrope", sans-serif;
   font-style: normal;
   font-weight: 800;
@@ -189,7 +189,11 @@ a {
   background-clip: text;
 }
 .memo-article-button_education {
+  color: #ffffff;
+  padding: 15px 36px 17px 36px;
+  border-radius: 20px;
   background-image: radial-gradient(100% 187.2% at 100% 100%, #42D987 0%, #78CD59 69.85%, #7BC952 100%);
+  width: max-content;
 }
 .memo-content-block__title_education {
   background: radial-gradient(100% 187.2% at 100% 100%, #42D987 0%, #78CD59 69.85%, #7BC952 100%);
@@ -211,7 +215,11 @@ a {
   background-clip: text;
 }
 .memo-article-button_help {
+  color: #ffffff;
+  padding: 15px 36px 17px 36px;
+  border-radius: 20px;
   background-image: linear-gradient(116.19deg, #FF9F9D 0%, #F95D65 34.9%, #F5536F 62.5%, #B675D5 100%);
+  width: max-content;
 }
 
 .memo-header {
@@ -252,12 +260,6 @@ a {
   flex-direction: row;
   gap: 24px;
   margin: 0 0 24px 0;
-}
-.memo-article-button {
-  color: #ffffff;
-  padding: 15px 36px 17px 36px;
-  border-radius: 20px;
-  width: max-content;
 }
 .memo-title-block {
   display: flex;

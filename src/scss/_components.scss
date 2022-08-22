@@ -30,7 +30,7 @@
 
         &__title {
             @extend %Heading-Desktop-Biggest;
-            
+
 
             margin: 0 0 59px 0;
 
@@ -50,15 +50,6 @@
             }
         }
 
-    }
-
-    &article-button {
-        @extend %Other-Desktop-Buttons;
-        color: #ffffff;
-        padding: 15px 36px 17px 36px;
-        border-radius: 20px;
-
-        width: max-content;
     }
 
     &title-block {

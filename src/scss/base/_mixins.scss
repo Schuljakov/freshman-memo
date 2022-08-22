@@ -1,0 +1,9 @@
+@mixin button($color: $gradient-green) {
+    @extend %Other-Desktop-Buttons;
+    color: #ffffff;
+    padding: 15px 36px 17px 36px;
+    border-radius: 20px;
+    background-image: $color; 
+    
+    width: max-content;
+}
