@@ -37,7 +37,7 @@ gulp.task('browserSync', function() {
 // For recompilation
 gulp.task('watch', function() {
     gulp.watch('src/**/*.scss', gulp.series('default')).on('change', reload),
-    gulp.watch('src/*.html', gulp.series('htmlCopy')).on('change', reload);
+    gulp.watch('src/**.html', gulp.series('htmlCopy')).on('change', reload);
     gulp.watch('./src/img/**', gulp.series("imageCopy")).on("change", reload);
 });
 
@@ -49,7 +49,7 @@ gulp.task('imageCopy', function() {
 
 // Copy index.html folder from ~ to build
 gulp.task('htmlCopy', function() {
-    return gulp.src('./src/*.html')
+    return gulp.src('./src/**.html')
         .pipe(gulp.dest('./build/'));
 });
 
@@ -65,7 +65,7 @@ gulp.task('fileinclude', async function() {
 
 // The default task
 gulp.task('default', 
-    gulp.series("compiler", 'imageCopy', 'fileinclude'), function (done) {
+    gulp.series("compiler", 'imageCopy', 'htmlCopy'), function (done) {
         done();
     }
 );
