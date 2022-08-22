@@ -1,0 +1,39 @@
+.memo- {
+    &container {
+        &_tiffany {
+            @include container("./img/page-backgrounds/digital-system-background.svg")
+        }
+    }
+
+    &header {
+        &_tiffany {
+            @include header($gradient-tiffany, "./img/backgrounds/tiffany-header-background.svg")
+        }
+
+        &__title {
+            &_tiffany {
+                @include header-title($gradient-tiffany);
+            }
+        }
+    }
+
+    &title-block {
+        &__title {
+            &_tiffany {
+                @include article-title($gradient-tiffany);
+            }
+        }
+    }
+
+    &article-button {
+        &_tiffany {
+            @include button($gradient-tiffany);
+        }
+    }
+
+    &content-block_transparent {
+        &_tiffany::before {
+            @include transparent-content-block($gradient-tiffany);
+        }
+    }
+}
