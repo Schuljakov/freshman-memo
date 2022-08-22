@@ -169,7 +169,7 @@ a {
   max-width: 1110px;
   margin: auto;
   padding: 0 15px;
-  background-image: url("../img/backgrounds/education-background.svg");
+  background-image: url("../img/page-backgrounds/education-background.svg");
   background-size: contain;
   background-repeat: repeat-y;
   background-position: center;
@@ -211,6 +211,15 @@ a {
   margin: 0 0 6px 0;
 }
 
+.memo-container_red {
+  max-width: 1110px;
+  margin: auto;
+  padding: 0 15px;
+  background-image: url("../img/page-backgrounds/help-background.svg");
+  background-size: contain;
+  background-repeat: repeat-y;
+  background-position: center;
+}
 .memo-header_red {
   border-radius: 64px;
   border: 2px solid transparent;
