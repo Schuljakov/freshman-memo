@@ -266,7 +266,8 @@ a {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 64px 0 32px 0;
+  padding: 64px 0 0 0;
+  margin: 0 0 32px 0;
 }
 .memo-title-block__article {
   color: #8692A4;
