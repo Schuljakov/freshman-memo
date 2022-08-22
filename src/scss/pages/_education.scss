@@ -1,13 +1,13 @@
 .memo- {
     &container {
         &_green {
-            @include container("../img/page-backgrounds/education-background.svg")
+            @include container("./img/page-backgrounds/education-background.svg")
         }
     }
 
     &header {
         &_green {
-            @include header($gradient-green, "../img/backgrounds/green-header-background.svg")
+            @include header($gradient-green, "./img/backgrounds/green-header-background.svg")
         }
 
         &__title {

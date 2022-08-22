@@ -169,7 +169,7 @@ a {
   max-width: 1110px;
   margin: auto;
   padding: 0 15px;
-  background-image: url("../img/page-backgrounds/education-background.svg");
+  background-image: url("./img/page-backgrounds/education-background.svg");
   background-size: contain;
   background-repeat: repeat-y;
   background-position: center;
@@ -178,7 +178,7 @@ a {
   border-radius: 64px;
   border: 2px solid transparent;
   padding: 126px 262px 32px 262px;
-  background: url("../img/backgrounds/green-header-background.svg") padding-box, linear-gradient(#F6FAFF, #F6FAFF) padding-box, radial-gradient(100% 187.2% at 100% 100%, #42D987 0%, #78CD59 69.85%, #7BC952 100%) border-box;
+  background: url("./img/backgrounds/green-header-background.svg") padding-box, linear-gradient(#F6FAFF, #F6FAFF) padding-box, radial-gradient(100% 187.2% at 100% 100%, #42D987 0%, #78CD59 69.85%, #7BC952 100%) border-box;
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -230,7 +230,7 @@ a {
   max-width: 1110px;
   margin: auto;
   padding: 0 15px;
-  background-image: url("../img/page-backgrounds/help-background.svg");
+  background-image: url("./img/page-backgrounds/help-background.svg");
   background-size: contain;
   background-repeat: repeat-y;
   background-position: center;
@@ -239,7 +239,7 @@ a {
   border-radius: 64px;
   border: 2px solid transparent;
   padding: 126px 262px 32px 262px;
-  background: url("../img/backgrounds/red-header-background.svg") padding-box, linear-gradient(#F6FAFF, #F6FAFF) padding-box, linear-gradient(116.19deg, #FF9F9D 0%, #F95D65 34.9%, #F5536F 62.5%, #B675D5 100%) border-box;
+  background: url("./img/backgrounds/red-header-background.svg") padding-box, linear-gradient(#F6FAFF, #F6FAFF) padding-box, linear-gradient(116.19deg, #FF9F9D 0%, #F95D65 34.9%, #F5536F 62.5%, #B675D5 100%) border-box;
   background-size: cover;
   background-repeat: no-repeat;
 }
