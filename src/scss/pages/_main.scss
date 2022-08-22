@@ -1,0 +1,33 @@
+.memo- {
+    &header {
+        &_main {
+            @include header($gradient-main, "./img/backgrounds/main-header-background.svg")
+        }
+
+        &__title {
+            &_main {
+                @include header-title($gradient-main);
+            }
+        }
+    }
+
+    &title-block {
+        &__title {
+            &_main {
+                @include article-title($gradient-main);
+            }
+        }
+    }
+
+    &article-button {
+        &_main {
+            @include button($gradient-main);
+        }
+    }
+
+    &content-block_transparent {
+        &_main::before {
+            @include transparent-content-block($gradient-main);
+        }
+    }
+}
