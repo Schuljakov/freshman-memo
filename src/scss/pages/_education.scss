@@ -27,6 +27,12 @@
         }
     }
 
+    &article-button {
+        &_education {
+            background-image: $gradient-green; 
+        }
+    }
+
     &content-block {
 
         &__title_education {
