@@ -458,7 +458,7 @@ a {
   padding: 20px 20px 20px 30px;
   width: calc(100% - 50px);
 }
-.memo-article-button_green::before, .memo-article-button_red::before {
+.memo-article-button_green::before, .memo-article-button_red::before, .memo-article-button_purpure::before, .memo-article-button_tiffany::before, .memo-article-button_main::before {
   content: "";
   position: absolute;
   top: 0;
@@ -474,7 +474,10 @@ a {
 }
 
 .memo-content-block_transparent_green,
-.memo-content-block_transparent_red {
+.memo-content-block_transparent_red,
+.memo-content-block_transparent_purpure,
+.memo-content-block_transparent_tiffany,
+.memo-content-block_transparent_main {
   position: relative;
   display: flex;
   flex-direction: column;

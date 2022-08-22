@@ -112,7 +112,10 @@
     &article {
         &-button {
             &_green::before,
-            &_red::before {
+            &_red::before,
+            &_purpure::before,
+            &_tiffany::before,
+            &_main::before {
                 content: "";
                 position: absolute;
                 top: 0;
@@ -136,10 +139,11 @@
 
 }
 
-
-
 .memo-content-block_transparent_green,
-.memo-content-block_transparent_red {
+.memo-content-block_transparent_red,
+.memo-content-block_transparent_purpure,
+.memo-content-block_transparent_tiffany,
+.memo-content-block_transparent_main {
     position: relative;
     display: flex;
     flex-direction: column;
