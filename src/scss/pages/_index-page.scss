@@ -1,7 +1,19 @@
 .memo-{
+    &header {
+        &_blue {
+            @include header($gradient-main, "./img/backgrounds/main-header-background.svg")
+        }
+
+        &__title {
+            &_blue {
+                @include header-title($gradient-main);
+            }
+        }
+    }
+
     &menu {
         color: #ffffff;
-        margin-bottom: 30px;
+        margin: 30px 0 30px 0;
 
         &__top-row,
         &__bottom-row {

@@ -38,7 +38,8 @@
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
-    margin: 0 0 59px 0;
+    margin: 0 0 37px 0;
+    text-align: center;
 }
 
 @mixin article-title($color: $gradient-green) {

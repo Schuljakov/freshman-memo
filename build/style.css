@@ -15,7 +15,7 @@ a {
   background-color: #F6FAFF;
 }
 
-.memo-header__title_red, .memo-header__title_green {
+.memo-header__title_red, .memo-header__title_green, .memo-header__title_blue {
   font-family: "Manrope", sans-serif;
   font-style: normal;
   font-weight: 800;
@@ -39,7 +39,7 @@ a {
   line-height: 48px;
 }
 
-.memo-title-block__about, .memo-header__small-text, .memo-tip__text {
+.memo-title-block__about, .memo-header__subtitle, .memo-tip__text {
   font-family: "Manrope", sans-serif;
   font-style: normal;
   font-weight: 700;
@@ -82,9 +82,25 @@ a {
   line-height: 18px;
 }
 
+.memo-header_blue {
+  border-radius: 64px;
+  border: 2px solid transparent;
+  padding: 126px 262px 32px 262px;
+  background: url("./img/backgrounds/main-header-background.svg") padding-box, linear-gradient(#F6FAFF, #F6FAFF) padding-box, radial-gradient(99.99% 203.31% at 0% 0%, #9891FC 0%, #5686F9 50%, #73A0FB 100%) border-box;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.memo-header__title_blue {
+  background: radial-gradient(99.99% 203.31% at 0% 0%, #9891FC 0%, #5686F9 50%, #73A0FB 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  margin: 0 0 37px 0;
+  text-align: center;
+}
 .memo-menu {
   color: #ffffff;
-  margin-bottom: 30px;
+  margin: 30px 0 30px 0;
 }
 .memo-menu__top-row, .memo-menu__bottom-row {
   display: flex;
@@ -203,7 +219,8 @@ a {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
-  margin: 0 0 59px 0;
+  margin: 0 0 37px 0;
+  text-align: center;
 }
 .memo-title-block__title_green {
   background: radial-gradient(100% 187.2% at 100% 100%, #42D987 0%, #78CD59 69.85%, #7BC952 100%);
@@ -264,7 +281,8 @@ a {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
-  margin: 0 0 59px 0;
+  margin: 0 0 37px 0;
+  text-align: center;
 }
 .memo-title-block__title_red {
   background: linear-gradient(116.19deg, #FF9F9D 0%, #F95D65 34.9%, #F5536F 62.5%, #B675D5 100%);
@@ -296,7 +314,7 @@ a {
   mask-composite: exclude;
 }
 
-.memo-header_green, .memo-header_red {
+.memo-header_blue, .memo-header_green, .memo-header_red {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -310,10 +328,10 @@ a {
 .memo-header__up-title {
   color: #8692A4;
 }
-.memo-header__small-text {
+.memo-header__subtitle {
   text-align: center;
   max-width: 322px;
-  margin: 0 0 15px 0;
+  margin: 0 0 8px 0;
 }
 .memo-header__buttons-section {
   display: flex;
