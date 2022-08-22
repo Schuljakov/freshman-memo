@@ -96,7 +96,7 @@
     }
 
     &tip {
-        background: radial-gradient(105% 1036.66% at 89.06% 16.54%, rgba(217, 232, 255, 0.6) 0%, rgba(217, 232, 255, 0.6) 0.01%, rgba(222, 245, 244, 0.6) 100%, rgba(241, 245, 250, 0.6) 100%);
+        position: relative;
 
         padding: 40px 40px 41px 40px;
         border-radius: 30px;
@@ -142,5 +142,22 @@
         .close-icon {
             cursor: pointer;
         }
+    }
+
+    &tip::before {
+        content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            border-radius: 30px;
+            border: 3px solid transparent;
+            background: $gradient-main border-box;
+            -webkit-mask:
+                linear-gradient(#fff 0 0) padding-box,
+                linear-gradient(#fff 0 0);
+            -webkit-mask-composite: destination-out;
+            mask-composite: exclude;
     }
 }
