@@ -1,3 +1,13 @@
+@mixin container($url) {
+    max-width: 1110px;
+    margin: auto;
+    padding: 0 15px;
+    background-image: url($url);
+    background-size: contain;
+    background-repeat: repeat-y;
+    background-position: center;
+}
+
 @mixin button($color: $gradient-green) {
     @extend %Other-Desktop-Buttons;
     color: #ffffff;

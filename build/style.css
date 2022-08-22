@@ -166,6 +166,9 @@ a {
 }
 
 .memo-container_green {
+  max-width: 1110px;
+  margin: auto;
+  padding: 0 15px;
   background-image: url("../img/backgrounds/education-background.svg");
   background-size: contain;
   background-repeat: repeat-y;
@@ -233,11 +236,6 @@ a {
   align-items: center;
 }
 
-.memo-container {
-  max-width: 1110px;
-  margin: auto;
-  padding: 0 15px;
-}
 .memo-header {
   border-radius: 64px;
   border: 2px solid transparent;

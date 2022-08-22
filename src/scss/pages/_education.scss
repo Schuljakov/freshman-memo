@@ -1,10 +1,7 @@
 .memo- {
     &container {
         &_green {
-            background-image: url("../img/backgrounds/education-background.svg");
-            background-size: contain;
-            background-repeat: repeat-y;
-            background-position: center;
+            @include container("../img/backgrounds/education-background.svg")
         }
     }
 

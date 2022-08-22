@@ -1,11 +1,4 @@
 .memo- {
-    &container {
-        max-width: 1110px;
-        margin: auto;
-
-        padding: 0 15px;
-    }
-
     &header {
         @extend %flex-center;
         border-radius: 64px;
