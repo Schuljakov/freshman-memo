@@ -668,7 +668,7 @@ a {
   border-radius: 30px;
   padding: 20px 20px 15px 20px;
   background-color: #ffffff;
-  width: 495px;
+  margin-bottom: 30px;
 }
 .memo-content-block_row {
   display: flex;
@@ -749,6 +749,13 @@ a {
   grid-template-rows: repeat(3, auto) 48px;
   grid-template-areas: "a b" "c d" "e d" "e ." "f g";
 }
+#memo-article-block__content--foreign-education {
+  display: grid;
+  max-width: 1100px;
+  column-gap: 30px;
+  grid-template-rows: repeat(2, auto) 40px;
+  grid-template-areas: "a b" "a c" ". c" "d e" "f e" "f ." "g g";
+}
 
 #memo-content-block--semesters {
   grid-area: a;
@@ -818,6 +825,28 @@ a {
 }
 #memo-content-block--science-seminar {
   margin-top: -48px;
+  grid-area: g;
+}
+#memo-content-block--terms {
+  grid-area: a;
+}
+#memo-content-block--trips {
+  grid-area: b;
+}
+#memo-content-block--cms {
+  margin-top: -40px;
+  grid-area: d;
+}
+#memo-content-block--world {
+  grid-area: c;
+}
+#memo-content-block--interest {
+  grid-area: e;
+}
+#memo-content-block--contacts {
+  grid-area: f;
+}
+#memo-content-block--globe {
   grid-area: g;
 }
 
@@ -973,15 +1002,23 @@ a {
   }
   #memo-article-block__content--science-work {
     max-width: 535px;
-    grid-template-rows: auto;
     grid-template-rows: repeat(4, auto);
     grid-template-areas: "a" "c" "e" "f" "b" "d" "g";
+    margin: 0 auto;
+  }
+  #memo-article-block__content--foreign-education {
+    max-width: 535px;
+    grid-template-rows: repeat(3, auto);
+    grid-template-areas: "a" "b" "c" "d" "e" "g" "f";
     margin: 0 auto;
   }
   #memo-content-block--room {
     margin-top: 0;
   }
   #memo-content-block--science-seminar {
+    margin-top: 0;
+  }
+  #memo-content-block--cms {
     margin-top: 0;
   }
 }

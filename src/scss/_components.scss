@@ -111,7 +111,7 @@
             border-radius: 30px;
             padding: 20px 20px 15px 20px;
             background-color: #ffffff;
-            width: 495px;
+            margin-bottom: 30px;
         }
 
         &_row {
@@ -254,6 +254,23 @@
         "f g"
         ;
     }
+
+    &--foreign-education {
+        display: grid;
+        max-width: 1100px;
+        column-gap: 30px;
+        grid-template-rows: repeat(2, auto) 40px;
+        grid-template-areas:
+        "a b"
+        "a c"
+        ". c"
+        "d e"
+        "f e"
+        "f ."
+        "g g"
+        ;
+    }
+
 }
 
 #memo-content-block {
@@ -326,6 +343,28 @@
     }
     &--science-seminar {
         margin-top: -48px;
+        grid-area: g;
+    }
+    &--terms {
+        grid-area: a;
+    }
+    &--trips {
+        grid-area: b;
+    }
+    &--cms {
+        margin-top: -40px;
+        grid-area: d;
+    }
+    &--world {
+        grid-area: c;
+    }
+    &--interest {
+        grid-area: e;
+    }
+    &--contacts {
+        grid-area: f;
+    }
+    &--globe {
         grid-area: g;
     }
 }
