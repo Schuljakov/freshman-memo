@@ -756,7 +756,7 @@ a {
     margin: 0 0 8px 0;
   }
   .memo-header_green, .memo-header_red, .memo-header_purpure, .memo-header_tiffany, .memo-header_main {
-    padding: 32px 31px 16px 31px;
+    padding: 32px 0 16px 0;
     border-width: 1px;
     border-radius: 16px;
     background-position: center;
@@ -773,16 +773,37 @@ a {
     border-radius: 12px;
     border-width: 1px;
   }
+  .memo-title-block {
+    padding: 32px 0 0 0;
+    margin: 0 0 16px 0;
+  }
   .memo-title-block__article {
     display: none;
   }
   .memo-title-block__title_green, .memo-title-block__title_red, .memo-title-block__title_purpure, .memo-title-block__title_tiffany, .memo-title-block__title_main {
     font-weight: 800;
     font-size: 24px;
-    line-height: normal;
+    line-height: 110%;
+    margin: 0 0 4px 0;
   }
   .memo-title-block__about {
     font-weight: 700;
+    font-size: 11px;
+    line-height: 130%;
+    letter-spacing: 0.03em;
+  }
+  .memo-article-block__line {
+    display: none;
+  }
+  .memo-content-block_transparent_green, .memo-content-block_transparent_red, .memo-content-block_transparent_purpure, .memo-content-block_transparent_tiffany, .memo-content-block_transparent_main {
+    width: auto;
+    padding: 16px;
+  }
+  .memo-content-block_transparent_green::before, .memo-content-block_transparent_red::before, .memo-content-block_transparent_purpure::before, .memo-content-block_transparent_tiffany::before, .memo-content-block_transparent_main::before {
+    border-radius: 16px;
+  }
+  .memo-content-block__text {
+    font-weight: 400;
     font-size: 11px;
     line-height: 130%;
     letter-spacing: 0.03em;

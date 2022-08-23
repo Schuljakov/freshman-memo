@@ -44,7 +44,7 @@
             &_purpure,
             &_tiffany,
             &_main {
-                padding: 32px 31px 16px 31px;
+                padding: 32px 0 16px 0;
                 border-width: 1px;
                 border-radius: 16px;
                 background-position: center;
@@ -79,6 +79,9 @@
         }
 
         &title-block {
+            padding: 32px 0 0 0;
+            margin: 0 0 16px 0;
+
             &__article {
                 display: none;
             }
@@ -92,7 +95,9 @@
                 &_main {
                     font-weight: 800;
                     font-size: 24px;
-                    line-height: normal;
+                    line-height: 110%;
+
+                    margin: 0 0 4px 0;
                 }
             }
 
@@ -100,7 +105,42 @@
                 font-weight: 700;
                 font-size: 11px;
                 line-height: 130%;
-            
+
+                letter-spacing: 0.03em;
+            }
+        }
+
+        &article-block {
+            &__line {
+                display: none;
+            }
+        }
+
+        &content-block {
+            &_transparent {
+                &_green,
+                &_red,
+                &_purpure,
+                &_tiffany,
+                &_main {
+                    width: auto;
+                    padding: 16px
+                }
+
+                &_green::before,
+                &_red::before,
+                &_purpure::before,
+                &_tiffany::before,
+                &_main::before {
+                    border-radius: 16px;
+                }
+            }
+
+            &__text {
+                font-weight: 400;
+                font-size: 11px;
+                line-height: 130%;
+
                 letter-spacing: 0.03em;
             }
         }
