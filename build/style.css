@@ -766,6 +766,9 @@ a {
   background: linear-gradient(92.93deg, rgba(247, 247, 247, 0.4) 0%, rgba(251, 251, 251, 0) 49.64%, rgba(255, 255, 255, 0.3) 100%) border-box;
   -webkit-mask: linear-gradient(#fff 0 0) padding-box, linear-gradient(#fff 0 0);
 }
+.memo-article-button_green:hover, .memo-article-button_red:hover, .memo-article-button_purpure:hover, .memo-article-button_tiffany:hover, .memo-article-button_main:hover {
+  scale: 1.05;
+}
 .memo-files-block {
   display: flex;
   flex-direction: row;

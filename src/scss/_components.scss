@@ -14,7 +14,7 @@
 
         height: 64px;
         width: 64px;
-        border-radius: 18px;   
+        border-radius: 18px;
     }
 
     &nav-icon {
@@ -27,7 +27,7 @@
     &nav-icon:hover {
         rotate: 0deg;
 
-    }   
+    }
 
     &header {
 
@@ -190,6 +190,19 @@
                     linear-gradient(#fff 0 0);
             }
         }
+    }
+
+    &article-button {
+
+        &_green:hover,
+        &_red:hover,
+        &_purpure:hover,
+        &_tiffany:hover,
+        &_main:hover {
+            scale: 1.05;
+        }
+
+        
     }
 
     &files-block {
@@ -364,23 +377,23 @@
         max-width: 1100px;
         column-gap: 30px;
         grid-template-areas:
-        "a b"
-        "c b"
-        "c d"
-        "e f"
-        "g f"
-        "g h"
-        "i h"
-        "i j"
-        "k j"
-        "k l"
-        "m l"
-        "m n"
-        "o n"
-        "o p"
-        "q p"
-        "q img"
-        ". img"
+            "a b"
+            "c b"
+            "c d"
+            "e f"
+            "g f"
+            "g h"
+            "i h"
+            "i j"
+            "k j"
+            "k l"
+            "m l"
+            "m n"
+            "o n"
+            "o p"
+            "q p"
+            "q img"
+            ". img"
         ;
     }
 
@@ -517,30 +530,39 @@
     &--lms {
         grid-area: c;
     }
+
     &--video-conferences {
         grid-area: f;
     }
+
     &--catalog {
         grid-area: g;
     }
+
     &--account {
         grid-area: i;
     }
+
     &--advice-service {
         grid-area: j;
     }
+
     &--cloud-services {
         grid-area: l;
     }
+
     &--azure-service {
         grid-area: m;
     }
+
     &--elibrary {
         grid-area: n;
     }
+
     &--programs {
         grid-area: p;
     }
+
     &--laptop {
         grid-area: img;
     }
@@ -550,21 +572,27 @@
     &--best-services {
         grid-area: a;
     }
+
     &--helpdesk {
         grid-area: d;
     }
+
     &--booking {
         grid-area: e;
     }
+
     &--portfolio {
         grid-area: h;
     }
+
     &--corporate-email {
         grid-area: k;
     }
+
     &--video-surveillance {
         grid-area: o;
     }
+
     &--edeans-office {
         grid-area: q;
     }
@@ -599,24 +627,31 @@
     &--science {
         grid-area: a;
     }
+
     &--best-services {
         grid-area: a;
     }
+
     &--helpdesk {
         grid-area: d;
     }
+
     &--booking {
         grid-area: e;
     }
+
     &--portfolio {
         grid-area: h;
     }
+
     &--corporate-email {
         grid-area: k;
     }
+
     &--video-surveillance {
         grid-area: p;
     }
+
     &--edeans-office {
         grid-area: q;
     }
