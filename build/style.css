@@ -742,6 +742,13 @@ a {
   grid-template-rows: auto auto 40px;
   grid-template-areas: "a b" "a c" ". c" "d e";
 }
+#memo-article-block__content--science-work {
+  display: grid;
+  max-width: 1100px;
+  column-gap: 30px;
+  grid-template-rows: repeat(3, auto) 48px;
+  grid-template-areas: "a b" "c d" "e d" "e ." "f g";
+}
 
 #memo-content-block--semesters {
   grid-area: a;
@@ -794,6 +801,25 @@ a {
   grid-area: d;
   margin-top: -40px;
 }
+#memo-content-block--scientist {
+  grid-area: b;
+}
+#memo-content-block--science-theme {
+  grid-area: c;
+}
+#memo-content-block--science-support {
+  grid-area: d;
+}
+#memo-content-block--science-attention {
+  grid-area: e;
+}
+#memo-content-block--science-subject {
+  grid-area: f;
+}
+#memo-content-block--science-seminar {
+  margin-top: -48px;
+  grid-area: g;
+}
 
 #memo-content-block_transparent_green--semester-beginning {
   grid-area: a;
@@ -812,6 +838,9 @@ a {
 }
 #memo-content-block_transparent_green--project {
   grid-area: b;
+}
+#memo-content-block_transparent_green--science {
+  grid-area: a;
 }
 
 #memo-content-block-async--exam {
@@ -921,7 +950,7 @@ a {
     max-width: 535px;
     margin: 0 auto;
     grid-template-areas: "a" "b" "c" "d" "e" "f" "g";
-    grid-template-columns: 535px;
+    grid-template-columns: minmax(320px, 535px);
   }
   #memo-content-block--disciplines-study {
     flex-direction: column;
@@ -939,10 +968,20 @@ a {
   #memo-article-block__content--boiling-point {
     max-width: 535px;
     grid-template-rows: auto;
-    grid-template-areas: "a" "b" "c" "d" "e";
+    grid-template-areas: "a" "b" "c" "e" "d";
+    margin: 0 auto;
+  }
+  #memo-article-block__content--science-work {
+    max-width: 535px;
+    grid-template-rows: auto;
+    grid-template-rows: repeat(4, auto);
+    grid-template-areas: "a" "c" "e" "f" "b" "d" "g";
     margin: 0 auto;
   }
   #memo-content-block--room {
+    margin-top: 0;
+  }
+  #memo-content-block--science-seminar {
     margin-top: 0;
   }
 }
