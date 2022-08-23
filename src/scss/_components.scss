@@ -6,9 +6,33 @@
         padding-bottom: 10px;
     }
 
+    &nav-button {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        height: 64px;
+        width: 64px;
+        border-radius: 18px;   
+    }
+
+    &nav-icon {
+        rotate: -45deg;
+        margin: 10px;
+
+        transition: 600ms;
+    }
+
+    &nav-icon:hover {
+        rotate: 0deg;
+
+    }   
+
     &header {
 
         &__up-title {
+            margin: 24px 0 0 0;
             @extend %Other-Desktop-Contacts;
             color: #8692A4;
         }

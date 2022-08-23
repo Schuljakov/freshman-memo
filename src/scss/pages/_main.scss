@@ -5,6 +5,12 @@
         }
     }
 
+    &nav-button {
+        &_main {
+            background-image: $gradient-main;
+        }
+    }
+
     &header {
         &_main {
             @include header($gradient-main, "./img/header-backgrounds/blue-header-background.png")

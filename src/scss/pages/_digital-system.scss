@@ -5,6 +5,12 @@
         }
     }
 
+    &nav-button {
+        &_tiffany {
+            background-image: $gradient-tiffany;
+        }
+    }
+
     &header {
         &_tiffany {
             @include header($gradient-tiffany, "./img/header-backgrounds/tiffany-header-background.png")

@@ -5,6 +5,12 @@
         }
     }
 
+    &nav-button {
+        &_purpure {
+            background-image: $gradient-purpure;
+        }
+    }
+
     &header {
         &_purpure {
             @include header($gradient-purpure, "./img/header-backgrounds/purpure-header-background.png")
