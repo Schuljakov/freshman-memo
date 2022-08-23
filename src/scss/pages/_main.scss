@@ -37,6 +37,14 @@
         }
     }
 
+    &content-block {
+        &__title {
+            &_main {
+                @include content-title($gradient-main);
+            }
+        }
+    }
+
     &content-block_transparent {
         &_main::before {
             @include transparent-content-block($gradient-main);
