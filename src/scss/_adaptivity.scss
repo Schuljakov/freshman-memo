@@ -184,3 +184,29 @@
         }
     }
 }
+
+
+@media (max-width: 1000px) {
+    #memo-article-block__content {
+        &--eductaion {
+            max-width: 535px;
+            margin: 0 auto;
+            grid-template-areas:
+            "a"
+            "b"
+            "c"
+            "d"
+            "e"
+            "f"
+            "g";
+            grid-template-columns: 535px;
+        }
+    }
+}
+
+#memo-content-block {
+    &--disciplines-study {
+        flex-direction: column;
+
+    }
+}

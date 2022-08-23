@@ -20,7 +20,7 @@
 
     <!-- Container -->
     <div class="memo-container_green">
-        
+
         <!-- Page header -->
         <section class="memo-header_green">
             <div class="nav-icon"></div>
@@ -45,70 +45,59 @@
                 </div>
             </div>
         </section>
-        
+
         <!-- Article #1 -->
         <section class="memo-article-block">
-            @@include('./components/title-block.html', {
-                "logo": "",
-                "id": "education-process",
-                "modificator": "green",
-                "name": "Процесс обучения",
-                "about": "Основное отличие университетского обучения от школьного: в школе – учат, в университете – учатся...",
-                "width": "auto"
-            })
             <!-- Content -->
-            <div class="memo-article-block__content">
-
-                <!-- Row -->
-                <div class="memo-content-row">
-                    <!-- Content-block -->
-                    <div class="memo-content-block">
-                        <div class="memo-content-block__title_green">Семестры</div>
-                        <div class="memo-content-block__text">Учебный процесс в ТвГУ организован <br> по семестрам. В
-                            течение
-                            семестра студенты <br> осваивают несколько <b>дисциплин*</b>, <br> затем переходят к
-                            следующему этапу. <br>
-                            <br>
-                            В учебном году <b>два семестра</b>, <br> в каждом семестре — <b>два модуля</b>. <br> Между
-                            семестрами — <b>каникулы</b>. <br>
-                            Каждый семестр заканчивается <b>сессией*</b>.
-                        </div>
-                        <div class="memo-content-block__attachment">
-                            <img src="./img/graphs/graph1.png" alt="">
-                        </div>
-                        <div class="memo-content-block__small-text">
-                            <b>*Академическая дисциплина</b> — это отрасль знаний, которая преподается или исследуется в
-                            высших
-                            учебных заведениях. Проще говоря, это как предмет в школе, только в университете. <br>
-                            <br>
-                            <b>*Сессия</b> — период сдачи зачётов и экзаменов.
-                        </div>
+            <div class="memo-article-block__content" id="memo-article-block__content--eductaion">
+                <!-- Content-block -->
+                <div class="memo-content-block" id="memo-content-block--semesters">
+                    <div class="memo-content-block__title_green">Семестры</div>
+                    <div class="memo-content-block__text">Учебный процесс в ТвГУ организован <br> по семестрам. В
+                        течение
+                        семестра студенты <br> осваивают несколько <b>дисциплин*</b>, <br> затем переходят к
+                        следующему этапу. <br>
+                        <br>
+                        В учебном году <b>два семестра</b>, <br> в каждом семестре — <b>два модуля</b>. <br> Между
+                        семестрами — <b>каникулы</b>. <br>
+                        Каждый семестр заканчивается <b>сессией*</b>.
                     </div>
-                    <!-- Content-block -->
-                    <div class="memo-content-block">
-                        <div class="memo-content-block__title_green">Модули</div>
-                        <div class="memo-content-block__text">
-                            Каждая учебная дисциплина разбивается на <b>модули*</b>.
-                            <br> <br>
-                            Каждый модуль заканчивается <b>рейтинговым контролем — на 9–10-й</b> <br> и последней неделях семестра.
-                            <br> <br>
-                            Семестр заканчивается промежуточной аттестацией (сессией)— <b>сдачей зачётов и экзаменов*</b>.
-                            </b>
-                        </div>
-                        <div class="memo-content-block__attachment">
-                            <img src="./img/graphs/graph2.png" alt="">
-                        </div>
-                        <div class="memo-content-block__small-text">
-                            <b>*Зачёты и экзамены</b> — это формы контроля успеваемости <br> студентов в период сессии,
-                            результаты <br>
-                            которого проставляются в зачётную книжку. <br>
-                            <br>
-                            <b>*«Модуль»</b> — это период обучения в 8 недель.
-                        </div>
+                    <div class="memo-content-block__attachment">
+                        <img src="./img/graphs/graph1.png" alt="">
+                    </div>
+                    <div class="memo-content-block__small-text">
+                        <b>*Академическая дисциплина</b> — это отрасль знаний, которая преподается или исследуется в
+                        высших
+                        учебных заведениях. Проще говоря, это как предмет в школе, только в университете. <br>
+                        <br>
+                        <b>*Сессия</b> — период сдачи зачётов и экзаменов.
                     </div>
                 </div>
-                <!-- Long content-block -->
-                <div class="memo-content-block memo-content-block_long">
+                <!-- Content-block -->
+                <div class="memo-content-block" id="memo-content-block--modules">
+                    <div class="memo-content-block__title_green">Модули</div>
+                    <div class="memo-content-block__text">
+                        Каждая учебная дисциплина разбивается на <b>модули*</b>.
+                        <br> <br>
+                        Каждый модуль заканчивается <b>рейтинговым контролем — на 9–10-й</b> <br> и последней неделях
+                        семестра.
+                        <br> <br>
+                        Семестр заканчивается промежуточной аттестацией (сессией)— <b>сдачей зачётов и экзаменов*</b>.
+                        </b>
+                    </div>
+                    <div class="memo-content-block__attachment">
+                        <img src="./img/graphs/graph2.png" alt="">
+                    </div>
+                    <div class="memo-content-block__small-text">
+                        <b>*Зачёты и экзамены</b> — это формы контроля успеваемости <br> студентов в период сессии,
+                        результаты <br>
+                        которого проставляются в зачётную книжку. <br>
+                        <br>
+                        <b>*«Модуль»</b> — это период обучения в 8 недель.
+                    </div>
+                </div>
+                <!-- Content-block -->
+                <div class="memo-content-block" id="memo-content-block--disciplines-study">
                     <div class="memo-content-block__lf">
                         <div class="memo-content-block__title_green">Освоение дисциплин
                         </div>
@@ -134,73 +123,69 @@
                     </div>
                     <img src="./img/pictures/students.png" alt="Студенты сидят за партой">
                 </div>
-                <!-- Row -->
-                <div class="memo-content-row">
-                    <!-- Content-block -->
-                    <div class="memo-content-block">
-                        <div class="memo-content-block__title_green">Посещение</div>
-                        <div class="memo-content-block__text" style="max-width: 444px;">Обучение проходит в соответствии
-                            с установленным
-                            расписанием занятий. Учебный день студента состоит и 1–4 академических <b>пар*</b>. Между
-                            парами
-                            также предусмотрены перерывы. Посещение всех видов учебных занятий является
-                            <b>обязательным</b>.
-                            <br><br>
-                        </div>
-                        <div class="memo-content-block__small-text">
-                            <b>*«Пара»</b> — это два академических часа <br>по 45 минут каждый.
-                        </div>
+                <!-- Content-block -->
+                <div class="memo-content-block" id="memo-content-block--visiting">
+                    <div class="memo-content-block__title_green">Посещение</div>
+                    <div class="memo-content-block__text" style="max-width: 444px;">Обучение проходит в соответствии
+                        с установленным
+                        расписанием занятий. Учебный день студента состоит и 1–4 академических <b>пар*</b>. Между
+                        парами
+                        также предусмотрены перерывы. Посещение всех видов учебных занятий является
+                        <b>обязательным</b>.
+                        <br><br>
                     </div>
-                    <!-- Content-block -->
-                    <div class="memo-content-block">
-                        <div class="memo-content-block__title_green">Дополнительно</div>
-                        <div class="memo-content-block__text">
-                            <b>Расписание</b> модульных, <br> и зачётных недель, экзаменов
-                            можно найти на сайте вашего факультета. <br>
-                            <br>
-                            <b>Зачётная книжка</b> — документ, в котором содержатся записи о сдаче студентом зачётов,
-                            экзаменов, защите курсовых, прохождении практик.
-                        </div>
+                    <div class="memo-content-block__small-text">
+                        <b>*«Пара»</b> — это два академических часа <br>по 45 минут каждый.
                     </div>
                 </div>
-                <!-- Row -->
-                <div class="memo-content-row">
-                    <!-- Content-block -->
-                    <div class="memo-content-block" style="width: 604px;">
-                        <div class="memo-content-block__title_green">Что делать,
-                            если пропустил(а) пару?</div>
-                        <div class="memo-content-block__text">
-                            При наличии уважительных причин для отсутствия следует сразу сообщить о них <b>старосте</b>,
-                            <b>тьютору</b> или<b> преподавателю</b> и предпринять все усилия, <b>чтобы не отстать от
-                                плана</b>.<br>
-                            <br>
-                            Это простое правило покажет студента ответственным <br> и позволит избежать многих проблем.
-                        </div>
+                <!-- Content-block -->
+                <div class="memo-content-block" id="memo-content-block--additionally
+                ">
+                    <div class="memo-content-block__title_green">Дополнительно</div>
+                    <div class="memo-content-block__text">
+                        <b>Расписание</b> модульных, <br> и зачётных недель, экзаменов
+                        можно найти на сайте вашего факультета. <br>
+                        <br>
+                        <b>Зачётная книжка</b> — документ, в котором содержатся записи о сдаче студентом зачётов,
+                        экзаменов, защите курсовых, прохождении практик.
                     </div>
-                    <div class="memo-content-block" style="width: 340px;">
-                        <div class="memo-content-block__title_green">Где найти
-                            тьютора?</div>
-                        <div class="memo-content-block__text">
-                            Тебе сможет помочь твой <b>староста</b> или <b>деканат</b> факультета. <br>
-                            <br>
-                            <b>Рекомендуем узнать <br> контакты тьютора, деканата и старосты вашей группы.</b>
-                        </div>
+                </div>
+                <!-- Content-block -->
+                <div class="memo-content-block" id="memo-content-block--pairskipping">
+                    <div class="memo-content-block__title_green">Что делать,
+                        если пропустил(а) пару?</div>
+                    <div class="memo-content-block__text">
+                        При наличии уважительных причин для отсутствия следует сразу сообщить о них <b>старосте</b>,
+                        <b>тьютору</b> или<b> преподавателю</b> и предпринять все усилия, <b>чтобы не отстать от
+                            плана</b>.<br>
+                        <br>
+                        Это простое правило покажет студента ответственным <br> и позволит избежать многих проблем.
+                    </div>
+                </div>
+                <!-- Content-block -->
+                <div class="memo-content-block" id="memo-content-block--tutorfinding">
+                    <div class="memo-content-block__title_green">Где найти
+                        тьютора?</div>
+                    <div class="memo-content-block__text">
+                        Тебе сможет помочь твой <b>староста</b> или <b>деканат</b> факультета. <br>
+                        <br>
+                        <b>Рекомендуем узнать <br> контакты тьютора, деканата и старосты вашей группы.</b>
                     </div>
                 </div>
             </div>
             <!-- Line -->
             <img class="memo-article-block__line" src="img/icons/lines/green-line.svg" width="100%" alt="">
         </section>
-        
+
         <!-- Article #2 -->
         <section class="memo-article-block">
             @@include('./components/title-block.html', {
-                "logo": "",
-                "id": "evaluation-system",
-                "modificator": "green",
-                "name": "Система оценки обучения",
-                "about": "В университете действует рейтинговая система оценки обучения.",
-                "width": "auto"
+            "logo": "",
+            "id": "evaluation-system",
+            "modificator": "green",
+            "name": "Система оценки обучения",
+            "about": "В университете действует рейтинговая система оценки обучения.",
+            "width": "auto"
             })
             <!-- Content -->
             <div class="memo-article-block__content">
@@ -274,13 +259,14 @@
                             шкала пересчёта рейтинговых баллов: <br>
                             <b> от 85 до 100 </b> – «отлично» (5) <br>
                             <b> от 70 до 84 </b> – «хорошо» (4) <br>
-                            <b> от 40 до 69 </b> – «удовлетворительно» (3) 
+                            <b> от 40 до 69 </b> – «удовлетворительно» (3)
                         </div>
                         <div class="memo-content-block__attachment">
                             <img src="./img/graphs/graph3.png" alt="" width="100%">
                         </div>
                         <div class="memo-content-block__text">
-                            Если у тебя до начала сессии уже есть <b>55/58 баллов</b>, ты можешь получить оценку <b>«4»/«5»</b> «автоматом». 
+                            Если у тебя до начала сессии уже есть <b>55/58 баллов</b>, ты можешь получить оценку
+                            <b>«4»/«5»</b> «автоматом».
                             <br> <br>
                             <b>Однако после начала сессии, этого сделать уже будет нельзя.</b>
                         </div>
@@ -292,11 +278,14 @@
                             Нужно стараться выполнять задания
                             в срок. Учебная нагрузка по разным
                             предметам согласована. Наличие
-                            задолженности по нескольким предметам в последний момент <b>может помешать получить стипендию или заставит пропустить интересные мероприятия</b>.
+                            задолженности по нескольким предметам в последний момент <b>может помешать получить
+                                стипендию или заставит пропустить интересные мероприятия</b>.
                             <br> <br>
-                            Если по результатам сессии студент имеет академические задолженности, он обязан их пересдать в полном объёме
+                            Если по результатам сессии студент имеет академические задолженности, он обязан их пересдать
+                            в полном объёме
                             в установленные сроки: <b>8 недель от начала следующего семестра</b> по графику
-                            ликвидации задолженностей, установленному деканом. Невыполнение этого правила влечёт за собой отчисление из университета.
+                            ликвидации задолженностей, установленному деканом. Невыполнение этого правила влечёт за
+                            собой отчисление из университета.
                         </div>
                     </div>
                 </div>
@@ -307,22 +296,16 @@
 
         <!-- Article #3 -->
         <section class="memo-article-block">
-            @@include('./components/title-block.html', {
-                "logo": "",
-                "id": "digital-education",
-                "modificator": "green",
-                "name": "Цифровое образование",
-                "about": "Образовательный процесс в ТвГУ осуществляется с использованием современной системы управления",
-                "width": "auto"
-            })
+
             <div class="memo-content-row">
                 <div class="memo-content-column">
                     <!-- Content-block -->
                     <div class="memo-content-block_transparent_green">
                         <div class="memo-content-block__title_green">Это — LMS</div>
                         <div class="memo-content-block__text">
-                            <b>Learning Management System (LMS)</b>  — это система управления учебным процессом 
-                            в университете. Использование LMS позволяет организовать и удобно координировать взаимодействие между всеми участниками образовательного процесса.
+                            <b>Learning Management System (LMS)</b> — это система управления учебным процессом
+                            в университете. Использование LMS позволяет организовать и удобно координировать
+                            взаимодействие между всеми участниками образовательного процесса.
                             <br> <br>
                             Войти в LMS можно в любой момент времени с любого устройства, имеющего выход в Интернет.
                         </div>
@@ -341,13 +324,16 @@
                     <!-- Content-block -->
                     <div class="memo-content-block">
                         <div class="memo-content-block__text">
-                            Преподаватели используют <b>LMS</b> для размещения материалов к занятиям, обмена сообщениями со студентами, тестирования полученных ими знаний, приёма студенческих проектов и домашних заданий.
+                            Преподаватели используют <b>LMS</b> для размещения материалов к занятиям, обмена сообщениями
+                            со студентами, тестирования полученных ими знаний, приёма студенческих проектов и домашних
+                            заданий.
                         </div>
                     </div>
                     <!-- Content-block -->
                     <div class="memo-content-block">
                         <div class="memo-content-block__text">
-                            Студенты с помощью <b>LMS</b> получают доступ ко всем материалам, опубликованным преподавателями, по изучаемым или пройденным дисциплинам, выполняют задания и тесты.
+                            Студенты с помощью <b>LMS</b> получают доступ ко всем материалам, опубликованным
+                            преподавателями, по изучаемым или пройденным дисциплинам, выполняют задания и тесты.
                         </div>
                     </div>
                     <!-- Content-block -->
@@ -372,42 +358,21 @@
 
         <!-- Article #4 -->
         <section class="memo-article-block">
-            @@include('./components/title-block.html', {
-                "logo": "./img/logos/boiling-point.png",
-                "id": "boiling-point",
-                "modificator": "green",
-                "name": "Точка кипения",
-                "about": "«Точка кипения ТвГУ» — пространство коллективной работы для студентов, ученых, бизнесменов, госслужащих, общественников.",
-                "width": "auto"
-            })
+
             <!-- Line -->
             <img class="memo-article-block__line" src="img/icons/lines/green-line.svg" width="100%" alt="">
         </section>
 
         <!-- Article #5 -->
         <section class="memo-article-block">
-            @@include('./components/title-block.html', {
-                "logo": "",
-                "id": "scientific-work",
-                "modificator": "green",
-                "name": "Научная работа",
-                "about": "При желании заниматься наукой выпускник ТвГУ может остаться в университете — поступить в аспирантуру, защитить диссертацию на соискание учёной степени кандидата наук",
-                "width": "723px"
-            })
+
             <!-- Line -->
             <img class="memo-article-block__line" src="img/icons/lines/green-line.svg" width="100%" alt="">
         </section>
 
         <!-- Article #6 -->
         <section class="memo-article-block">
-            @@include('./components/title-block.html', {
-                "logo": "",
-                "id": "foreign-education",
-                "modificator": "green",
-                "name": "Обучение за рубежом",
-                "about": "Студенты ТвГУ могут пройти семестровое обучение в одном из зарубежных университетов-партнеров",
-                "width": "auto"
-            })
+
         </section>
 
         <section class="memo-footer_green">
