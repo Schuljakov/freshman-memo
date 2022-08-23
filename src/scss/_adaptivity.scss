@@ -250,6 +250,13 @@
 
 
 @media (max-width: 1000px) {
+    .memo-header__buttons-section__row {
+        gap: 12px;
+        flex-direction: column;
+        align-items: center;
+        margin: 0 0 8px 0;
+    }
+
     #memo-article-block__content {
         &--eductaion {
             max-width: 535px;

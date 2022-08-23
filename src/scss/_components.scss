@@ -1,16 +1,9 @@
 .memo- {
     &container {
-
-        &_green,
-        &_red,
-        &_purpure,
-        &_tiffany,
-        &_main {
-            max-width: 1110px;
-            margin: auto;
-            padding: 0 15px;
-            padding-bottom: 10px;
-        }
+        max-width: 1110px;
+        margin: auto;
+        padding: 0 15px;
+        padding-bottom: 10px;
     }
 
     &header {
