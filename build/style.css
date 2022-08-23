@@ -798,9 +798,11 @@ a {
   .memo-content-block_transparent_green, .memo-content-block_transparent_red, .memo-content-block_transparent_purpure, .memo-content-block_transparent_tiffany, .memo-content-block_transparent_main {
     width: auto;
     padding: 16px;
+    margin: 0 0 8px 0;
   }
   .memo-content-block_transparent_green::before, .memo-content-block_transparent_red::before, .memo-content-block_transparent_purpure::before, .memo-content-block_transparent_tiffany::before, .memo-content-block_transparent_main::before {
     border-radius: 16px;
+    margin: 0 0 8px 0;
   }
   .memo-content-block__text {
     font-weight: 400;
@@ -809,10 +811,10 @@ a {
     letter-spacing: 0.03em;
   }
   .memo-footer_green, .memo-footer_red, .memo-footer_purpure, .memo-footer_tiffany, .memo-footer_main {
-    padding: 32px 31px 16px 31px;
+    padding: 16px 30px;
   }
   .memo-footer_green::before, .memo-footer_red::before, .memo-footer_purpure::before, .memo-footer_tiffany::before, .memo-footer_main::before {
-    padding: 32px 31px 16px 31px;
+    padding: 16px 30px;
     border-radius: 16px;
     border-width: 1px;
   }

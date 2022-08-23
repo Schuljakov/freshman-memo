@@ -124,7 +124,8 @@
                 &_tiffany,
                 &_main {
                     width: auto;
-                    padding: 16px
+                    padding: 16px;
+                    margin: 0 0 8px 0;
                 }
 
                 &_green::before,
@@ -133,6 +134,7 @@
                 &_tiffany::before,
                 &_main::before {
                     border-radius: 16px;
+                    margin: 0 0 8px 0;
                 }
             }
 
@@ -152,7 +154,7 @@
             &_purpure,
             &_tiffany,
             &_main {
-                padding: 32px 31px 16px 31px;
+                padding: 16px 30px;
             }
 
             &_green::before,
@@ -160,7 +162,7 @@
             &_purpure::before,
             &_tiffany::before,
             &_main::before {
-                padding: 32px 31px 16px 31px;
+                padding: 16px 30px;
                 border-radius: 16px;
                 border-width: 1px;
             }
