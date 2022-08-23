@@ -53,6 +53,11 @@
             @extend %Paragraph-Desktop-Bold;
         }
 
+        &__logo {
+            margin: 0 0 32px 0;
+            mix-blend-mode: darken;
+        }
+
     }
 
     &title-block {
@@ -75,6 +80,20 @@
         padding: 0px;
         gap: 30px;
         isolation: isolate;
+
+        &-async {
+            display: flex;
+            flex-direction: row;
+            padding: 0px;
+            gap: 30px;
+            isolation: isolate;
+            align-items: baseline;
+
+            &_top {
+                @extend .memo-content-row;
+                align-items: baseline;
+            }
+        }
     }
 
     &content-block {
@@ -84,6 +103,7 @@
         display: flex;
         flex-direction: column;
         padding: 20px 30px 30px 32px;
+        gap: 6px;
 
         margin: 0 0 32px 0;
 
@@ -96,6 +116,12 @@
         &__small-text {
             @extend %Other-Desktop-Regular-Ultra-Small;
             color: $color-gray;
+        }
+
+        &-async {
+            @extend .memo-content-block;
+            position: relative;
+            top: -204px;
         }
     }
 
@@ -110,6 +136,7 @@
     }
 
     &article {
+
         &-button {
 
             &_green::before,
@@ -129,9 +156,6 @@
                 -webkit-mask:
                     linear-gradient(#fff 0 0) padding-box,
                     linear-gradient(#fff 0 0);
-
-
-
             }
         }
     }
@@ -146,125 +170,8 @@
     display: flex;
     flex-direction: column;
     padding: 20px 30px 30px 32px;
-
+    gap: 6px;
     margin: 0 0 32px 0;
 
     width: 535px;
-}
-
-// Chrome only
-@media screen and (-webkit-min-device-pixel-ratio:0) and (min-resolution:.001dpcm) {
-    .memo-menu {
-        &__main::before,
-        &__education::before,
-        &__help::before,
-        &__non-education::before,
-        &__digital-system::before  {
-            -webkit-mask-composite: destination-out;
-        }
-    }
-
-    .memo-tip::before {
-        -webkit-mask-composite: destination-out;
-    }
-
-    .memo-content-block_transparent {
-
-        &_green::before,
-        &_red::before,
-        &_purpure::before,
-        &_tiffany::before,
-        &_main::before {
-            -webkit-mask-composite: destination-out;
-        }
-    }
-
-    .memo-article-button {
-
-        &_green::before,
-        &_red::before,
-        &_purpure::before,
-        &_tiffany::before,
-        &_main::before {
-            -webkit-mask-composite: destination-out;
-        }
-    }
-}
-
-// Firefox
-@-moz-document url-prefix() {
-    .memo-menu {
-        &__main::before,
-        &__education::before,
-        &__help::before,
-        &__non-education::before,
-        &__digital-system::before  {
-            -webkit-mask-composite: destination-out;
-        }
-    }
-
-    .memo-tip::before {
-        -webkit-mask-composite: destination-out;
-    }
-
-    .memo-content-block_transparent {
-
-        &_green::before,
-        &_red::before,
-        &_purpure::before,
-        &_tiffany::before,
-        &_main::before {
-            -webkit-mask-composite: destination-out;
-        }
-    }
-
-    .memo-article-button {
-
-        &_green::before,
-        &_red::before,
-        &_purpure::before,
-        &_tiffany::before,
-        &_main::before {
-            -webkit-mask-composite: destination-out;
-        }
-    }
-}
-
-// Safari only
-@media not all and (min-resolution:.001dpcm) {
-    .memo-tip::before {
-        mask-composite: exclude;
-    }
-
-    .memo-content-block_transparent {
-
-        &_green::before,
-        &_red::before,
-        &_purpure::before,
-        &_tiffany::before,
-        &_main::before {
-            mask-composite: exclude;
-        }
-    }
-
-    .memo-article-button {
-
-        &_green::before,
-        &_red::before,
-        &_purpure::before,
-        &_tiffany::before,
-        &_main::before {
-            mask-composite: exclude;
-        }
-    }
-
-    .memo-menu {
-        &__main::before,
-        &__education::before,
-        &__help::before,
-        &__non-education::before,
-        &__digital-system::before  {
-            mask-composite: exclude;
-        }
-    }
 }
