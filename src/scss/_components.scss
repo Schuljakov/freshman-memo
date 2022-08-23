@@ -95,7 +95,8 @@
         width: 473px;
 
         &__logo {
-            margin: 0 0 12px 0;
+            margin: 0 auto 12px 0;
+            max-height: 50px;
         }
 
         &__attachment {
@@ -123,6 +124,10 @@
             flex-direction: row;
             justify-content: center;
             gap: 6px;
+        }
+
+        & .memo-article-button_tiffany {
+            margin-top: 12px;
         }
     }
 
@@ -172,6 +177,13 @@
             @extend %flex-center;
             position: relative;
         }
+    }
+}
+
+.memo-content-block_transparent_tiffany,
+.memo-content-block {
+    & .memo-article-button_tiffany {
+        margin-top: 12px;
     }
 }
 
@@ -275,6 +287,31 @@
         ;
     }
 
+    &--digital-services {
+        display: grid;
+        max-width: 1100px;
+        column-gap: 30px;
+        grid-template-areas:
+        "a b"
+        "c b"
+        "c d"
+        "e f"
+        "g f"
+        "g h"
+        "i h"
+        "i j"
+        "k j"
+        "k l"
+        "m l"
+        "m n"
+        "o n"
+        "o p"
+        "q p"
+        "q img"
+        ". img"
+        ;
+    }
+
 }
 
 #memo-content-block {
@@ -373,6 +410,67 @@
     }
 }
 
+.memo-content-block {
+    &--education-area {
+        grid-area: b;
+    }
+
+    &--lms {
+        grid-area: c;
+    }
+    &--video-conferences {
+        grid-area: f;
+    }
+    &--catalog {
+        grid-area: g;
+    }
+    &--account {
+        grid-area: i;
+    }
+    &--advice-service {
+        grid-area: j;
+    }
+    &--cloud-services {
+        grid-area: l;
+    }
+    &--azure-service {
+        grid-area: m;
+    }
+    &--elibrary {
+        grid-area: n;
+    }
+    &--programs {
+        grid-area: p;
+    }
+    &--laptop {
+        grid-area: img;
+    }
+}
+
+.memo-content-block_transparent_tiffany {
+    &--best-services {
+        grid-area: a;
+    }
+    &--helpdesk {
+        grid-area: d;
+    }
+    &--booking {
+        grid-area: e;
+    }
+    &--portfolio {
+        grid-area: h;
+    }
+    &--corporate-email {
+        grid-area: k;
+    }
+    &--video-surveillance {
+        grid-area: o;
+    }
+    &--edeans-office {
+        grid-area: q;
+    }
+}
+
 #memo-content-block_transparent_green {
     &--semester-beginning {
         grid-area: a;
@@ -396,6 +494,28 @@
     &--science {
         grid-area: a;
     }
+    &--best-services {
+        grid-area: a;
+    }
+    &--helpdesk {
+        grid-area: d;
+    }
+    &--booking {
+        grid-area: e;
+    }
+    &--portfolio {
+        grid-area: h;
+    }
+    &--corporate-email {
+        grid-area: k;
+    }
+    &--video-surveillance {
+        grid-area: p;
+    }
+    &--edeans-office {
+        grid-area: q;
+    }
+
 }
 
 #memo-content-block-async {
