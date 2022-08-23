@@ -732,6 +732,42 @@ a {
   width: 473px;
 }
 
+#memo-article-block__content--eductaion {
+  display: grid;
+  max-width: 1100px;
+  width: 100%;
+  grid-template-columns: 460.5px 49.5px 49.5px 460.5px;
+  column-gap: 30px;
+  grid-template-areas: "a a b b" "c c c c" "d d e e" "f f f g";
+}
+
+#memo-content-block--semesters {
+  grid-area: a;
+}
+#memo-content-block--modules {
+  grid-area: b;
+}
+#memo-content-block--disciplines-study {
+  width: auto;
+  max-width: 1050px;
+  flex-direction: row;
+  grid-area: c;
+}
+#memo-content-block--visiting {
+  grid-area: d;
+}
+#memo-content-block--additionally {
+  grid-area: e;
+}
+#memo-content-block--pairskipping {
+  width: auto;
+  grid-area: f;
+}
+#memo-content-block--tutorfinding {
+  width: auto;
+  grid-area: g;
+}
+
 @media only screen and (max-width: 600px) {
   .memo-container_green, .memo-container_red, .memo-container_purpure, .memo-container_tiffany, .memo-container_main {
     background-size: 400%;
@@ -826,4 +862,15 @@ a {
     border-radius: 16px;
     border-width: 1px;
   }
+}
+@media (max-width: 1000px) {
+  #memo-article-block__content--eductaion {
+    max-width: 535px;
+    margin: 0 auto;
+    grid-template-areas: "a" "b" "c" "d" "e" "f" "g";
+    grid-template-columns: 535px;
+  }
+}
+#memo-content-block--disciplines-study {
+  flex-direction: column;
 }
