@@ -109,7 +109,6 @@
         &-async {
             @extend .memo-content-block;
             position: relative;
-            top: -204px;
         }
     }
 
@@ -208,6 +207,21 @@
         "f f f g"
         ;
     }
+
+    &--rating-system {
+        display: grid;
+        max-width: 1100px;
+        column-gap: 30px;
+        grid-template-areas:
+        "a b"
+        "a c"
+        "d c"
+        "d e"
+        "f e"
+        "f g"
+        ". g"
+        ;
+    }
 }
 
 #memo-content-block {
@@ -236,5 +250,33 @@
     &--tutorfinding {
         width: auto;
         grid-area: g;
+    }
+    &--debts-score {
+        grid-area: f;
+
+    }
+
+    &--tested {
+        grid-area: c;
+    }
+}
+
+#memo-content-block_transparent_green {
+    &--semester-beginning {
+        grid-area: a;
+    }
+    &--marks {
+        grid-area: b;
+
+    }
+}
+
+#memo-content-block-async {
+    &--exam {
+        grid-area: d;
+    }
+    &--auditorium {
+        grid-area: e;
+
     }
 }
