@@ -663,6 +663,7 @@ a {
 .memo-content-block__small-text {
   color: #8692A4;
 }
+
 .memo-content-block__img {
   border-radius: 30px;
   padding: 20px 20px 15px 20px;
@@ -716,6 +717,12 @@ a {
   column-gap: 30px;
   grid-template-areas: "a a b b" "c c c c" "d d e e" "f f f g";
 }
+#memo-article-block__content--rating-system {
+  display: grid;
+  max-width: 1100px;
+  column-gap: 30px;
+  grid-template-areas: "a b" "a c" "d c" "d e" "f e" "f g" ". g";
+}
 
 #memo-content-block--semesters {
   grid-area: a;
@@ -742,6 +749,26 @@ a {
 #memo-content-block--tutorfinding {
   width: auto;
   grid-area: g;
+}
+#memo-content-block--debts-score {
+  grid-area: f;
+}
+#memo-content-block--tested {
+  grid-area: c;
+}
+
+#memo-content-block_transparent_green--semester-beginning {
+  grid-area: a;
+}
+#memo-content-block_transparent_green--marks {
+  grid-area: b;
+}
+
+#memo-content-block-async--exam {
+  grid-area: d;
+}
+#memo-content-block-async--auditorium {
+  grid-area: e;
 }
 
 @media only screen and (max-width: 600px) {
@@ -848,5 +875,10 @@ a {
   }
   #memo-content-block--disciplines-study {
     flex-direction: column;
+  }
+  #memo-article-block__content--rating-system {
+    max-width: 535px;
+    grid-template-areas: "a" "b" "c" "d" "e" "f" "g";
+    margin: 0 auto;
   }
 }
