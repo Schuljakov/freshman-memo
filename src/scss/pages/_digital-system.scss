@@ -7,7 +7,7 @@
 
     &header {
         &_tiffany {
-            @include header($gradient-tiffany, "./img/backgrounds/tiffany-header-background.svg")
+            @include header($gradient-tiffany, "./img/header-backgrounds/tiffany-header-background.png")
         }
 
         &__title {

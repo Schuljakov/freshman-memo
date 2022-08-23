@@ -1,7 +1,7 @@
 .memo- {
     &header {
         &_main {
-            @include header($gradient-main, "./img/backgrounds/main-header-background.svg")
+            @include header($gradient-main, "./img/header-backgrounds/blue-header-background.png")
         }
 
         &__title {

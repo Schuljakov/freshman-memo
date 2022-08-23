@@ -7,7 +7,7 @@
 
     &header {
         &_purpure {
-            @include header($gradient-purpure, "./img/backgrounds/purpure-header-background.svg")
+            @include header($gradient-purpure, "./img/header-backgrounds/purpure-header-background.png")
         }
 
         &__title {
