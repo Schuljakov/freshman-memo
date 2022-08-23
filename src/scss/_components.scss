@@ -51,20 +51,16 @@
 
         &__about {
             @extend %Paragraph-Desktop-Bold;
+            max-width: 583px;
+            text-align: center;
         }
 
         &__logo {
             margin: 0 0 32px 0;
             mix-blend-mode: darken;
         }
+        
 
-    }
-
-    &title-block {
-        &__about {
-            max-width: 583px;
-            text-align: center;
-        }
     }
 
     &article-block {
@@ -77,6 +73,7 @@
     &content-row {
         display: flex;
         flex-direction: row;
+        flex-wrap: wrap;
         padding: 0px;
         gap: 30px;
         isolation: isolate;

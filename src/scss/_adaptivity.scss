@@ -1,0 +1,129 @@
+@media only screen and (max-width: 600px) {
+    .memo- {
+        &header {
+            &__title {
+
+                &_green,
+                &_red,
+                &_purpure,
+                &_tiffany,
+                &_main {
+                    font-size: 32px;
+                    line-height: 100%;
+
+                    margin: 0 0 24px 0;
+                }
+            }
+
+            &__arrow {
+                display: none;
+            }
+
+            &__up-title {
+                display: none;
+            }
+
+            &__subtitle {
+                font-weight: 700;
+                font-size: 11px;
+                line-height: 130%;
+
+                letter-spacing: 0.03em;
+
+                margin: 0 0 24px 0;
+            }
+
+            &__buttons-section__row {
+                gap: 12px;
+
+                margin: 0 0 8px 0;
+            }
+
+            &_green,
+            &_red,
+            &_purpure,
+            &_tiffany,
+            &_main {
+                padding: 32px 31px 16px 31px;
+                border-width: 1px;
+                border-radius: 16px;
+                background-position: center;
+            }
+
+        }
+
+        &article-button {
+
+            &_green,
+            &_red,
+            &_purpure,
+            &_tiffany,
+            &_main {
+                font-weight: 800;
+                font-size: 12px;
+                line-height: 12px;
+                border-radius: 12px;
+                border-width: 1px;
+
+                padding: 12px 24px;
+            }
+
+            &_green::before,
+            &_red::before,
+            &_purpure::before,
+            &_tiffany::before,
+            &_main::before {
+                border-radius: 12px;
+                border-width: 1px;
+            }
+        }
+
+        &title-block {
+            &__article {
+                display: none;
+            }
+
+            &__title {
+
+                &_green,
+                &_red,
+                &_purpure,
+                &_tiffany,
+                &_main {
+                    font-weight: 800;
+                    font-size: 24px;
+                    line-height: normal;
+                }
+            }
+
+            &__about {
+                font-weight: 700;
+                font-size: 11px;
+                line-height: 130%;
+            
+                letter-spacing: 0.03em;
+            }
+        }
+
+        &footer {
+
+            &_green,
+            &_red,
+            &_purpure,
+            &_tiffany,
+            &_main {
+                padding: 32px 31px 16px 31px;
+            }
+
+            &_green::before,
+            &_red::before,
+            &_purpure::before,
+            &_tiffany::before,
+            &_main::before {
+                padding: 32px 31px 16px 31px;
+                border-radius: 16px;
+                border-width: 1px;
+            }
+        }
+    }
+}
