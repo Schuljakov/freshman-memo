@@ -102,12 +102,17 @@
 
         display: flex;
         flex-direction: column;
+        justify-content: space-around;
         padding: 20px 30px 30px 32px;
         gap: 6px;
 
         margin: 0 0 32px 0;
 
-        width: 535px;
+        width: 473px;
+
+        &__attachment {
+            width: 100%;
+        }
 
         &__text {
             @extend %Paragraph-Desktop-Regular;
@@ -122,6 +127,24 @@
             @extend .memo-content-block;
             position: relative;
             top: -204px;
+        }
+    }
+
+    &img-block {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        
+        
+        &__img {
+            top: -204px;
+            position: relative;
+            width: 100%;
+            max-width: 473px;
+            display: block;
+            border-radius: 30px;
+            padding: 20px;
+            background-color: #ffffff;
         }
     }
 
@@ -173,5 +196,5 @@
     gap: 6px;
     margin: 0 0 32px 0;
 
-    width: 535px;
+    width: 473px;
 }
