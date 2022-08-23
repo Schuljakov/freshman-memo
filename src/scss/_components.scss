@@ -3,6 +3,7 @@
         max-width: 1110px;
         margin: auto;
         padding: 0 15px;
+        padding-bottom: 10px;
     }
 
     &header {
@@ -162,6 +163,51 @@
         }
     }
 
+    &files-block {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+
+        margin: 0 0 22px 0;
+    }
+
+    &files-row {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+
+        gap: 11px;
+    }
+
+    &files-block {
+        gap: 11px;
+    }
+
+    &file {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+
+        margin: 0 31px 0 0;
+
+        &__text {
+            margin: 0 0 0 15px;
+        }
+        
+        &__name {
+            max-width: 156px;
+            @extend %Other-Desktop-Bold-Ulta-Small;
+            color: #000000;
+        }
+        
+        &__size {
+            @extend %Other-Desktop-Bold-Ulta-Small;
+            color: $color-gray;
+        }
+    }
+
     &footer {
         &_green,
         &_red,
@@ -171,6 +217,7 @@
             padding: 32px 262px 32px 262px;
             @extend %flex-center;
             position: relative;
+            margin: 0 0 10px 0;
         }
     }
 }
