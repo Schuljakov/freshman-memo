@@ -267,7 +267,6 @@
         }
         &--science-work {
             max-width: 535px;
-            grid-template-rows: auto;
             grid-template-rows: repeat(4, auto);
             grid-template-areas:
             "a"
@@ -280,6 +279,20 @@
             ;
             margin: 0 auto;
         }
+        &--foreign-education {
+            max-width: 535px;
+            grid-template-rows: repeat(3, auto);
+            grid-template-areas:
+            "a"
+            "b"
+            "c"
+            "d"
+            "e"
+            "g"
+            "f"
+            ;
+            margin: 0 auto;
+        }
     }
 
     #memo-content-block--room {
@@ -288,4 +301,8 @@
     #memo-content-block--science-seminar {
         margin-top: 0;
     }
+    #memo-content-block--cms {
+        margin-top: 0;
+    }
+
 }
