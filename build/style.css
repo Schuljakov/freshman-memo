@@ -722,6 +722,19 @@ a {
   column-gap: 30px;
   grid-template-areas: "a b" "a c" "d c" "d e" "f e" "f g" ". g";
 }
+#memo-article-block__content--digital {
+  display: grid;
+  max-width: 1100px;
+  column-gap: 30px;
+  grid-template-areas: "a b" "a c" "e d" ". d";
+}
+#memo-article-block__content--boiling-point {
+  display: grid;
+  max-width: 1100px;
+  column-gap: 30px;
+  grid-template-rows: auto auto 40px;
+  grid-template-areas: "a b" "a c" ". c" "d e";
+}
 
 #memo-content-block--semesters {
   grid-area: a;
@@ -755,11 +768,42 @@ a {
 #memo-content-block--tested {
   grid-area: c;
 }
+#memo-content-block--descr-1 {
+  grid-area: e;
+}
+#memo-content-block--descr-2 {
+  grid-area: b;
+}
+#memo-content-block--descr-3 {
+  grid-area: c;
+}
+#memo-content-block--agenda {
+  grid-area: c;
+}
+#memo-content-block--cost {
+  grid-area: e;
+}
+#memo-content-block--room {
+  grid-area: d;
+  margin-top: -40px;
+}
 
 #memo-content-block_transparent_green--semester-beginning {
   grid-area: a;
 }
 #memo-content-block_transparent_green--marks {
+  grid-area: b;
+}
+#memo-content-block_transparent_green--lms {
+  grid-area: a;
+}
+#memo-content-block_transparent_green--profile {
+  grid-area: d;
+}
+#memo-content-block_transparent_green--what {
+  grid-area: a;
+}
+#memo-content-block_transparent_green--project {
   grid-area: b;
 }
 
@@ -879,5 +923,19 @@ a {
     max-width: 535px;
     grid-template-areas: "a" "b" "c" "d" "e" "f" "g";
     margin: 0 auto;
+  }
+  #memo-article-block__content--digital {
+    max-width: 535px;
+    grid-template-areas: "a" "b" "c" "e" "d";
+    margin: 0 auto;
+  }
+  #memo-article-block__content--boiling-point {
+    max-width: 535px;
+    grid-template-rows: auto;
+    grid-template-areas: "a" "b" "c" "d" "e";
+    margin: 0 auto;
+  }
+  #memo-content-block--room {
+    margin-top: 0;
   }
 }

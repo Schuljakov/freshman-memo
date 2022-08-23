@@ -205,7 +205,6 @@
     #memo-content-block {
         &--disciplines-study {
             flex-direction: column;
-
         }
     }
 
@@ -222,5 +221,33 @@
             "g";
             margin: 0 auto;
         }
+        &--digital {
+            max-width: 535px;
+            grid-template-areas:
+            "a"
+            "b"
+            "c"
+            "e"
+            "d"
+            ;
+            margin: 0 auto;
+        }
+
+        &--boiling-point {
+            max-width: 535px;
+            grid-template-rows: auto;
+            grid-template-areas:
+            "a"
+            "b"
+            "c"
+            "d"
+            "e"
+            ;
+            margin: 0 auto;
+        }
+    }
+
+    #memo-content-block--room {
+        margin-top: 0;
     }
 }
