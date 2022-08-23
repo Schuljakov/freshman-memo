@@ -266,6 +266,16 @@ a {
   -webkit-mask: linear-gradient(#fff 0 0) padding-box, linear-gradient(#fff 0 0);
 }
 
+.memo-container_main {
+  max-width: 1110px;
+  margin: auto;
+  padding: 0 15px;
+  padding-bottom: 10px;
+  background-image: url("./img/page-backgrounds/main-background.svg");
+  background-size: 500%;
+  background-repeat: repeat-y;
+  background-position: center;
+}
 .memo-header_main {
   border-radius: 64px;
   border: 2px solid transparent;
@@ -329,7 +339,7 @@ a {
   padding: 0 15px;
   padding-bottom: 10px;
   background-image: url("./img/page-backgrounds/education-background.svg");
-  background-size: contain;
+  background-size: 500%;
   background-repeat: repeat-y;
   background-position: center;
 }
@@ -403,7 +413,7 @@ a {
   padding: 0 15px;
   padding-bottom: 10px;
   background-image: url("./img/page-backgrounds/help-background.svg");
-  background-size: contain;
+  background-size: 500%;
   background-repeat: repeat-y;
   background-position: center;
 }
@@ -470,7 +480,7 @@ a {
   padding: 0 15px;
   padding-bottom: 10px;
   background-image: url("./img/page-backgrounds/digital-system-background.svg");
-  background-size: contain;
+  background-size: 500%;
   background-repeat: repeat-y;
   background-position: center;
 }
@@ -544,7 +554,7 @@ a {
   padding: 0 15px;
   padding-bottom: 10px;
   background-image: url("./img/page-backgrounds/non-education-background.svg");
-  background-size: contain;
+  background-size: 500%;
   background-repeat: repeat-y;
   background-position: center;
 }
@@ -611,7 +621,7 @@ a {
   align-items: center;
 }
 
-.memo-container {
+.memo-container_green, .memo-container_red, .memo-container_purpure, .memo-container_tiffany, .memo-container_main {
   max-width: 1110px;
   margin: auto;
   padding: 0 15px;

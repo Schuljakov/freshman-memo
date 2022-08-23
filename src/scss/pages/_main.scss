@@ -1,4 +1,10 @@
 .memo- {
+    &container {
+        &_main {
+            @include container("./img/page-backgrounds/main-background.svg")
+        }
+    }
+
     &header {
         &_main {
             @include header($gradient-main, "./img/header-backgrounds/blue-header-background.png")
