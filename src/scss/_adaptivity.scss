@@ -1,5 +1,15 @@
 @media only screen and (max-width: 600px) {
     .memo- {
+        &container {
+            &_green,
+            &_red,
+            &_purpure,
+            &_tiffany,
+            &_main {
+                background-size: 400%;
+            }
+        }
+
         &header {
             &__title {
 
@@ -117,14 +127,20 @@
         }
 
         &content-block {
+            width: auto;
+            padding: 15px 17px 16px 16px;
+            margin: 0 0 8px 0;
+            border-radius: 16px;
+
             &_transparent {
+
                 &_green,
                 &_red,
                 &_purpure,
                 &_tiffany,
                 &_main {
                     width: auto;
-                    padding: 16px;
+                    padding: 15px 17px 16px 16px;
                     margin: 0 0 8px 0;
                 }
 
@@ -134,7 +150,6 @@
                 &_tiffany::before,
                 &_main::before {
                     border-radius: 16px;
-                    margin: 0 0 8px 0;
                 }
             }
 
