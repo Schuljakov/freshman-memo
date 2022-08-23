@@ -205,7 +205,22 @@
     #memo-content-block {
         &--disciplines-study {
             flex-direction: column;
-    
+
+        }
+    }
+
+    #memo-article-block__content {
+        &--rating-system {
+            max-width: 535px;
+            grid-template-areas:
+            "a"
+            "b"
+            "c"
+            "d"
+            "e"
+            "f"
+            "g";
+            margin: 0 auto;
         }
     }
 }
