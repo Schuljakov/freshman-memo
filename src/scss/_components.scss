@@ -232,6 +232,20 @@
         "d e"
         ;
     }
+
+    &--science-work {
+        display: grid;
+        max-width: 1100px;
+        column-gap: 30px;
+        grid-template-rows: repeat(3, auto) 48px;
+        grid-template-areas:
+        "a b"
+        "c d"
+        "e d"
+        "e ."
+        "f g"
+        ;
+    }
 }
 
 #memo-content-block {
@@ -265,11 +279,9 @@
         grid-area: f;
 
     }
-
     &--tested {
         grid-area: c;
     }
-
     &--descr-1 {
         grid-area: e;
     }
@@ -279,7 +291,6 @@
     &--descr-3 {
         grid-area: c;
     }
-
     &--agenda {
         grid-area: c;
     }
@@ -289,6 +300,25 @@
     &--room {
         grid-area: d;
         margin-top: -40px;
+    }
+    &--scientist {
+        grid-area: b;
+    }
+    &--science-theme {
+        grid-area: c;
+    }
+    &--science-support {
+        grid-area: d;
+    }
+    &--science-attention {
+        grid-area: e;
+    }
+    &--science-subject {
+        grid-area: f;
+    }
+    &--science-seminar {
+        margin-top: -48px;
+        grid-area: g;
     }
 }
 
@@ -311,6 +341,9 @@
     }
     &--project {
         grid-area: b;
+    }
+    &--science {
+        grid-area: a;
     }
 }
 
