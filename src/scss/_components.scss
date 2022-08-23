@@ -182,6 +182,18 @@
             }
         }
     }
+
+    &footer {
+        &_green,
+        &_red,
+        &_purpure,
+        &_tiffany,
+        &_main {
+            padding: 32px 262px 32px 262px;
+            @extend %flex-center;
+            position: relative;
+        }
+    }
 }
 
 .memo-content-block_transparent_green,

@@ -35,6 +35,16 @@
             -webkit-mask-composite: destination-out;
         }
     }
+
+    .memo-footer {
+        &_green::before,
+        &_red::before,
+        &_purpure::before,
+        &_tiffany::before,
+        &_main::before {
+            -webkit-mask-composite: destination-out;
+        }
+    }
 }
 
 // Firefox
@@ -66,6 +76,16 @@
 
     .memo-article-button {
 
+        &_green::before,
+        &_red::before,
+        &_purpure::before,
+        &_tiffany::before,
+        &_main::before {
+            -webkit-mask-composite: destination-out;
+        }
+    }
+
+    .memo-footer {
         &_green::before,
         &_red::before,
         &_purpure::before,
@@ -110,6 +130,16 @@
         &__help::before,
         &__non-education::before,
         &__digital-system::before  {
+            mask-composite: exclude;
+        }
+    }
+
+    .memo-footer {
+        &_green::before,
+        &_red::before,
+        &_purpure::before,
+        &_tiffany::before,
+        &_main::before {
             mask-composite: exclude;
         }
     }

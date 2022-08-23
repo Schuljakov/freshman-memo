@@ -49,6 +49,7 @@
         <!-- Article #1 -->
         <section class="memo-article-block">
             @@include('./components/title-block.html', {
+                "logo": "",
                 "id": "education-process",
                 "modificator": "green",
                 "name": "Процесс обучения",
@@ -194,6 +195,7 @@
         <!-- Article #2 -->
         <section class="memo-article-block">
             @@include('./components/title-block.html', {
+                "logo": "",
                 "id": "evaluation-system",
                 "modificator": "green",
                 "name": "Система оценки обучения",
@@ -306,6 +308,7 @@
         <!-- Article #3 -->
         <section class="memo-article-block">
             @@include('./components/title-block.html', {
+                "logo": "",
                 "id": "digital-education",
                 "modificator": "green",
                 "name": "Цифровое образование",
@@ -384,6 +387,7 @@
         <!-- Article #5 -->
         <section class="memo-article-block">
             @@include('./components/title-block.html', {
+                "logo": "",
                 "id": "scientific-work",
                 "modificator": "green",
                 "name": "Научная работа",
@@ -397,12 +401,34 @@
         <!-- Article #6 -->
         <section class="memo-article-block">
             @@include('./components/title-block.html', {
+                "logo": "",
                 "id": "foreign-education",
                 "modificator": "green",
                 "name": "Обучение за рубежом",
                 "about": "Студенты ТвГУ могут пройти семестровое обучение в одном из зарубежных университетов-партнеров",
                 "width": "auto"
             })
+        </section>
+
+        <section class="memo-footer_green">
+            <div class="memo-header__buttons-section">
+                <div class="memo-header__buttons-section__row">
+                    <a href="#education-process" class="memo-article-button_green">Процесс обучения</a>
+                    <a href="#evaluation-system" class="memo-article-button_green">Система оценки</a>
+                </div>
+                <div class="memo-header__buttons-section__row">
+                    <a href="#digital-education" class="memo-article-button_green">Цифровое образование</a>
+                    <a href="#boiling-point" class="memo-article-button_green">Точка кипения</a>
+                </div>
+                <div class="memo-header__buttons-section__row">
+                    <a href="#scientific-work" class="memo-article-button_green">Научная работа</a>
+                    <a href="#foreign-education" class="memo-article-button_green">Обучение за рубежом</a>
+                </div>
+            </div>
+            <div>
+                <img src="./img/icons/arrows/green-forward.svg" alt="" style="rotate: 180deg;">
+            </div>
+            <div class="memo-header__subtitle">Узнай о том, как учится студент ТвГУ</div>
         </section>
     </div>
 </body>

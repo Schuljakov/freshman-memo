@@ -44,4 +44,10 @@
             @include transparent-content-block($gradient-green);
         }
     }
+
+    &footer {
+        &_green::before {
+            @include footer($gradient-green)
+        }
+    }
 }
