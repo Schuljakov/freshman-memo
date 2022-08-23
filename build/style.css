@@ -638,24 +638,13 @@ a {
   width: 100%;
   margin: 32px 0 0 0;
 }
-.memo-content-row, .memo-content-row-async_top {
+.memo-content-row {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   padding: 0px;
   gap: 30px;
   isolation: isolate;
-}
-.memo-content-row-async {
-  display: flex;
-  flex-direction: row;
-  padding: 0px;
-  gap: 30px;
-  isolation: isolate;
-  align-items: baseline;
-}
-.memo-content-row-async_top {
-  align-items: baseline;
 }
 .memo-content-block, .memo-content-block-async {
   background: #ffffff;

@@ -77,20 +77,6 @@
         padding: 0px;
         gap: 30px;
         isolation: isolate;
-
-        &-async {
-            display: flex;
-            flex-direction: row;
-            padding: 0px;
-            gap: 30px;
-            isolation: isolate;
-            align-items: baseline;
-
-            &_top {
-                @extend .memo-content-row;
-                align-items: baseline;
-            }
-        }
     }
 
     &content-block {
