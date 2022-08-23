@@ -36,4 +36,10 @@
             @include transparent-content-block($gradient-red);
         }
     }
+
+    &footer {
+        &_red::before {
+            @include footer($gradient-red)
+        }
+    }
 }
