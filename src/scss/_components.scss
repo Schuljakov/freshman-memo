@@ -111,6 +111,7 @@
 
     &article {
         &-button {
+
             &_green::before,
             &_red::before,
             &_purpure::before,
@@ -128,8 +129,8 @@
                 -webkit-mask:
                     linear-gradient(#fff 0 0) padding-box,
                     linear-gradient(#fff 0 0);
-                -webkit-mask-composite: destination-out;
-                mask-composite: exclude;
+
+
 
             }
         }
@@ -149,4 +150,121 @@
     margin: 0 0 32px 0;
 
     width: 535px;
+}
+
+// Chrome only
+@media screen and (-webkit-min-device-pixel-ratio:0) and (min-resolution:.001dpcm) {
+    .memo-menu {
+        &__main::before,
+        &__education::before,
+        &__help::before,
+        &__non-education::before,
+        &__digital-system::before  {
+            -webkit-mask-composite: destination-out;
+        }
+    }
+
+    .memo-tip::before {
+        -webkit-mask-composite: destination-out;
+    }
+
+    .memo-content-block_transparent {
+
+        &_green::before,
+        &_red::before,
+        &_purpure::before,
+        &_tiffany::before,
+        &_main::before {
+            -webkit-mask-composite: destination-out;
+        }
+    }
+
+    .memo-article-button {
+
+        &_green::before,
+        &_red::before,
+        &_purpure::before,
+        &_tiffany::before,
+        &_main::before {
+            -webkit-mask-composite: destination-out;
+        }
+    }
+}
+
+// Firefox
+@-moz-document url-prefix() {
+    .memo-menu {
+        &__main::before,
+        &__education::before,
+        &__help::before,
+        &__non-education::before,
+        &__digital-system::before  {
+            -webkit-mask-composite: destination-out;
+        }
+    }
+
+    .memo-tip::before {
+        -webkit-mask-composite: destination-out;
+    }
+
+    .memo-content-block_transparent {
+
+        &_green::before,
+        &_red::before,
+        &_purpure::before,
+        &_tiffany::before,
+        &_main::before {
+            -webkit-mask-composite: destination-out;
+        }
+    }
+
+    .memo-article-button {
+
+        &_green::before,
+        &_red::before,
+        &_purpure::before,
+        &_tiffany::before,
+        &_main::before {
+            -webkit-mask-composite: destination-out;
+        }
+    }
+}
+
+// Safari only
+@media not all and (min-resolution:.001dpcm) {
+    .memo-tip::before {
+        mask-composite: exclude;
+    }
+
+    .memo-content-block_transparent {
+
+        &_green::before,
+        &_red::before,
+        &_purpure::before,
+        &_tiffany::before,
+        &_main::before {
+            mask-composite: exclude;
+        }
+    }
+
+    .memo-article-button {
+
+        &_green::before,
+        &_red::before,
+        &_purpure::before,
+        &_tiffany::before,
+        &_main::before {
+            mask-composite: exclude;
+        }
+    }
+
+    .memo-menu {
+        &__main::before,
+        &__education::before,
+        &__help::before,
+        &__non-education::before,
+        &__digital-system::before  {
+            mask-composite: exclude;
+        }
+    }
 }

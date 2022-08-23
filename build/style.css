@@ -155,8 +155,6 @@ a {
   border: 3px solid transparent;
   background: linear-gradient(92.93deg, rgba(247, 247, 247, 0.4) 0%, rgba(251, 251, 251, 0) 49.64%, rgba(255, 255, 255, 0.3) 100%) border-box;
   -webkit-mask: linear-gradient(#fff 0 0) padding-box, linear-gradient(#fff 0 0);
-  -webkit-mask-composite: destination-out;
-  mask-composite: exclude;
 }
 .memo-tip {
   position: relative;
@@ -207,8 +205,6 @@ a {
   border: 2px solid transparent;
   background: radial-gradient(99.99% 203.31% at 0% 0%, #9891FC 0%, #5686F9 50%, #73A0FB 100%) border-box;
   -webkit-mask: linear-gradient(#fff 0 0) padding-box, linear-gradient(#fff 0 0);
-  -webkit-mask-composite: destination-out;
-  mask-composite: exclude;
 }
 
 .memo-header_main {
@@ -253,8 +249,6 @@ a {
   border: 1px solid transparent;
   background: radial-gradient(99.99% 203.31% at 0% 0%, #9891FC 0%, #5686F9 50%, #73A0FB 100%) border-box;
   -webkit-mask: linear-gradient(#fff 0 0) padding-box, linear-gradient(#fff 0 0);
-  -webkit-mask-composite: destination-out;
-  mask-composite: exclude;
 }
 
 .memo-container_green {
@@ -315,8 +309,6 @@ a {
   border: 1px solid transparent;
   background: radial-gradient(100% 187.2% at 100% 100%, #42D987 0%, #78CD59 69.85%, #7BC952 100%) border-box;
   -webkit-mask: linear-gradient(#fff 0 0) padding-box, linear-gradient(#fff 0 0);
-  -webkit-mask-composite: destination-out;
-  mask-composite: exclude;
 }
 
 .memo-container_red {
@@ -370,8 +362,6 @@ a {
   border: 1px solid transparent;
   background: linear-gradient(116.19deg, #FF9F9D 0%, #F95D65 34.9%, #F5536F 62.5%, #B675D5 100%) border-box;
   -webkit-mask: linear-gradient(#fff 0 0) padding-box, linear-gradient(#fff 0 0);
-  -webkit-mask-composite: destination-out;
-  mask-composite: exclude;
 }
 
 .memo-container_tiffany {
@@ -425,8 +415,6 @@ a {
   border: 1px solid transparent;
   background: radial-gradient(47.76% 81.73% at 81.4% 18.33%, #1CDBEA 0%, rgba(27, 218, 232, 0) 100%), radial-gradient(20.56% 60.56% at 72.76% 100%, #3ED4B7 0%, rgba(60, 213, 183, 0) 100%), radial-gradient(39.53% 100.27% at 7.52% 91.67%, #3ED4B7 0%, rgba(60, 213, 183, 0) 100%), linear-gradient(97.62deg, #52AADE 0%, #36B1D5 48.96%, #48A8CD 100%) border-box;
   -webkit-mask: linear-gradient(#fff 0 0) padding-box, linear-gradient(#fff 0 0);
-  -webkit-mask-composite: destination-out;
-  mask-composite: exclude;
 }
 
 .memo-container_purpure {
@@ -480,8 +468,6 @@ a {
   border: 1px solid transparent;
   background: radial-gradient(99.35% 249.93% at 0% 0%, #BD98FE 0%, #9B89FE 34.38%, #98B0FE 69.27%, #85A0F8 100%) border-box;
   -webkit-mask: linear-gradient(#fff 0 0) padding-box, linear-gradient(#fff 0 0);
-  -webkit-mask-composite: destination-out;
-  mask-composite: exclude;
 }
 
 .memo-header_blue, .memo-header_main, .memo-header_green, .memo-header_red, .memo-header_tiffany, .memo-header_purpure {
@@ -570,8 +556,6 @@ a {
   border: 3px solid transparent;
   background: linear-gradient(92.93deg, rgba(247, 247, 247, 0.4) 0%, rgba(251, 251, 251, 0) 49.64%, rgba(255, 255, 255, 0.3) 100%) border-box;
   -webkit-mask: linear-gradient(#fff 0 0) padding-box, linear-gradient(#fff 0 0);
-  -webkit-mask-composite: destination-out;
-  mask-composite: exclude;
 }
 
 .memo-content-block_transparent_green,
@@ -587,6 +571,48 @@ a {
   width: 535px;
 }
 
+@media screen and (-webkit-min-device-pixel-ratio: 0) and (min-resolution: 0.001dpcm) {
+  .memo-menu__main::before, .memo-menu__education::before, .memo-menu__help::before, .memo-menu__non-education::before, .memo-menu__digital-system::before {
+    -webkit-mask-composite: destination-out;
+  }
+  .memo-tip::before {
+    -webkit-mask-composite: destination-out;
+  }
+  .memo-content-block_transparent_green::before, .memo-content-block_transparent_red::before, .memo-content-block_transparent_purpure::before, .memo-content-block_transparent_tiffany::before, .memo-content-block_transparent_main::before {
+    -webkit-mask-composite: destination-out;
+  }
+  .memo-article-button_green::before, .memo-article-button_red::before, .memo-article-button_purpure::before, .memo-article-button_tiffany::before, .memo-article-button_main::before {
+    -webkit-mask-composite: destination-out;
+  }
+}
+@-moz-document url-prefix() {
+  .memo-menu__main::before, .memo-menu__education::before, .memo-menu__help::before, .memo-menu__non-education::before, .memo-menu__digital-system::before {
+    -webkit-mask-composite: destination-out;
+  }
+  .memo-tip::before {
+    -webkit-mask-composite: destination-out;
+  }
+  .memo-content-block_transparent_green::before, .memo-content-block_transparent_red::before, .memo-content-block_transparent_purpure::before, .memo-content-block_transparent_tiffany::before, .memo-content-block_transparent_main::before {
+    -webkit-mask-composite: destination-out;
+  }
+  .memo-article-button_green::before, .memo-article-button_red::before, .memo-article-button_purpure::before, .memo-article-button_tiffany::before, .memo-article-button_main::before {
+    -webkit-mask-composite: destination-out;
+  }
+}
+@media not all and (min-resolution: 0.001dpcm) {
+  .memo-tip::before {
+    mask-composite: exclude;
+  }
+  .memo-content-block_transparent_green::before, .memo-content-block_transparent_red::before, .memo-content-block_transparent_purpure::before, .memo-content-block_transparent_tiffany::before, .memo-content-block_transparent_main::before {
+    mask-composite: exclude;
+  }
+  .memo-article-button_green::before, .memo-article-button_red::before, .memo-article-button_purpure::before, .memo-article-button_tiffany::before, .memo-article-button_main::before {
+    mask-composite: exclude;
+  }
+  .memo-menu__main::before, .memo-menu__education::before, .memo-menu__help::before, .memo-menu__non-education::before, .memo-menu__digital-system::before {
+    mask-composite: exclude;
+  }
+}
 @media only screen and (max-width: 600px) {
   .memo-header {
     padding: 70px 60px 20px 60px;
