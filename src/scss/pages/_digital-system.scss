@@ -31,6 +31,14 @@
         }
     }
 
+    &content-block {
+        &__title {
+            &_tiffany {
+                @include content-title($gradient-tiffany);
+            }
+        }
+    }
+
     &content-block_transparent {
         &_tiffany::before {
             @include transparent-content-block($gradient-tiffany);
