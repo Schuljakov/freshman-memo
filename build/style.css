@@ -689,7 +689,8 @@ a {
   width: 473px;
 }
 .memo-content-block__logo {
-  margin: 0 0 12px 0;
+  margin: 0 auto 12px 0;
+  max-height: 50px;
 }
 .memo-content-block__attachment {
   width: 100%;
@@ -708,6 +709,9 @@ a {
   flex-direction: row;
   align-items: center;
   gap: 6px;
+}
+.memo-content-block .memo-article-button_tiffany {
+  margin-top: 12px;
 }
 .memo-content-block_long {
   display: flex;
@@ -768,6 +772,11 @@ a {
   margin: 0 0 10px 0;
 }
 
+.memo-content-block_transparent_tiffany .memo-article-button_tiffany,
+.memo-content-block .memo-article-button_tiffany {
+  margin-top: 12px;
+}
+
 .memo-content-block_transparent_green,
 .memo-content-block_transparent_red,
 .memo-content-block_transparent_purpure,
@@ -822,6 +831,12 @@ a {
   column-gap: 30px;
   grid-template-rows: repeat(2, auto) 40px;
   grid-template-areas: "a b" "a c" ". c" "d e" "f e" "f ." "g g";
+}
+#memo-article-block__content--digital-services {
+  display: grid;
+  max-width: 1100px;
+  column-gap: 30px;
+  grid-template-areas: "a b" "c b" "c d" "e f" "g f" "g h" "i h" "i j" "k j" "k l" "m l" "m n" "o n" "o p" "q p" "q img" ". img";
 }
 
 #memo-content-block--semesters {
@@ -917,6 +932,62 @@ a {
   grid-area: g;
 }
 
+.memo-content-block--education-area {
+  grid-area: b;
+}
+.memo-content-block--lms {
+  grid-area: c;
+}
+.memo-content-block--video-conferences {
+  grid-area: f;
+}
+.memo-content-block--catalog {
+  grid-area: g;
+}
+.memo-content-block--account {
+  grid-area: i;
+}
+.memo-content-block--advice-service {
+  grid-area: j;
+}
+.memo-content-block--cloud-services {
+  grid-area: l;
+}
+.memo-content-block--azure-service {
+  grid-area: m;
+}
+.memo-content-block--elibrary {
+  grid-area: n;
+}
+.memo-content-block--programs {
+  grid-area: p;
+}
+.memo-content-block--laptop {
+  grid-area: img;
+}
+
+.memo-content-block_transparent_tiffany--best-services {
+  grid-area: a;
+}
+.memo-content-block_transparent_tiffany--helpdesk {
+  grid-area: d;
+}
+.memo-content-block_transparent_tiffany--booking {
+  grid-area: e;
+}
+.memo-content-block_transparent_tiffany--portfolio {
+  grid-area: h;
+}
+.memo-content-block_transparent_tiffany--corporate-email {
+  grid-area: k;
+}
+.memo-content-block_transparent_tiffany--video-surveillance {
+  grid-area: o;
+}
+.memo-content-block_transparent_tiffany--edeans-office {
+  grid-area: q;
+}
+
 #memo-content-block_transparent_green--semester-beginning {
   grid-area: a;
 }
@@ -937,6 +1008,27 @@ a {
 }
 #memo-content-block_transparent_green--science {
   grid-area: a;
+}
+#memo-content-block_transparent_green--best-services {
+  grid-area: a;
+}
+#memo-content-block_transparent_green--helpdesk {
+  grid-area: d;
+}
+#memo-content-block_transparent_green--booking {
+  grid-area: e;
+}
+#memo-content-block_transparent_green--portfolio {
+  grid-area: h;
+}
+#memo-content-block_transparent_green--corporate-email {
+  grid-area: k;
+}
+#memo-content-block_transparent_green--video-surveillance {
+  grid-area: p;
+}
+#memo-content-block_transparent_green--edeans-office {
+  grid-area: q;
 }
 
 #memo-content-block-async--exam {
