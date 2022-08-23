@@ -903,6 +903,8 @@ a {
   }
   .memo-header__buttons-section__row {
     gap: 12px;
+    flex-direction: column;
+    align-items: center;
     margin: 0 0 8px 0;
   }
   .memo-header_green, .memo-header_red, .memo-header_purpure, .memo-header_tiffany, .memo-header_main {
@@ -949,7 +951,10 @@ a {
     width: auto;
     padding: 15px 17px 16px 16px;
     margin: 0 0 8px 0;
-    border-radius: 16px;
+    border-radius: 24px;
+  }
+  .memo-content-block__img {
+    border-radius: 24px;
   }
   .memo-content-block_transparent_green, .memo-content-block_transparent_red, .memo-content-block_transparent_purpure, .memo-content-block_transparent_tiffany, .memo-content-block_transparent_main {
     width: auto;
@@ -958,6 +963,13 @@ a {
   }
   .memo-content-block_transparent_green::before, .memo-content-block_transparent_red::before, .memo-content-block_transparent_purpure::before, .memo-content-block_transparent_tiffany::before, .memo-content-block_transparent_main::before {
     border-radius: 16px;
+  }
+  .memo-content-block__title_green, .memo-content-block__title_red, .memo-content-block__title_purpure, .memo-content-block__title_tiffany, .memo-content-block__title_main {
+    font-style: normal;
+    font-weight: 800;
+    font-size: 16px;
+    line-height: 22px;
+    margin: 0;
   }
   .memo-content-block__text {
     font-weight: 400;
