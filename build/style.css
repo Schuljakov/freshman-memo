@@ -955,6 +955,7 @@ a {
   }
   .memo-content-block__img {
     border-radius: 24px;
+    margin: 0 0 8px 0;
   }
   .memo-content-block_transparent_green, .memo-content-block_transparent_red, .memo-content-block_transparent_purpure, .memo-content-block_transparent_tiffany, .memo-content-block_transparent_main {
     width: auto;
@@ -991,7 +992,7 @@ a {
     max-width: 535px;
     margin: 0 auto;
     grid-template-areas: "a" "b" "c" "d" "e" "f" "g";
-    grid-template-columns: minmax(320px, 535px);
+    grid-template-columns: auto;
   }
   #memo-content-block--disciplines-study {
     flex-direction: column;

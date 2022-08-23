@@ -135,6 +135,7 @@
 
             &__img {
                 border-radius: 24px;
+                margin: 0 0 8px 0;
             }
 
             &_transparent {
@@ -219,7 +220,7 @@
             "e"
             "f"
             "g";
-            grid-template-columns: minmax(320px, 535px);
+            grid-template-columns: auto;
         }
     }
     #memo-content-block {
