@@ -202,11 +202,10 @@
             grid-template-columns: 535px;
         }
     }
-}
-
-#memo-content-block {
-    &--disciplines-study {
-        flex-direction: column;
-
+    #memo-content-block {
+        &--disciplines-study {
+            flex-direction: column;
+    
+        }
     }
 }
