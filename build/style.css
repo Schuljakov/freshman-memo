@@ -1114,6 +1114,9 @@ a {
     border-radius: 24px;
     margin: 0 0 8px 0;
   }
+  .memo-content-block__img_widthfix {
+    width: auto !important;
+  }
   .memo-content-block__logo {
     height: 27px;
     margin: 0;
@@ -1270,5 +1273,8 @@ a {
   }
   .memo-article-block__content-column-double--first {
     margin-right: 8px;
+  }
+  .memo-content-block__img_widthfix {
+    width: auto;
   }
 }

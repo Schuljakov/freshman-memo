@@ -185,6 +185,9 @@
             &__img {
                 border-radius: 24px;
                 margin: 0 0 8px 0;
+                &_widthfix {
+                    width: auto !important;
+                }
             }
 
             &__logo {
@@ -424,5 +427,8 @@
     }
     .memo-article-block__content-column-double--first {
         margin-right: 8px;
+    }
+    .memo-content-block__img_widthfix {
+        width: auto;
     }
 }
