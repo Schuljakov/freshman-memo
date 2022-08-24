@@ -96,6 +96,12 @@
             margin: 32px 0 0 0;
         }
 
+        &__content {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            flex-direction: row;
+        }
         &__content-column {
             display: flex;
             flex-direction: column;
@@ -453,14 +459,6 @@
             "g g"
         ;
     }
-
-    &--digital-services {
-        display: flex;
-        justify-content: space-between;
-        align-items: flex-start;
-        flex-direction: row;
-    }
-
 }
 
 #memo-content-block {
