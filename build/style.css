@@ -908,6 +908,9 @@ a {
   position: relative;
   margin: 0 0 10px 0;
 }
+.memo-footer_green .memo-header__subtitle, .memo-footer_red .memo-header__subtitle, .memo-footer_purpure .memo-header__subtitle, .memo-footer_tiffany .memo-header__subtitle, .memo-footer_main .memo-header__subtitle {
+  margin: 0 0 24px 0;
+}
 
 .memo-content-block_transparent_tiffany .memo-article-button_tiffany,
 .memo-content-block .memo-article-button_tiffany {

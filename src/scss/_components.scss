@@ -338,7 +338,12 @@
             @extend %flex-center;
             position: relative;
             margin: 0 0 10px 0;
+
+            & .memo-header__subtitle {
+                margin: 0 0 24px 0;
+            }
         }
+
     }
 }
 
