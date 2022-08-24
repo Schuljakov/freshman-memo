@@ -290,9 +290,7 @@
 
 }
 
-
-
-@media (max-width: 1000px) {
+@media (max-width: 1100px) {
     .memo-menu {
         color: #ffffff !important;
         margin: 30px 0 30px 0;
@@ -300,7 +298,7 @@
         &__top-row,
         &__bottom-row {
             display: flex;
-            flex-direction: column;
+            flex-direction: column !important;
             justify-content: space-between;
             flex-wrap: wrap;
         }
@@ -309,7 +307,7 @@
             margin-bottom: 0;
         }
 
-        margin: 0;
+        margin: auto;
         width: 50%;
 
         &__main,
@@ -331,8 +329,6 @@
 
         &__main {
             padding: 55px 0 55px 30px;
-            width: 290px;
-            background-image: url("./img/mesh/main-gradient.png");
         }
 
         &__education {
@@ -371,8 +367,9 @@
         }
 
     }
+}
 
-
+@media (max-width: 1000px) {
     .memo-header__buttons-section__row {
         gap: 12px;
         flex-direction: column;
