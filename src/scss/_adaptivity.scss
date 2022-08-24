@@ -17,6 +17,18 @@
             }
         }
 
+        &nav-button {
+            height: 32px;
+            width: 32px;
+            border-radius: 10px;
+        }
+
+        &nav-icon {
+            height: 15px;
+            width: 15px;
+            margin: 5px;
+        }
+
         &header {
             &__title {
 

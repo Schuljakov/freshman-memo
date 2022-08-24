@@ -1128,6 +1128,16 @@ a {
   .memo-container_green, .memo-container_red, .memo-container_purpure, .memo-container_tiffany, .memo-container_main {
     background-size: 400%;
   }
+  .memo-nav-button {
+    height: 32px;
+    width: 32px;
+    border-radius: 10px;
+  }
+  .memo-nav-icon {
+    height: 15px;
+    width: 15px;
+    margin: 5px;
+  }
   .memo-header__title_green, .memo-header__title_red, .memo-header__title_purpure, .memo-header__title_tiffany, .memo-header__title_main {
     font-size: 32px;
     line-height: 100%;
