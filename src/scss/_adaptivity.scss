@@ -307,8 +307,7 @@
             margin-bottom: 0;
         }
 
-        margin: auto;
-        width: 50%;
+        width: 100%;
 
         &__main,
         &__education,
@@ -316,36 +315,26 @@
         &__non-education,
         &__digital-system {
             position: relative;
-            
+
             border-radius: 30px;
             color: #ffffff !important;
-            width: 100%;
             background-size: 110%;
             background-position: center;
             background-repeat: no-repeat;
 
-            margin: 0 0 16px 0;
+            width: 50%;
+            margin: 0 auto 16px;
         }
 
-        &__main {
-            padding: 55px 0 55px 30px;
+        &__main, &__education, &__help, &__non-education, &__digital-system {
+            font-size: 40px;
+            line-height: 38px;
         }
 
-        &__education {
-            padding: 55px 0 55px 30px;
+        &__main, &__education, &__help, &__non-education, &__non-education, &__digital-system {
+            padding: 45px 0 45px 30px;
         }
 
-        &__help {
-            padding: 55px 0 55px 30px;
-        }
-
-        &__non-education {
-            padding: 69px 0 71px 30px;
-        }
-
-        &__digital-system {
-            padding: 69px 0 71px 30px;
-        }
 
         &__main::before,
         &__education::before,
@@ -391,110 +380,19 @@
         line-height: 21px;
     }
 
-    #memo-article-block__content {
-        &--eductaion {
-            max-width: 535px;
-            margin: 0 auto;
-            grid-template-areas:
-                "a"
-                "b"
-                "c"
-                "d"
-                "e"
-                "f"
-                "g";
-            grid-template-columns: auto;
+}
+
+@media (max-width: 800px) {
+    .memo-menu {
+        &__main, &__education, &__help, &__non-education, &__non-education, &__digital-system {
+            padding: 30px 0 30px 30px;
+            width: 100%;
+        }
+        &__main, &__education, &__help, &__non-education, &__digital-system {
+            font-size: 34px;
+            line-height: 24px;
         }
     }
-
-    #memo-content-block {
-        &--disciplines-study {
-            flex-direction: column;
-        }
-    }
-
-    #memo-article-block__content {
-        &--rating-system {
-            max-width: 535px;
-            grid-template-areas:
-                "a"
-                "b"
-                "c"
-                "d"
-                "e"
-                "f"
-                "g";
-            margin: 0 auto;
-        }
-
-        &--digital {
-            max-width: 535px;
-            grid-template-areas:
-                "a"
-                "b"
-                "c"
-                "e"
-                "d"
-            ;
-            margin: 0 auto;
-        }
-
-        &--boiling-point {
-            max-width: 535px;
-            grid-template-rows: auto;
-            grid-template-areas:
-                "a"
-                "b"
-                "c"
-                "e"
-                "d"
-            ;
-            margin: 0 auto;
-        }
-
-        &--science-work {
-            max-width: 535px;
-            grid-template-rows: repeat(4, auto);
-            grid-template-areas:
-                "a"
-                "c"
-                "e"
-                "f"
-                "b"
-                "d"
-                "g"
-            ;
-            margin: 0 auto;
-        }
-
-        &--foreign-education {
-            max-width: 535px;
-            grid-template-rows: repeat(3, auto);
-            grid-template-areas:
-                "a"
-                "b"
-                "c"
-                "d"
-                "e"
-                "g"
-                "f"
-            ;
-            margin: 0 auto;
-        }
-    }
-
-    #memo-content-block--room {
-        margin-top: 0;
-    }
-
-    #memo-content-block--science-seminar {
-        margin-top: 0;
-    }
-
-    #memo-content-block--cms {
-        margin-top: 0;
-    }
-
 }
 
 @media(max-width: 600px) {
@@ -507,6 +405,12 @@
     }
     .memo-article-block__content-column-double {
         justify-content: space-evenly;
+    }
+    .memo-menu {
+        &__main, &__education, &__help, &__non-education, &__non-education, &__digital-system {
+            font-size: 24px;
+            margin-bottom: 8px;
+        }
     }
 }
 
