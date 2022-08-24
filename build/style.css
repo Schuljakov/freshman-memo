@@ -754,6 +754,15 @@ a {
   justify-content: flex-start;
   align-items: flex-end;
 }
+.memo-article-block__content-column-double {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+.memo-article-block__content-column-double--first {
+  margin-right: 30px;
+}
 .memo-article-block__content-column + .memo-article-block__content-column {
   margin-left: 30px;
 }

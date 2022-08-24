@@ -107,6 +107,16 @@
             flex-direction: column;
             justify-content: flex-start;
             align-items: flex-end;
+
+            &-double {
+                display: flex;
+                flex-direction: row;
+                justify-content: flex-start;
+                align-items: flex-start;
+                &--first {
+                    margin-right: 30px;
+                }
+            }
         }
         &__content-column + &__content-column {
             margin-left: 30px;
