@@ -1211,8 +1211,6 @@ a {
     display: none;
   }
   .memo-content-block {
-    width: auto;
-    padding: 15px 17px 16px 16px;
     margin: 0 0 8px 0;
     border-radius: 24px;
   }
@@ -1225,8 +1223,6 @@ a {
     margin: 0;
   }
   .memo-content-block_transparent_green, .memo-content-block_transparent_red, .memo-content-block_transparent_purpure, .memo-content-block_transparent_tiffany, .memo-content-block_transparent_main {
-    width: auto;
-    padding: 15px 17px 16px 16px;
     margin: 0 0 8px 0;
   }
   .memo-content-block_transparent_green::before, .memo-content-block_transparent_red::before, .memo-content-block_transparent_purpure::before, .memo-content-block_transparent_tiffany::before, .memo-content-block_transparent_main::before {
