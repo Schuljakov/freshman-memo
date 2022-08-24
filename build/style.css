@@ -705,7 +705,9 @@ a {
 .memo-header__subtitle {
   text-align: center;
   max-width: 322px;
-  margin: 0 0 8px 0;
+}
+.memo-header__arrow {
+  margin: 0 0 24px 0;
 }
 .memo-header__buttons-section {
   display: flex;
