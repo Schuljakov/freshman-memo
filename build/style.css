@@ -740,6 +740,12 @@ a {
   width: 100%;
   margin: 32px 0 0 0;
 }
+.memo-article-block__content {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-direction: row;
+}
 .memo-article-block__content-column {
   display: flex;
   flex-direction: column;
@@ -966,12 +972,6 @@ a {
   column-gap: 30px;
   grid-template-rows: repeat(2, auto) 40px;
   grid-template-areas: "a b" "a c" ". c" "d e" "f e" "f ." "g g";
-}
-#memo-article-block__content--digital-services {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  flex-direction: row;
 }
 
 #memo-content-block--semesters {
