@@ -10,6 +10,10 @@
         }
     }
 
+    .memo-link-button::before {
+        -webkit-mask-composite: destination-out;
+    }
+
     .memo-tip::before {
         -webkit-mask-composite: destination-out;
     }
@@ -59,6 +63,10 @@
         }
     }
 
+    .memo-link-button::before {
+        -webkit-mask-composite: destination-out;
+    }
+
     .memo-tip::before {
         -webkit-mask-composite: destination-out;
     }
@@ -99,6 +107,10 @@
 // Safari only
 @media not all and (min-resolution:.001dpcm) {
     .memo-tip::before {
+        mask-composite: exclude;
+    }
+
+    .memo-link-button::before {
         mask-composite: exclude;
     }
 

@@ -1,12 +1,13 @@
 @media only screen and (max-width: 600px) {
     #memo-students-image {
         height: 222px;
-        object-fit: cover;   
-        border-radius: 20px;     
+        object-fit: cover;
+        border-radius: 20px;
     }
 
     .memo- {
         &container {
+
             &_green,
             &_red,
             &_purpure,
@@ -67,6 +68,25 @@
                 background-position: center;
             }
 
+        }
+
+        &vk-logo {
+            height: 16px;
+        }
+
+        &link-button {
+            font-weight: 800;
+            font-size: 12px;
+            line-height: 12px;
+            border-radius: 12px;
+            border-width: 1px;
+
+            padding: 10px 12px;
+        }
+
+        &link-button::before {
+            border-radius: 12px;
+            border-width: 1px;
         }
 
         &article-button {
@@ -178,6 +198,7 @@
             }
 
             &__title {
+
                 &_green,
                 &_red,
                 &_purpure,
@@ -200,13 +221,13 @@
                 letter-spacing: 0.03em;
             }
         }
-        
+
         &files-row {
             flex-direction: column;
         }
 
         &file {
-            
+
             margin: 0;
 
             &__icon {
@@ -223,6 +244,10 @@
                 font-size: 10px;
                 line-height: 110%;
             }
+        }
+
+        &embedded-ol {
+            margin-left: 12px;
         }
 
         &footer {
@@ -262,16 +287,17 @@
             max-width: 535px;
             margin: 0 auto;
             grid-template-areas:
-            "a"
-            "b"
-            "c"
-            "d"
-            "e"
-            "f"
-            "g";
+                "a"
+                "b"
+                "c"
+                "d"
+                "e"
+                "f"
+                "g";
             grid-template-columns: auto;
         }
     }
+
     #memo-content-block {
         &--disciplines-study {
             flex-direction: column;
@@ -282,23 +308,24 @@
         &--rating-system {
             max-width: 535px;
             grid-template-areas:
-            "a"
-            "b"
-            "c"
-            "d"
-            "e"
-            "f"
-            "g";
+                "a"
+                "b"
+                "c"
+                "d"
+                "e"
+                "f"
+                "g";
             margin: 0 auto;
         }
+
         &--digital {
             max-width: 535px;
             grid-template-areas:
-            "a"
-            "b"
-            "c"
-            "e"
-            "d"
+                "a"
+                "b"
+                "c"
+                "e"
+                "d"
             ;
             margin: 0 auto;
         }
@@ -307,39 +334,41 @@
             max-width: 535px;
             grid-template-rows: auto;
             grid-template-areas:
-            "a"
-            "b"
-            "c"
-            "e"
-            "d"
+                "a"
+                "b"
+                "c"
+                "e"
+                "d"
             ;
             margin: 0 auto;
         }
+
         &--science-work {
             max-width: 535px;
             grid-template-rows: repeat(4, auto);
             grid-template-areas:
-            "a"
-            "c"
-            "e"
-            "f"
-            "b"
-            "d"
-            "g"
+                "a"
+                "c"
+                "e"
+                "f"
+                "b"
+                "d"
+                "g"
             ;
             margin: 0 auto;
         }
+
         &--foreign-education {
             max-width: 535px;
             grid-template-rows: repeat(3, auto);
             grid-template-areas:
-            "a"
-            "b"
-            "c"
-            "d"
-            "e"
-            "g"
-            "f"
+                "a"
+                "b"
+                "c"
+                "d"
+                "e"
+                "g"
+                "f"
             ;
             margin: 0 auto;
         }
@@ -348,9 +377,11 @@
     #memo-content-block--room {
         margin-top: 0;
     }
+
     #memo-content-block--science-seminar {
         margin-top: 0;
     }
+
     #memo-content-block--cms {
         margin-top: 0;
     }

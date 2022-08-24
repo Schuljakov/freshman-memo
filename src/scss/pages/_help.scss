@@ -37,6 +37,14 @@
         }
     }
 
+    &content-block {
+        &__title {
+            &_red {
+                @include content-title($gradient-red);
+            }
+        }
+    }
+
     &content-block_transparent {
         &_red::before {
             @include transparent-content-block($gradient-red);

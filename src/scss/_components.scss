@@ -248,6 +248,48 @@
         }
     }
 
+    &vk-logo {
+        margin-right: 8px;
+    }
+
+    &link-button {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+
+        position: relative;
+        @extend %Other-Desktop-Buttons;
+        color: #ffffff;
+        padding: 15px 24px 17px 24px;
+        border-radius: 20px;
+        background-color: $color-blue;
+
+        width: max-content;
+    }
+
+    &link-button::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        border-radius: 20px;
+        border: 3px solid transparent;
+        background: $gradient-white border-box;
+        -webkit-mask:
+            linear-gradient(#fff 0 0) padding-box,
+            linear-gradient(#fff 0 0);
+    }
+
+    &link-button:hover {
+        scale: 1.05;
+    }
+
+    &embedded-ol {
+        margin-left: 24px;
+    }
+
     &footer {
 
         &_green,
