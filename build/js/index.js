@@ -1,5 +1,5 @@
 window.onload = () => {
-    const mediaQuery = window.matchMedia('(max-width: 1000px)');
+    const mediaQuery = window.matchMedia('(max-width: 1100px)');
     if (mediaQuery.matches) transformColumnView(mediaQuery);
     mediaQuery.addListener(transformColumnView);
 
