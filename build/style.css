@@ -690,10 +690,24 @@ a {
   width: 64px;
   border-radius: 18px;
 }
+.memo-nav-button_control {
+  position: fixed;
+  bottom: 50px;
+  right: 50px;
+}
+.memo-nav-button_control:hover img {
+  animation-name: arrow-shake;
+  animation-duration: 1000ms;
+  animation-iteration-count: 1;
+  animation-timing-function: linear;
+}
 .memo-nav-icon {
   rotate: -45deg;
   margin: 10px;
   transition: 600ms;
+}
+.memo-nav-icon_norotate {
+  rotate: 0deg;
 }
 .memo-nav-icon:hover {
   rotate: 0deg;
@@ -927,6 +941,20 @@ a {
   margin: 0 0 24px 0;
 }
 
+@keyframes arrow-shake {
+  0% {
+    rotate: 0deg;
+  }
+  33% {
+    rotate: 20deg;
+  }
+  66% {
+    rotate: -20deg;
+  }
+  100% {
+    rotate: 0deg;
+  }
+}
 .memo-content-block_transparent_tiffany .memo-article-button_tiffany,
 .memo-content-block .memo-article-button_tiffany {
   margin-top: 12px;
@@ -946,189 +974,19 @@ a {
   width: 473px;
 }
 
-#memo-article-block__content--eductaion {
-  display: grid;
-  max-width: 1100px;
-  width: 100%;
-  grid-template-columns: 460.5px 49.5px 49.5px 460.5px;
-  column-gap: 30px;
-  grid-template-areas: "a a b b" "c c c c" "d d e e" "f f f g";
+.memo-button-up {
+  background: radial-gradient(72.75% 306.89% at 117.32% 115.77%, rgba(0, 38, 255, 0.7) 0%, rgba(122, 141, 251, 0) 100%);
+  border-radius: 18px;
+  width: 64px;
+  height: 64px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
 }
-#memo-article-block__content--rating-system {
-  display: grid;
-  max-width: 1100px;
-  column-gap: 30px;
-  grid-template-areas: "a b" "a c" "d c" "d e" "f e" "f g" ". g";
-}
-#memo-article-block__content--digital {
-  display: grid;
-  max-width: 1100px;
-  column-gap: 30px;
-  grid-template-areas: "a b" "a c" "e d" ". d";
-}
-#memo-article-block__content--boiling-point {
-  display: grid;
-  max-width: 1100px;
-  column-gap: 30px;
-  grid-template-rows: auto auto 40px;
-  grid-template-areas: "a b" "a c" ". c" "d e";
-}
-#memo-article-block__content--science-work {
-  display: grid;
-  max-width: 1100px;
-  column-gap: 30px;
-  grid-template-rows: repeat(3, auto) 48px;
-  grid-template-areas: "a b" "c d" "e d" "e ." "f g";
-}
-#memo-article-block__content--foreign-education {
-  display: grid;
-  max-width: 1100px;
-  column-gap: 30px;
-  grid-template-rows: repeat(2, auto) 40px;
-  grid-template-areas: "a b" "a c" ". c" "d e" "f e" "f ." "g g";
-}
-
-#memo-content-block--semesters {
-  grid-area: a;
-}
-#memo-content-block--modules {
-  grid-area: b;
-}
-#memo-content-block--disciplines-study {
-  width: auto;
-  max-width: 1050px;
-  flex-direction: row;
-  grid-area: c;
-}
-#memo-content-block--visiting {
-  grid-area: d;
-}
-#memo-content-block--additionally {
-  grid-area: e;
-}
-#memo-content-block--pairskipping {
-  width: auto;
-  grid-area: f;
-}
-#memo-content-block--tutorfinding {
-  width: auto;
-  grid-area: g;
-}
-#memo-content-block--debts-score {
-  grid-area: f;
-}
-#memo-content-block--tested {
-  grid-area: c;
-}
-#memo-content-block--descr-1 {
-  grid-area: e;
-}
-#memo-content-block--descr-2 {
-  grid-area: b;
-}
-#memo-content-block--descr-3 {
-  grid-area: c;
-}
-#memo-content-block--agenda {
-  grid-area: c;
-}
-#memo-content-block--cost {
-  grid-area: e;
-}
-#memo-content-block--room {
-  grid-area: d;
-  margin-top: -40px;
-}
-#memo-content-block--scientist {
-  grid-area: b;
-}
-#memo-content-block--science-theme {
-  grid-area: c;
-}
-#memo-content-block--science-support {
-  grid-area: d;
-}
-#memo-content-block--science-attention {
-  grid-area: e;
-}
-#memo-content-block--science-subject {
-  grid-area: f;
-}
-#memo-content-block--science-seminar {
-  margin-top: -48px;
-  grid-area: g;
-}
-#memo-content-block--terms {
-  grid-area: a;
-}
-#memo-content-block--trips {
-  grid-area: b;
-}
-#memo-content-block--cms {
-  margin-top: -40px;
-  grid-area: d;
-}
-#memo-content-block--world {
-  grid-area: c;
-}
-#memo-content-block--interest {
-  grid-area: e;
-}
-#memo-content-block--contacts {
-  grid-area: f;
-}
-#memo-content-block--globe {
-  grid-area: g;
-}
-
-#memo-content-block_transparent_green--semester-beginning {
-  grid-area: a;
-}
-#memo-content-block_transparent_green--marks {
-  grid-area: b;
-}
-#memo-content-block_transparent_green--lms {
-  grid-area: a;
-}
-#memo-content-block_transparent_green--profile {
-  grid-area: d;
-}
-#memo-content-block_transparent_green--what {
-  grid-area: a;
-}
-#memo-content-block_transparent_green--project {
-  grid-area: b;
-}
-#memo-content-block_transparent_green--science {
-  grid-area: a;
-}
-#memo-content-block_transparent_green--best-services {
-  grid-area: a;
-}
-#memo-content-block_transparent_green--helpdesk {
-  grid-area: d;
-}
-#memo-content-block_transparent_green--booking {
-  grid-area: e;
-}
-#memo-content-block_transparent_green--portfolio {
-  grid-area: h;
-}
-#memo-content-block_transparent_green--corporate-email {
-  grid-area: k;
-}
-#memo-content-block_transparent_green--video-surveillance {
-  grid-area: p;
-}
-#memo-content-block_transparent_green--edeans-office {
-  grid-area: q;
-}
-
-#memo-content-block-async--exam {
-  grid-area: d;
-}
-#memo-content-block-async--auditorium {
-  grid-area: e;
+.memo-button-up__picture {
+  max-width: 28px;
+  max-height: 28px;
 }
 
 @media only screen and (max-width: 600px) {

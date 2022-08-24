@@ -60,4 +60,17 @@ window.onload = () => {
             }
         }
     }
+
+    function backToTop() {
+        console.log("123")
+        if (window.pageYOffset > 0) {
+          window.scrollBy(0, -40);
+          setTimeout(backToTop, 0);
+        }
+    }
+
+    document.getElementsByClassName("memo-nav-button_control")[0].addEventListener("click", function (e) {
+        e.preventDefault();
+        backToTop();
+    })
 }
