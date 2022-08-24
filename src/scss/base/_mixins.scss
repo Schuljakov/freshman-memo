@@ -3,7 +3,7 @@
     margin: auto;
     padding: 0 15px;
     padding-bottom: 10px;
-    background-image: url($url);
+    background-image: url($url) !important;
     background-size: contain;
     background-repeat: repeat-y;
     background-position: center;
@@ -40,7 +40,7 @@
 @mixin button($color: $gradient-green) {
     position: relative;
     @extend %Other-Desktop-Buttons;
-    color: #ffffff;
+    color: #ffffff !important;
     padding: 15px 36px 17px 36px;
     border-radius: 20px;
     background-image: $color;
