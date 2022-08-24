@@ -212,13 +212,13 @@ a {
   background-image: url("./img/mesh/help-gradient.png");
 }
 .memo-menu__non-education {
-  padding: 69px 0 71px 30px;
-  width: 505px;
+  padding: 69px 0 71px 25px;
+  width: 497px;
   background-image: url("./img/mesh/non-education-gradient.png");
 }
 .memo-menu__digital-system {
-  padding: 69px 0 71px 30px;
-  width: 505px;
+  padding: 69px 0 71px 25px;
+  width: 497px;
   background-image: url("./img/mesh/digital-system-gradient.png");
 }
 .memo-menu__main::before, .memo-menu__education::before, .memo-menu__help::before, .memo-menu__non-education::before, .memo-menu__digital-system::before {
@@ -1172,8 +1172,7 @@ a {
   .memo-menu {
     color: #ffffff !important;
     margin: 30px 0 30px 0;
-    margin: auto;
-    width: 50%;
+    width: 100%;
   }
   .memo-menu__top-row, .memo-menu__bottom-row {
     display: flex;
@@ -1188,26 +1187,18 @@ a {
     position: relative;
     border-radius: 30px;
     color: #ffffff !important;
-    width: 100%;
     background-size: 110%;
     background-position: center;
     background-repeat: no-repeat;
-    margin: 0 0 16px 0;
+    width: 50%;
+    margin: 0 auto 16px;
   }
-  .memo-menu__main {
-    padding: 55px 0 55px 30px;
+  .memo-menu__main, .memo-menu__education, .memo-menu__help, .memo-menu__non-education, .memo-menu__digital-system {
+    font-size: 40px;
+    line-height: 38px;
   }
-  .memo-menu__education {
-    padding: 55px 0 55px 30px;
-  }
-  .memo-menu__help {
-    padding: 55px 0 55px 30px;
-  }
-  .memo-menu__non-education {
-    padding: 69px 0 71px 30px;
-  }
-  .memo-menu__digital-system {
-    padding: 69px 0 71px 30px;
+  .memo-menu__main, .memo-menu__education, .memo-menu__help, .memo-menu__non-education, .memo-menu__non-education, .memo-menu__digital-system {
+    padding: 45px 0 45px 30px;
   }
   .memo-menu__main::before, .memo-menu__education::before, .memo-menu__help::before, .memo-menu__non-education::before, .memo-menu__digital-system::before {
     content: "";
@@ -1242,51 +1233,15 @@ a {
     font-size: 21px;
     line-height: 21px;
   }
-  #memo-article-block__content--eductaion {
-    max-width: 535px;
-    margin: 0 auto;
-    grid-template-areas: "a" "b" "c" "d" "e" "f" "g";
-    grid-template-columns: auto;
+}
+@media (max-width: 800px) {
+  .memo-menu__main, .memo-menu__education, .memo-menu__help, .memo-menu__non-education, .memo-menu__non-education, .memo-menu__digital-system {
+    padding: 30px 0 30px 30px;
+    width: 100%;
   }
-  #memo-content-block--disciplines-study {
-    flex-direction: column;
-  }
-  #memo-article-block__content--rating-system {
-    max-width: 535px;
-    grid-template-areas: "a" "b" "c" "d" "e" "f" "g";
-    margin: 0 auto;
-  }
-  #memo-article-block__content--digital {
-    max-width: 535px;
-    grid-template-areas: "a" "b" "c" "e" "d";
-    margin: 0 auto;
-  }
-  #memo-article-block__content--boiling-point {
-    max-width: 535px;
-    grid-template-rows: auto;
-    grid-template-areas: "a" "b" "c" "e" "d";
-    margin: 0 auto;
-  }
-  #memo-article-block__content--science-work {
-    max-width: 535px;
-    grid-template-rows: repeat(4, auto);
-    grid-template-areas: "a" "c" "e" "f" "b" "d" "g";
-    margin: 0 auto;
-  }
-  #memo-article-block__content--foreign-education {
-    max-width: 535px;
-    grid-template-rows: repeat(3, auto);
-    grid-template-areas: "a" "b" "c" "d" "e" "g" "f";
-    margin: 0 auto;
-  }
-  #memo-content-block--room {
-    margin-top: 0;
-  }
-  #memo-content-block--science-seminar {
-    margin-top: 0;
-  }
-  #memo-content-block--cms {
-    margin-top: 0;
+  .memo-menu__main, .memo-menu__education, .memo-menu__help, .memo-menu__non-education, .memo-menu__digital-system {
+    font-size: 34px;
+    line-height: 24px;
   }
 }
 @media (max-width: 600px) {
@@ -1299,6 +1254,10 @@ a {
   }
   .memo-article-block__content-column-double {
     justify-content: space-evenly;
+  }
+  .memo-menu__main, .memo-menu__education, .memo-menu__help, .memo-menu__non-education, .memo-menu__non-education, .memo-menu__digital-system {
+    font-size: 24px;
+    margin-bottom: 8px;
   }
 }
 @media (max-width: 400px) {
