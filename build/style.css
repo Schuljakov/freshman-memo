@@ -740,6 +740,15 @@ a {
   width: 100%;
   margin: 32px 0 0 0;
 }
+.memo-article-block__content-column {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-end;
+}
+.memo-article-block__content-column + .memo-article-block__content-column {
+  margin-left: 30px;
+}
 .memo-content-row {
   display: flex;
   flex-direction: row;
@@ -959,10 +968,10 @@ a {
   grid-template-areas: "a b" "a c" ". c" "d e" "f e" "f ." "g g";
 }
 #memo-article-block__content--digital-services {
-  display: grid;
-  max-width: 1100px;
-  column-gap: 30px;
-  grid-template-areas: "a b" "c b" "c d" "e f" "g f" "g h" "i h" "i j" "k j" "k l" "m l" "m n" "o n" "o p" "q p" "q img" ". img";
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-direction: row;
 }
 
 #memo-content-block--semesters {
@@ -1056,62 +1065,6 @@ a {
 }
 #memo-content-block--globe {
   grid-area: g;
-}
-
-.memo-content-block--education-area {
-  grid-area: b;
-}
-.memo-content-block--lms {
-  grid-area: c;
-}
-.memo-content-block--video-conferences {
-  grid-area: f;
-}
-.memo-content-block--catalog {
-  grid-area: g;
-}
-.memo-content-block--account {
-  grid-area: i;
-}
-.memo-content-block--advice-service {
-  grid-area: j;
-}
-.memo-content-block--cloud-services {
-  grid-area: l;
-}
-.memo-content-block--azure-service {
-  grid-area: m;
-}
-.memo-content-block--elibrary {
-  grid-area: n;
-}
-.memo-content-block--programs {
-  grid-area: p;
-}
-.memo-content-block--laptop {
-  grid-area: img;
-}
-
-.memo-content-block_transparent_tiffany--best-services {
-  grid-area: a;
-}
-.memo-content-block_transparent_tiffany--helpdesk {
-  grid-area: d;
-}
-.memo-content-block_transparent_tiffany--booking {
-  grid-area: e;
-}
-.memo-content-block_transparent_tiffany--portfolio {
-  grid-area: h;
-}
-.memo-content-block_transparent_tiffany--corporate-email {
-  grid-area: k;
-}
-.memo-content-block_transparent_tiffany--video-surveillance {
-  grid-area: o;
-}
-.memo-content-block_transparent_tiffany--edeans-office {
-  grid-area: q;
 }
 
 #memo-content-block_transparent_green--semester-beginning {
@@ -1327,6 +1280,10 @@ a {
     flex-direction: column;
     align-items: center;
     margin: 0 0 8px 0;
+  }
+  .memo-article-block__content-column {
+    margin: 0 auto;
+    max-width: 535px;
   }
   #memo-article-block__content--eductaion {
     max-width: 535px;
