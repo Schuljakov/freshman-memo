@@ -151,6 +151,31 @@
             gap: 6px;
         }
 
+        &_small {
+            background: #ffffff;
+            border-radius: 30px;
+
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+            padding: 30px 37px;
+            gap: 6px;
+
+            margin: 0 0 30px 0;
+
+            width: 179px;
+
+            &__title {
+                @extend %Heading-Desktop-Smallest;
+                background: $gradient-purpure;
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                background-clip: text;
+                text-align: center;
+            }
+        }
+
         & .memo-article-button_tiffany {
             margin-top: 12px;
         }
