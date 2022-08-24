@@ -1,5 +1,5 @@
 window.onload = () => {
-    const mediaQuery = window.matchMedia('(max-width: 1000px)');
+    const mediaQuery = window.matchMedia('(max-width: 1100px)');
     if (mediaQuery.matches) transformColumnView(mediaQuery);
     mediaQuery.addListener(transformColumnView);
 
@@ -64,7 +64,7 @@ window.onload = () => {
     function backToTop() {
         console.log("123")
         if (window.pageYOffset > 0) {
-          window.scrollBy(0, -20);
+          window.scrollBy(0, -80);
           setTimeout(backToTop, 0);
         }
     }
