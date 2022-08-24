@@ -176,7 +176,7 @@ a {
   text-align: center;
 }
 .memo-menu {
-  color: #ffffff;
+  color: #ffffff !important;
   margin: 30px 0 30px 0;
 }
 .memo-menu__top-row, .memo-menu__bottom-row {
@@ -191,7 +191,7 @@ a {
 .memo-menu__main, .memo-menu__education, .memo-menu__help, .memo-menu__non-education, .memo-menu__digital-system {
   position: relative;
   border-radius: 30px;
-  color: #ffffff;
+  color: #ffffff !important;
   background-size: 110%;
   background-position: center;
   background-repeat: no-repeat;

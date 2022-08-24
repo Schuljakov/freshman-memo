@@ -12,7 +12,7 @@
     }
 
     &menu {
-        color: #ffffff;
+        color: #ffffff !important;
         margin: 30px 0 30px 0;
 
         &__top-row,
@@ -35,7 +35,7 @@
             position: relative;
             @extend %Heading-Desktop-Middle;
             border-radius: 30px;
-            color: #ffffff;
+            color: #ffffff !important;
 
             background-size: 110%;
             background-position: center;
