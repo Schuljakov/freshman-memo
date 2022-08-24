@@ -158,6 +158,7 @@
             &__line {
                 display: none;
             }
+
         }
 
         &content-block {
@@ -280,6 +281,10 @@
         flex-direction: column;
         align-items: center;
         margin: 0 0 8px 0;
+    }
+    .memo-article-block__content-column {
+        margin: 0 auto;
+        max-width: 535px;
     }
 
     #memo-article-block__content {

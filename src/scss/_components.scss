@@ -93,6 +93,16 @@
             width: 100%;
             margin: 32px 0 0 0;
         }
+
+        &__content-column {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: flex-end;
+        }
+        &__content-column + &__content-column {
+            margin-left: 30px;
+        }
     }
 
     &content-row {
@@ -438,28 +448,10 @@
     }
 
     &--digital-services {
-        display: grid;
-        max-width: 1100px;
-        column-gap: 30px;
-        grid-template-areas:
-            "a b"
-            "c b"
-            "c d"
-            "e f"
-            "g f"
-            "g h"
-            "i h"
-            "i j"
-            "k j"
-            "k l"
-            "m l"
-            "m n"
-            "o n"
-            "o p"
-            "q p"
-            "q img"
-            ". img"
-        ;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        flex-direction: row;
     }
 
 }
@@ -587,81 +579,6 @@
     }
 }
 
-.memo-content-block {
-    &--education-area {
-        grid-area: b;
-    }
-
-    &--lms {
-        grid-area: c;
-    }
-
-    &--video-conferences {
-        grid-area: f;
-    }
-
-    &--catalog {
-        grid-area: g;
-    }
-
-    &--account {
-        grid-area: i;
-    }
-
-    &--advice-service {
-        grid-area: j;
-    }
-
-    &--cloud-services {
-        grid-area: l;
-    }
-
-    &--azure-service {
-        grid-area: m;
-    }
-
-    &--elibrary {
-        grid-area: n;
-    }
-
-    &--programs {
-        grid-area: p;
-    }
-
-    &--laptop {
-        grid-area: img;
-    }
-}
-
-.memo-content-block_transparent_tiffany {
-    &--best-services {
-        grid-area: a;
-    }
-
-    &--helpdesk {
-        grid-area: d;
-    }
-
-    &--booking {
-        grid-area: e;
-    }
-
-    &--portfolio {
-        grid-area: h;
-    }
-
-    &--corporate-email {
-        grid-area: k;
-    }
-
-    &--video-surveillance {
-        grid-area: o;
-    }
-
-    &--edeans-office {
-        grid-area: q;
-    }
-}
 
 #memo-content-block_transparent_green {
     &--semester-beginning {
