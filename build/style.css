@@ -691,9 +691,17 @@ a {
   border-radius: 18px;
 }
 .memo-nav-button_control {
+  z-index: 1000;
+  height: 44px !important;
+  width: 44px !important;
+  border-radius: 14px;
   position: fixed;
-  bottom: 50px;
-  right: 50px;
+  bottom: 10px;
+  right: 15px;
+}
+.memo-nav-button_control img {
+  height: 25px !important;
+  width: 25px !important;
 }
 .memo-nav-button_control:hover img {
   animation-name: arrow-shake;
