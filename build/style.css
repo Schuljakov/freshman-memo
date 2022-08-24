@@ -176,7 +176,7 @@ a {
   text-align: center;
 }
 .memo-menu {
-  color: #ffffff;
+  color: #ffffff !important;
   margin: 30px 0 30px 0;
 }
 .memo-menu__top-row, .memo-menu__bottom-row {
@@ -191,7 +191,7 @@ a {
 .memo-menu__main, .memo-menu__education, .memo-menu__help, .memo-menu__non-education, .memo-menu__digital-system {
   position: relative;
   border-radius: 30px;
-  color: #ffffff;
+  color: #ffffff !important;
   background-size: 110%;
   background-position: center;
   background-repeat: no-repeat;
@@ -705,7 +705,9 @@ a {
 .memo-header__subtitle {
   text-align: center;
   max-width: 322px;
-  margin: 0 0 8px 0;
+}
+.memo-header__arrow {
+  margin: 0 0 24px 0;
 }
 .memo-header__buttons-section {
   display: flex;
@@ -911,6 +913,9 @@ a {
   padding: 32px 262px 32px 262px;
   position: relative;
   margin: 0 0 10px 0;
+}
+.memo-footer_green .memo-header__subtitle, .memo-footer_red .memo-header__subtitle, .memo-footer_purpure .memo-header__subtitle, .memo-footer_tiffany .memo-header__subtitle, .memo-footer_main .memo-header__subtitle {
+  margin: 0 0 24px 0;
 }
 
 .memo-content-block_transparent_tiffany .memo-article-button_tiffany,
@@ -1125,6 +1130,16 @@ a {
   }
   .memo-container_green, .memo-container_red, .memo-container_purpure, .memo-container_tiffany, .memo-container_main {
     background-size: 400%;
+  }
+  .memo-nav-button {
+    height: 32px;
+    width: 32px;
+    border-radius: 10px;
+  }
+  .memo-nav-icon {
+    height: 15px;
+    width: 15px;
+    margin: 5px;
   }
   .memo-header__title_green, .memo-header__title_red, .memo-header__title_purpure, .memo-header__title_tiffany, .memo-header__title_main {
     font-size: 32px;
