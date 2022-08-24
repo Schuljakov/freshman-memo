@@ -383,10 +383,38 @@
 }
 
 @media (max-width: 800px) {
+    .memo-header_blue {
+        padding: 32px 0 16px 0;
+        border-radius: 16px;
+    }
+    .memo-header__title_blue {
+        font-size: 32px;
+        line-height: 100%;
+    }
+    .memo-tip {
+        padding: 14px;
+    }
+    .memo-tip__icon {
+        margin-right: 14px;
+    }
+    .memo-tip__title {
+        font-weight: 800;
+        font-size: 24px;
+        line-height: 110%;
+    }
+    .memo-tip__small-icon {
+        margin-bottom: 1px;
+        padding: 0 2px;
+        height: 11px;
+    }
+    .memo-tip__text {
+        font-size: 14px;
+        line-height: 138%;
+    }
     .memo-menu {
         &__main, &__education, &__help, &__non-education, &__non-education, &__digital-system {
             padding: 30px 0 30px 30px;
-            width: 100%;
+            width: calc(100% - 30px);
         }
         &__main, &__education, &__help, &__non-education, &__digital-system {
             font-size: 34px;
@@ -410,6 +438,10 @@
         &__main, &__education, &__help, &__non-education, &__non-education, &__digital-system {
             font-size: 24px;
             margin-bottom: 8px;
+            border-radius: 16px;
+        }
+        &__main::before, &__education::before, &__help::before, &__non-education::before, &__non-education::before, &__digital-system::before {
+            border-radius: 16px;
         }
     }
 }

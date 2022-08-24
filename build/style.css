@@ -1235,9 +1235,37 @@ a {
   }
 }
 @media (max-width: 800px) {
+  .memo-header_blue {
+    padding: 32px 0 16px 0;
+    border-radius: 16px;
+  }
+  .memo-header__title_blue {
+    font-size: 32px;
+    line-height: 100%;
+  }
+  .memo-tip {
+    padding: 14px;
+  }
+  .memo-tip__icon {
+    margin-right: 14px;
+  }
+  .memo-tip__title {
+    font-weight: 800;
+    font-size: 24px;
+    line-height: 110%;
+  }
+  .memo-tip__small-icon {
+    margin-bottom: 1px;
+    padding: 0 2px;
+    height: 11px;
+  }
+  .memo-tip__text {
+    font-size: 14px;
+    line-height: 138%;
+  }
   .memo-menu__main, .memo-menu__education, .memo-menu__help, .memo-menu__non-education, .memo-menu__non-education, .memo-menu__digital-system {
     padding: 30px 0 30px 30px;
-    width: 100%;
+    width: calc(100% - 30px);
   }
   .memo-menu__main, .memo-menu__education, .memo-menu__help, .memo-menu__non-education, .memo-menu__digital-system {
     font-size: 34px;
@@ -1258,6 +1286,10 @@ a {
   .memo-menu__main, .memo-menu__education, .memo-menu__help, .memo-menu__non-education, .memo-menu__non-education, .memo-menu__digital-system {
     font-size: 24px;
     margin-bottom: 8px;
+    border-radius: 16px;
+  }
+  .memo-menu__main::before, .memo-menu__education::before, .memo-menu__help::before, .memo-menu__non-education::before, .memo-menu__non-education::before, .memo-menu__digital-system::before {
+    border-radius: 16px;
   }
 }
 @media (max-width: 400px) {
