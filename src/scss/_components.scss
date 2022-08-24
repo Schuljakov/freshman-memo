@@ -119,6 +119,7 @@
             justify-content: space-between;
             align-items: flex-start;
             flex-direction: row;
+            flex-wrap: wrap;
         }
         &__content-column {
             display: flex;
