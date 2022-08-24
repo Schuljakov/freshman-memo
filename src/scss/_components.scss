@@ -71,7 +71,7 @@
 
         &__article {
             @extend %Other-Desktop-Contacts;
-            color: #8692A4;
+            color: #8692A4 !important;
         }
 
         &__about {
@@ -94,6 +94,12 @@
             margin: 32px 0 0 0;
         }
 
+        &__content {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            flex-direction: row;
+        }
         &__content-column {
             display: flex;
             flex-direction: column;
@@ -294,7 +300,7 @@
 
         position: relative;
         @extend %Other-Desktop-Buttons;
-        color: #ffffff;
+        color: #ffffff !important;
         padding: 15px 24px 17px 24px;
         border-radius: 20px;
         background-color: $color-blue;
@@ -446,14 +452,6 @@
             "g g"
         ;
     }
-
-    &--digital-services {
-        display: flex;
-        justify-content: space-between;
-        align-items: flex-start;
-        flex-direction: row;
-    }
-
 }
 
 #memo-content-block {

@@ -6,8 +6,8 @@
 }
 
 a {
-  text-decoration: none;
-  color: #000000;
+  text-decoration: none !important;
+  color: #000000 !important;
   display: block;
 }
 
@@ -289,7 +289,7 @@ a {
   margin: auto;
   padding: 0 15px;
   padding-bottom: 10px;
-  background-image: url("./img/page-backgrounds/main-background.svg");
+  background-image: url("./img/page-backgrounds/main-background.svg") !important;
   background-size: contain;
   background-repeat: repeat-y;
   background-position: center;
@@ -323,7 +323,7 @@ a {
 }
 .memo-article-button_main {
   position: relative;
-  color: #ffffff;
+  color: #ffffff !important;
   padding: 15px 36px 17px 36px;
   border-radius: 20px;
   background-image: radial-gradient(99.99% 203.31% at 0% 0%, #9891FC 0%, #5686F9 50%, #73A0FB 100%);
@@ -366,7 +366,7 @@ a {
   margin: auto;
   padding: 0 15px;
   padding-bottom: 10px;
-  background-image: url("./img/page-backgrounds/education-background.svg");
+  background-image: url("./img/page-backgrounds/education-background.svg") !important;
   background-size: contain;
   background-repeat: repeat-y;
   background-position: center;
@@ -400,7 +400,7 @@ a {
 }
 .memo-article-button_green {
   position: relative;
-  color: #ffffff;
+  color: #ffffff !important;
   padding: 15px 36px 17px 36px;
   border-radius: 20px;
   background-image: radial-gradient(100% 187.2% at 100% 100%, #42D987 0%, #78CD59 69.85%, #7BC952 100%);
@@ -443,7 +443,7 @@ a {
   margin: auto;
   padding: 0 15px;
   padding-bottom: 10px;
-  background-image: url("./img/page-backgrounds/help-background.svg");
+  background-image: url("./img/page-backgrounds/help-background.svg") !important;
   background-size: contain;
   background-repeat: repeat-y;
   background-position: center;
@@ -477,7 +477,7 @@ a {
 }
 .memo-article-button_red {
   position: relative;
-  color: #ffffff;
+  color: #ffffff !important;
   padding: 15px 36px 17px 36px;
   border-radius: 20px;
   background-image: linear-gradient(116.19deg, #FF9F9D 0%, #F95D65 34.9%, #F5536F 62.5%, #B675D5 100%);
@@ -520,7 +520,7 @@ a {
   margin: auto;
   padding: 0 15px;
   padding-bottom: 10px;
-  background-image: url("./img/page-backgrounds/digital-system-background.svg");
+  background-image: url("./img/page-backgrounds/digital-system-background.svg") !important;
   background-size: contain;
   background-repeat: repeat-y;
   background-position: center;
@@ -554,7 +554,7 @@ a {
 }
 .memo-article-button_tiffany {
   position: relative;
-  color: #ffffff;
+  color: #ffffff !important;
   padding: 15px 36px 17px 36px;
   border-radius: 20px;
   background-image: radial-gradient(47.76% 81.73% at 81.4% 18.33%, #1CDBEA 0%, rgba(27, 218, 232, 0) 100%), radial-gradient(20.56% 60.56% at 72.76% 100%, #3ED4B7 0%, rgba(60, 213, 183, 0) 100%), radial-gradient(39.53% 100.27% at 7.52% 91.67%, #3ED4B7 0%, rgba(60, 213, 183, 0) 100%), linear-gradient(97.62deg, #52AADE 0%, #36B1D5 48.96%, #48A8CD 100%);
@@ -597,7 +597,7 @@ a {
   margin: auto;
   padding: 0 15px;
   padding-bottom: 10px;
-  background-image: url("./img/page-backgrounds/non-education-background.svg");
+  background-image: url("./img/page-backgrounds/non-education-background.svg") !important;
   background-size: contain;
   background-repeat: repeat-y;
   background-position: center;
@@ -631,7 +631,7 @@ a {
 }
 .memo-article-button_purpure {
   position: relative;
-  color: #ffffff;
+  color: #ffffff !important;
   padding: 15px 36px 17px 36px;
   border-radius: 20px;
   background-image: radial-gradient(99.35% 249.93% at 0% 0%, #BD98FE 0%, #9B89FE 34.38%, #98B0FE 69.27%, #85A0F8 100%);
@@ -726,7 +726,7 @@ a {
   margin: 0 0 32px 0;
 }
 .memo-title-block__article {
-  color: #8692A4;
+  color: #8692A4 !important;
 }
 .memo-title-block__about {
   max-width: 583px;
@@ -739,6 +739,12 @@ a {
 .memo-article-block__line {
   width: 100%;
   margin: 32px 0 0 0;
+}
+.memo-article-block__content {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-direction: row;
 }
 .memo-article-block__content-column {
   display: flex;
@@ -877,7 +883,7 @@ a {
   flex-direction: row;
   align-items: center;
   position: relative;
-  color: #ffffff;
+  color: #ffffff !important;
   padding: 15px 24px 17px 24px;
   border-radius: 20px;
   background-color: #8098F9;
@@ -966,12 +972,6 @@ a {
   column-gap: 30px;
   grid-template-rows: repeat(2, auto) 40px;
   grid-template-areas: "a b" "a c" ". c" "d e" "f e" "f ." "g g";
-}
-#memo-article-block__content--digital-services {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  flex-direction: row;
 }
 
 #memo-content-block--semesters {
@@ -1211,8 +1211,6 @@ a {
     display: none;
   }
   .memo-content-block {
-    width: auto;
-    padding: 15px 17px 16px 16px;
     margin: 0 0 8px 0;
     border-radius: 24px;
   }
@@ -1225,8 +1223,6 @@ a {
     margin: 0;
   }
   .memo-content-block_transparent_green, .memo-content-block_transparent_red, .memo-content-block_transparent_purpure, .memo-content-block_transparent_tiffany, .memo-content-block_transparent_main {
-    width: auto;
-    padding: 15px 17px 16px 16px;
     margin: 0 0 8px 0;
   }
   .memo-content-block_transparent_green::before, .memo-content-block_transparent_red::before, .memo-content-block_transparent_purpure::before, .memo-content-block_transparent_tiffany::before, .memo-content-block_transparent_main::before {
