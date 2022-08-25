@@ -82,6 +82,12 @@
         }
     }
 
+    
+
+    &nav-button:hover .memo-nav-icon {
+        transform: rotate(0deg);
+    }
+
     &nav-icon {
         transform: rotate(-45deg);
         margin: 10px;
@@ -90,11 +96,6 @@
         &_norotate {
             transform: rotate(0deg);
         }
-    }
-
-    &nav-icon:hover {
-        transform: rotate(0deg);
-
     }
 
     &header {
@@ -431,7 +432,7 @@
     }
 
     &link-button:hover {
-        scale: 1.05;
+        transform: scale(1.05);
     }
 
 

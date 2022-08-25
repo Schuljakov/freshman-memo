@@ -744,15 +744,15 @@ a {
   bottom: 0;
   right: 0;
 }
+.memo-nav-button:hover .memo-nav-icon {
+  transform: rotate(0deg);
+}
 .memo-nav-icon {
   transform: rotate(-45deg);
   margin: 10px;
   transition: 600ms;
 }
 .memo-nav-icon_norotate {
-  transform: rotate(0deg);
-}
-.memo-nav-icon:hover {
   transform: rotate(0deg);
 }
 .memo-header__up-title {
@@ -996,7 +996,7 @@ a {
   -webkit-mask: linear-gradient(#fff 0 0) padding-box, linear-gradient(#fff 0 0);
 }
 .memo-link-button:hover {
-  scale: 1.05;
+  transform: scale(1.05);
 }
 .memo-embedded-ol {
   margin-left: 24px;
