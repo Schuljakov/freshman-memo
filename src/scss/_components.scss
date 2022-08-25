@@ -233,6 +233,7 @@
         &__small-text {
             @extend %Other-Desktop-Regular-Ultra-Small;
             color: $color-gray;
+            font-weight: 700;
         }
 
         &__img {
@@ -395,7 +396,6 @@
 
         &_inline {
             margin: 0;
-            // width: auto;
         }
 
         &-human {

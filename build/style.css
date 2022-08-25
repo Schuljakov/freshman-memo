@@ -864,6 +864,7 @@ a {
 }
 .memo-content-block__small-text {
   color: #8692A4;
+  font-weight: 700;
 }
 .memo-content-block__img {
   border-radius: 30px;
