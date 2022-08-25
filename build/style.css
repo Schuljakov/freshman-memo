@@ -1012,16 +1012,16 @@ a {
 
 @keyframes arrow-shake {
   0% {
-    rotate: 0deg;
+    transform: rotate(0deg);
   }
   33% {
-    rotate: 20deg;
+    transform: rotate(20deg);
   }
   66% {
-    rotate: -20deg;
+    transform: rotate(-20deg);
   }
   100% {
-    rotate: 0deg;
+    transform: rotate(0deg);
   }
 }
 .memo-content-block_transparent_tiffany .memo-article-button_tiffany,
