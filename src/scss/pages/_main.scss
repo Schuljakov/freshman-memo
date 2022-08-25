@@ -13,7 +13,7 @@
 
     &header {
         &_main {
-            @include header($gradient-main, "./img/header-backgrounds/blue-header-background.png")
+            @include header($gradient-main, "./img/header-backgrounds/main-header-background.png")
         }
 
         &__title {
