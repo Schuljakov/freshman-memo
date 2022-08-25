@@ -41,6 +41,41 @@
                 }
             }
         }
+
+        &_central {
+            position: absolute;
+            left: 0;
+            right: 0;
+            &-up {
+                top: 45px;
+            }
+        }
+        &_mainnavbtn {
+            z-index: 10;
+        }
+        &_pagenav {
+            width: fit-content;
+            margin: 0 auto;
+            position: relative;
+            width: 64px;
+            height: 64px;
+            &-purpure {
+                background: $gradient-purpure;
+            }
+
+            & a:first-child, & a:last-child {
+                position: absolute;
+            }
+            & a:first-child {
+                top: 0;
+                left: 0;
+            }
+            & a:last-child {
+                bottom: 0;
+                right: 0;
+
+            }
+        }
     }
 
     &nav-icon {
@@ -131,6 +166,7 @@
             justify-content: space-between;
             align-items: flex-start;
             flex-direction: row;
+            position: relative;
         }
         &__content-column {
             display: flex;
@@ -331,10 +367,6 @@
         }
     }
 
-    &vk-logo {
-        margin-right: 8px;
-    }
-
     &link-button {
         display: flex;
         flex-direction: row;
@@ -343,12 +375,42 @@
         position: relative;
         @extend %Other-Desktop-Buttons;
         color: #ffffff !important;
-        padding: 15px 24px 17px 24px;
+        padding: 16px;
         border-radius: 20px;
-        background-color: $color-blue;
-
+        margin: 0 auto;
+        z-index: 10;
         width: max-content;
+        & img {
+            width: 32px;
+            height: 32px;
+            margin: 0;
+        }
+        &-vk {
+            background-color: $color-blue;
+        }
+        &-human {
+            background: $gradient-purpure;
+        }
+        &_central {
+            position: absolute;
+            left: 0;
+            right: 0;
+            margin: 0 auto;
+        }
+        &_outlink {
+            &-up {
+                top: 200px;
+            }
+            &-middle {
+                top: 50%;
+                transform: translateY(-50%);
+            }
+            &-down {
+                bottom: 154px;
+            }
+        }
     }
+
 
     &link-button::before {
         content: "";
@@ -368,6 +430,7 @@
     &link-button:hover {
         scale: 1.05;
     }
+
 
     &embedded-ol {
         margin-left: 24px;
