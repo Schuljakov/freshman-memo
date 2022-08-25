@@ -20,6 +20,10 @@
             }
         }
 
+        &main-icon {
+            display: none;
+        }
+
         &nav-button {
             height: 32px;
             width: 32px;
@@ -57,7 +61,7 @@
 
             &__subtitle {
                 font-weight: 700;
-                font-size: 11px;
+                font-size: 14px;
                 line-height: 130%;
 
                 letter-spacing: 0.03em;
@@ -234,7 +238,7 @@
 
             &__text {
                 font-weight: 400;
-                font-size: 11px;
+                font-size: 14px;
                 line-height: 130%;
 
                 letter-spacing: 0.03em;
@@ -296,7 +300,7 @@
 @media (max-width: 1100px) {
     .memo-menu {
         color: #ffffff !important;
-        margin: 30px 0 30px 0;
+        margin: 8px 0 8px 0;
 
         &__top-row,
         &__bottom-row {
@@ -442,6 +446,9 @@
             font-size: 24px;
             margin-bottom: 8px;
             border-radius: 16px;
+        }
+        &__digital-system {
+            margin-bottom: 0;
         }
         &__main::before, &__education::before, &__help::before, &__non-education::before, &__non-education::before, &__digital-system::before {
             border-radius: 16px;
