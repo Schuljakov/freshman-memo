@@ -709,6 +709,38 @@ a {
   animation-iteration-count: 1;
   animation-timing-function: linear;
 }
+.memo-nav-button_central {
+  position: absolute;
+  left: 0;
+  right: 0;
+}
+.memo-nav-button_central-up {
+  top: 45px;
+}
+.memo-nav-button_mainnavbtn {
+  z-index: 10;
+}
+.memo-nav-button_pagenav {
+  width: fit-content;
+  margin: 0 auto;
+  position: relative;
+  width: 64px;
+  height: 64px;
+}
+.memo-nav-button_pagenav-purpure {
+  background: radial-gradient(99.35% 249.93% at 0% 0%, #BD98FE 0%, #9B89FE 34.38%, #98B0FE 69.27%, #85A0F8 100%);
+}
+.memo-nav-button_pagenav a:first-child, .memo-nav-button_pagenav a:last-child {
+  position: absolute;
+}
+.memo-nav-button_pagenav a:first-child {
+  top: 0;
+  left: 0;
+}
+.memo-nav-button_pagenav a:last-child {
+  bottom: 0;
+  right: 0;
+}
 .memo-nav-icon {
   rotate: -45deg;
   margin: 10px;
@@ -769,6 +801,7 @@ a {
   justify-content: space-between;
   align-items: flex-start;
   flex-direction: row;
+  position: relative;
 }
 .memo-article-block__content-column {
   display: flex;
@@ -908,19 +941,44 @@ a {
 .memo-file__size {
   color: #8692A4;
 }
-.memo-vk-logo {
-  margin-right: 8px;
-}
 .memo-link-button {
   display: flex;
   flex-direction: row;
   align-items: center;
   position: relative;
   color: #ffffff !important;
-  padding: 15px 24px 17px 24px;
+  padding: 16px;
   border-radius: 20px;
-  background-color: #8098F9;
+  margin: 0 auto;
+  z-index: 10;
   width: max-content;
+}
+.memo-link-button img {
+  width: 32px;
+  height: 32px;
+  margin: 0;
+}
+.memo-link-button-vk {
+  background-color: #8098F9;
+}
+.memo-link-button-human {
+  background: radial-gradient(99.35% 249.93% at 0% 0%, #BD98FE 0%, #9B89FE 34.38%, #98B0FE 69.27%, #85A0F8 100%);
+}
+.memo-link-button_central {
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+}
+.memo-link-button_outlink-up {
+  top: 200px;
+}
+.memo-link-button_outlink-middle {
+  top: 50%;
+  transform: translateY(-50%);
+}
+.memo-link-button_outlink-down {
+  bottom: 154px;
 }
 .memo-link-button::before {
   content: "";
