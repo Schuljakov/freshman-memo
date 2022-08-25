@@ -745,15 +745,15 @@ a {
   right: 0;
 }
 .memo-nav-icon {
-  rotate: -45deg;
+  transform: rotate(-45deg);
   margin: 10px;
   transition: 600ms;
 }
 .memo-nav-icon_norotate {
-  rotate: 0deg;
+  transform: rotate(0deg);
 }
 .memo-nav-icon:hover {
-  rotate: 0deg;
+  transform: rotate(0deg);
 }
 .memo-header__up-title {
   margin: 24px 0 0 0;
@@ -909,7 +909,7 @@ a {
   -webkit-mask: linear-gradient(#fff 0 0) padding-box, linear-gradient(#fff 0 0);
 }
 .memo-article-button_green:hover, .memo-article-button_red:hover, .memo-article-button_purpure:hover, .memo-article-button_tiffany:hover, .memo-article-button_main:hover {
-  scale: 1.05;
+  transform: scale(1.05);
 }
 .memo-files-block {
   display: flex;

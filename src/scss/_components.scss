@@ -83,18 +83,17 @@
     }
 
     &nav-icon {
-        rotate: -45deg;
+        transform: rotate(-45deg);
         margin: 10px;
-
+        
         transition: 600ms;
         &_norotate {
-            rotate: 0deg;
-
+            transform: rotate(0deg);
         }
     }
 
     &nav-icon:hover {
-        rotate: 0deg;
+        transform: rotate(0deg);
 
     }
 
@@ -322,7 +321,7 @@
         &_purpure:hover,
         &_tiffany:hover,
         &_main:hover {
-            scale: 1.05;
+            transform: scale(1.05);
         }
     }
 
