@@ -287,7 +287,7 @@ a {
 .memo-container_main {
   max-width: 1110px;
   margin: auto;
-  padding: 0 15px;
+  padding: 20px 15px 0 15px;
   padding-bottom: 10px;
   background-image: url("./img/page-backgrounds/main-background.svg") !important;
   background-size: contain;
@@ -364,7 +364,7 @@ a {
 .memo-container_green {
   max-width: 1110px;
   margin: auto;
-  padding: 0 15px;
+  padding: 20px 15px 0 15px;
   padding-bottom: 10px;
   background-image: url("./img/page-backgrounds/education-background.svg") !important;
   background-size: contain;
@@ -441,7 +441,7 @@ a {
 .memo-container_red {
   max-width: 1110px;
   margin: auto;
-  padding: 0 15px;
+  padding: 20px 15px 0 15px;
   padding-bottom: 10px;
   background-image: url("./img/page-backgrounds/help-background.svg") !important;
   background-size: contain;
@@ -518,7 +518,7 @@ a {
 .memo-container_tiffany {
   max-width: 1110px;
   margin: auto;
-  padding: 0 15px;
+  padding: 20px 15px 0 15px;
   padding-bottom: 10px;
   background-image: url("./img/page-backgrounds/digital-system-background.svg") !important;
   background-size: contain;
@@ -595,7 +595,7 @@ a {
 .memo-container_purpure {
   max-width: 1110px;
   margin: auto;
-  padding: 0 15px;
+  padding: 20px 15px 0 15px;
   padding-bottom: 10px;
   background-image: url("./img/page-backgrounds/non-education-background.svg") !important;
   background-size: contain;
@@ -678,7 +678,7 @@ a {
 .memo-container {
   max-width: 1110px;
   margin: auto;
-  padding: 0 15px;
+  padding: 20px 15px 0 15px;
   padding-bottom: 10px;
 }
 .memo-nav-button {
