@@ -273,13 +273,14 @@ a {
 }
 .memo-tip::before {
   content: "";
+  z-index: -10;
   position: absolute;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
   border-radius: 30px;
-  border: 2px solid transparent;
+  border: 1px solid transparent;
   background: radial-gradient(99.99% 203.31% at 0% 0%, #9891FC 0%, #5686F9 50%, #73A0FB 100%) border-box;
   -webkit-mask: linear-gradient(#fff 0 0) padding-box, linear-gradient(#fff 0 0);
 }
@@ -774,7 +775,7 @@ a {
   max-width: 322px;
 }
 .memo-header__arrow {
-  margin: 0 0 24px 0;
+  margin: 16px 0 16px 0;
 }
 .memo-header__buttons-section {
   display: flex;
@@ -973,6 +974,9 @@ a {
 }
 .memo-link-button-vk {
   background-color: #8098F9;
+}
+.memo-link-button_inline {
+  margin: 0;
 }
 .memo-link-button-human {
   background: radial-gradient(99.35% 249.93% at 0% 0%, #BD98FE 0%, #9B89FE 34.38%, #98B0FE 69.27%, #85A0F8 100%);

@@ -115,7 +115,7 @@
         }
 
         &__arrow {
-            margin: 0 0 24px 0;
+            margin: 16px 0 16px 0;
         }
 
         &__buttons-section {
@@ -392,6 +392,12 @@
         &-vk {
             background-color: $color-blue;
         }
+
+        &_inline {
+            margin: 0;
+            // width: auto;
+        }
+
         &-human {
             background: $gradient-purpure;
         }
