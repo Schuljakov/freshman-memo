@@ -23,6 +23,7 @@
 }
 
 @mixin footer($gradient) {
+    z-index: -10;
     content: "";
     position: absolute;
     top: 0;
@@ -78,6 +79,7 @@
 }
 
 @mixin transparent-content-block($gradient) {
+    z-index: -10;
     content: "";
     position: absolute;
     top: 0;
