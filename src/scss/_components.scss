@@ -458,9 +458,18 @@
             transition: all .2s linear;
             border-radius: 18px;
             &-purpure {
-                background: radial-gradient(99.35% 249.93% at 0% 0%, #BD98FE 0%, #9B89FE 34.38%, #98B0FE 69.27%, #85A0F8 100%);
+                background: $gradient-purpure;
             }
-            
+            &-red {
+                background: $gradient-red;
+            }
+            &-green {
+                background: $gradient-green;
+            }
+            &-tiffany {
+                background: $gradient-tiffany;
+            }
+
 
             &:hover {
                 border-radius: 30px;
