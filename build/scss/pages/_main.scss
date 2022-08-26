@@ -1,0 +1,59 @@
+.memo- {
+    &container {
+        &_main {
+            @include container("/tips-for-students/img/page-backgrounds/main-background.svg")
+        }
+    }
+
+    &nav-button {
+        &_main {
+            background-image: $gradient-main;
+        }
+    }
+
+    &header {
+        &_main {
+            @include header($gradient-main, "/tips-for-students/img/header-backgrounds/main-header-background.png")
+        }
+
+        &__title {
+            &_main {
+                @include header-title($gradient-main);
+            }
+        }
+    }
+
+    &title-block {
+        &__title {
+            &_main {
+                @include article-title($gradient-main);
+            }
+        }
+    }
+
+    &article-button {
+        &_main {
+            @include button($gradient-main);
+        }
+    }
+
+    &content-block {
+        &__title {
+            &_main {
+                @include content-title($gradient-main);
+            }
+        }
+    }
+
+    &content-block_transparent {
+        &_main::before {
+            @include transparent-content-block($gradient-main);
+        }
+    }
+
+    &footer {
+        &_main::before {
+            @include footer($gradient-main);
+        }
+    }
+}

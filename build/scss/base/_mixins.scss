@@ -1,0 +1,95 @@
+@mixin container($url) {
+    max-width: 1110px;
+    margin: auto;
+    padding: 20px 15px 0 15px;
+    padding-bottom: 10px;
+    background-image: url($url) !important;
+    background-size: contain;
+    background-repeat: repeat-y;
+    background-position: center;
+}
+
+@mixin header($gradient, $url) {
+    @extend %flex-center;
+    border-radius: 64px;
+    border: 2px solid transparent;
+    padding: 32px 262px 32px 262px;
+    background:
+        url($url) padding-box,
+        linear-gradient(#F6FAFF, #F6FAFF) padding-box,
+        $gradient border-box;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+@mixin footer($gradient) {
+    z-index: -10;
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: 64px;
+    border: 2px solid transparent;
+    background: $gradient border-box;
+    -webkit-mask:
+        linear-gradient(#fff 0 0) padding-box,
+        linear-gradient(#fff 0 0);
+}
+
+@mixin button($color: $gradient-green) {
+    position: relative;
+    @extend %Other-Desktop-Buttons;
+    color: #ffffff !important;
+    padding: 15px 36px 17px 36px;
+    border-radius: 20px;
+    background-image: $color;
+
+    width: max-content;
+}
+
+@mixin header-title($color: $gradient-green) {
+    @extend %Heading-Desktop-Biggest;
+    background: $color;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin: 0 0 37px 0;
+    text-align: center;
+}
+
+@mixin article-title($color: $gradient-green) {
+    @extend %Heading-Desktop-Middle;
+    background: $color;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin: 0 0 16px 0;
+    text-align: center;
+}
+
+@mixin content-title($color: $gradient-green) {
+    @extend %Heading-Desktop-Small;
+    background: $color;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin: 0 0 6px 0;
+}
+
+@mixin transparent-content-block($gradient) {
+    z-index: -10;
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: 30px;
+    border: 1px solid transparent;
+    background: $gradient border-box;
+    -webkit-mask:
+        linear-gradient(#fff 0 0) padding-box,
+        linear-gradient(#fff 0 0);
+}

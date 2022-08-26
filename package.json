@@ -12,12 +12,14 @@
     "gulp-sass": "^5.1.0",
     "gulp-sass-bulk-importer": "^3.0.2",
     "gulp-sourcemaps": "^3.0.0",
+    "gulp-string-replace": "^1.1.2",
     "require-dir": "^1.2.0"
   },
   "scripts": {
     "build": "gulp",
     "dev": "gulp dev",
-    "include": "gulp fileinclude"
+    "include": "gulp fileinclude",
+    "replace": "gulp replace"
   },
   "dependencies": {
     "pump": "^3.0.0",

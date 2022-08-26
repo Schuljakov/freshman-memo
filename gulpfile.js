@@ -8,6 +8,7 @@ const sass = require('gulp-sass')(require('sass'));
 const concat = require('gulp-concat');
 const browserSync = require('browser-sync');
 const fileinclude = require('gulp-file-include');
+const replace = require('gulp-string-replace');
 
 
 // For live-reloading
@@ -69,6 +70,22 @@ gulp.task('default',
         done();
     }
 );
+
+gulp.task('replace', async function() {
+    gulp.src(["./src/**"]) // Any file globs are supported
+      .pipe(replace('style.css', '/tips-for-students/style.css'))
+      .pipe(replace('./index.html', '/tips-for-students/index'))
+      .pipe(replace('./main.html', '/tips-for-students/main'))
+      .pipe(replace('./help.html', '/tips-for-students/help'))
+      .pipe(replace('./education.html', '/tips-for-students/education'))
+      .pipe(replace('./digital-system.html', '/tips-for-students/digital-system'))
+      .pipe(replace('./non-education.html', '/tips-for-students/non-education'))
+      .pipe(replace('./non-education.html', '/tips-for-students/non-education'))
+      .pipe(replace('./img', '/tips-for-students/img'))
+      .pipe(replace('src="img/', 'src="/tips-for-students/img/'))
+      
+      .pipe(gulp.dest('./build/'))
+  });
 
 // For developer
 gulp.task('dev', 

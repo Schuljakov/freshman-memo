@@ -1,0 +1,59 @@
+.memo- {
+    &container {
+        &_tiffany {
+            @include container("/tips-for-students/img/page-backgrounds/digital-system-background.svg")
+        }
+    }
+
+    &nav-button {
+        &_tiffany {
+            background-image: $gradient-tiffany;
+        }
+    }
+
+    &header {
+        &_tiffany {
+            @include header($gradient-tiffany, "/tips-for-students/img/header-backgrounds/tiffany-header-background.png")
+        }
+
+        &__title {
+            &_tiffany {
+                @include header-title($gradient-tiffany);
+            }
+        }
+    }
+
+    &title-block {
+        &__title {
+            &_tiffany {
+                @include article-title($gradient-tiffany);
+            }
+        }
+    }
+
+    &article-button {
+        &_tiffany {
+            @include button($gradient-tiffany);
+        }
+    }
+
+    &content-block {
+        &__title {
+            &_tiffany {
+                @include content-title($gradient-tiffany);
+            }
+        }
+    }
+
+    &content-block_transparent {
+        &_tiffany::before {
+            @include transparent-content-block($gradient-tiffany);
+        }
+    }
+
+    &footer {
+        &_tiffany::before {
+            @include footer($gradient-tiffany);
+        }
+    }
+}
