@@ -967,6 +967,7 @@ a {
   margin: 0 auto;
   z-index: 10;
   width: max-content;
+  transition: all 0.1s linear;
 }
 .memo-link-button img {
   width: 32px;
@@ -1041,6 +1042,9 @@ a {
 }
 .memo-pagenav-button_box-tiffany {
   background: radial-gradient(47.76% 81.73% at 81.4% 18.33%, #1CDBEA 0%, rgba(27, 218, 232, 0) 100%), radial-gradient(20.56% 60.56% at 72.76% 100%, #3ED4B7 0%, rgba(60, 213, 183, 0) 100%), radial-gradient(39.53% 100.27% at 7.52% 91.67%, #3ED4B7 0%, rgba(60, 213, 183, 0) 100%), linear-gradient(97.62deg, #52AADE 0%, #36B1D5 48.96%, #48A8CD 100%);
+}
+.memo-pagenav-button_box-main {
+  background: radial-gradient(99.99% 203.31% at 0% 0%, #9891FC 0%, #5686F9 50%, #73A0FB 100%);
 }
 .memo-pagenav-button_box:hover {
   border-radius: 30px;

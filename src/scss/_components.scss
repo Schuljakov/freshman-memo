@@ -385,6 +385,7 @@
         margin: 0 auto;
         z-index: 10;
         width: max-content;
+        transition: all .1s linear;
         & img {
             width: 32px;
             height: 32px;
@@ -468,6 +469,9 @@
             }
             &-tiffany {
                 background: $gradient-tiffany;
+            }
+            &-main {
+                background: $gradient-main;
             }
 
 
