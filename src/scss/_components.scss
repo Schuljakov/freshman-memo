@@ -82,7 +82,7 @@
         }
     }
 
-    
+
 
     &nav-button:hover .memo-nav-icon {
         transform: rotate(0deg);
@@ -91,7 +91,7 @@
     &nav-icon {
         transform: rotate(-45deg);
         margin: 10px;
-        
+
         transition: 600ms;
         &_norotate {
             transform: rotate(0deg);
@@ -407,6 +407,9 @@
             right: 0;
             margin: 0 auto;
         }
+        &_pagenav {
+            top: 45px;
+        }
         &_outlink {
             &-up {
                 top: 200px;
@@ -419,6 +422,7 @@
                 bottom: 154px;
             }
         }
+
     }
 
 
@@ -441,6 +445,117 @@
         transform: scale(1.05);
     }
 
+    &pagenav-button {
+        width: 64px;
+        height: 64px;
+        display: block;
+        border-radius: 18px;
+        &_box {
+            width: 64px;
+            height: 64px;
+            margin: 0 auto;
+            position: relative;
+            transition: all .2s linear;
+            border-radius: 18px;
+            &-purpure {
+                background: radial-gradient(99.35% 249.93% at 0% 0%, #BD98FE 0%, #9B89FE 34.38%, #98B0FE 69.27%, #85A0F8 100%);
+            }
+            
+
+            &:hover {
+                border-radius: 30px;
+                & .memo-pagenav-button_arrow {
+                    opacity: 1;
+                }
+            }
+
+            &-horizontal {
+                margin: 0;
+                & .memo-pagenav-button_cubes {
+                    border-radius: 0;
+                    left: 50%;
+                    transform: translateX(-50%);
+                }
+                & .memo-pagenav-button_arrow-up  img{
+                    transform: translate(-50%, -50%) rotate(-90deg);
+                }
+                & .memo-pagenav-button_arrow-down img{
+                    transform: translate(-50%, -50%) rotate(-90deg);
+                }
+
+            }
+
+
+            &-horizontal:hover {
+                width: 192px;
+                & .memo-pagenav-button_arrow {
+                    z-index: 0;
+                }
+                & .memo-pagenav-icon_rotated {
+                    transform: translate(-50%, -50%) rotate(0deg);
+                }
+            }
+            &-vertical {
+                & .memo-pagenav-button_cubes {
+                    top: 50%;
+                    transform: translateY(-50%);
+                }
+            }
+            &-vertical:hover {
+                height: 192px;
+                transform: translateY(-64px);
+
+                & .memo-pagenav-button_arrow-up {
+                    border-top-right-radius: 30px;
+                    border-top-left-radius: 30px;
+                    border-bottom-left-radius: 0px;
+                    border-bottom-right-radius: 0px;
+                }
+                & .memo-pagenav-button_arrow-down {
+                    border-top-right-radius: 0px;
+                    border-top-left-radius: 0px;
+                    border-bottom-left-radius: 30px;
+                    border-bottom-right-radius: 30px;
+                }
+                & .memo-pagenav-button_cubes {
+                    border-radius: 0;
+                }
+                & .memo-pagenav-icon_rotated {
+                    transform: translate(-50%, -50%) rotate(0deg);
+                }
+            }
+
+        }
+        &_arrow {
+            position: absolute;
+            opacity: 0;
+            &-up {
+                top: 0;
+                left: 0;
+            }
+            &-down {
+                bottom: 0;
+                right: 0;
+            }
+        }
+        &_cubes {
+            position: absolute;
+        }
+
+        &_arrow-up, &_arrow-down, &_cubes {
+            transition: all .2s linear;
+        }
+    }
+    &pagenav-icon {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        &_rotated {
+            transform: translate(-50%, -50%) rotate(-45deg);
+            transition: all .2s linear;
+        }
+    }
 
     &embedded-ol {
         margin-left: 24px;
