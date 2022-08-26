@@ -454,6 +454,30 @@
             border-radius: 16px;
         }
     }
+    .memo-pagenav{
+
+        &-button {
+            width: 44px;
+            height: 44px;
+            &_box {
+                width: 44px;
+                height: 44px;
+            }
+            &_box {
+                &-horizontal:hover {
+                    width: 132px;
+                }
+                &-vertical:hover {
+                    height: 132px;
+                }
+            }
+        }
+        &-icon {
+            width: 25px;
+            height: 25px;
+        }
+
+    }
 }
 
 @media(max-width: 400px) {
