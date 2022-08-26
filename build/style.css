@@ -1046,10 +1046,10 @@ a {
 .memo-pagenav-button_box-main {
   background: radial-gradient(99.99% 203.31% at 0% 0%, #9891FC 0%, #5686F9 50%, #73A0FB 100%);
 }
-.memo-pagenav-button_box:hover {
+.memo-pagenav-button_box-withhover:hover {
   border-radius: 30px;
 }
-.memo-pagenav-button_box:hover .memo-pagenav-button_arrow {
+.memo-pagenav-button_box-withhover:hover .memo-pagenav-button_arrow {
   opacity: 1;
 }
 .memo-pagenav-button_box-horizontal {
@@ -1066,39 +1066,39 @@ a {
 .memo-pagenav-button_box-horizontal .memo-pagenav-button_arrow-down img {
   transform: translate(-50%, -50%) rotate(-90deg);
 }
-.memo-pagenav-button_box-horizontal:hover {
+.memo-pagenav-button_box-horizontal.memo-pagenav-button_box-withhover:hover {
   width: 192px;
 }
-.memo-pagenav-button_box-horizontal:hover .memo-pagenav-button_arrow {
+.memo-pagenav-button_box-horizontal.memo-pagenav-button_box-withhover:hover .memo-pagenav-button_arrow {
   z-index: 0;
 }
-.memo-pagenav-button_box-horizontal:hover .memo-pagenav-icon_rotated {
+.memo-pagenav-button_box-horizontal.memo-pagenav-button_box-withhover:hover .memo-pagenav-icon_rotated {
   transform: translate(-50%, -50%) rotate(0deg);
 }
 .memo-pagenav-button_box-vertical .memo-pagenav-button_cubes {
   top: 50%;
   transform: translateY(-50%);
 }
-.memo-pagenav-button_box-vertical:hover {
+.memo-pagenav-button_box-vertical.memo-pagenav-button_box-withhover:hover {
   height: 192px;
   transform: translateY(-64px);
 }
-.memo-pagenav-button_box-vertical:hover .memo-pagenav-button_arrow-up {
+.memo-pagenav-button_box-vertical.memo-pagenav-button_box-withhover:hover .memo-pagenav-button_arrow-up {
   border-top-right-radius: 30px;
   border-top-left-radius: 30px;
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
 }
-.memo-pagenav-button_box-vertical:hover .memo-pagenav-button_arrow-down {
+.memo-pagenav-button_box-vertical.memo-pagenav-button_box-withhover:hover .memo-pagenav-button_arrow-down {
   border-top-right-radius: 0px;
   border-top-left-radius: 0px;
   border-bottom-left-radius: 30px;
   border-bottom-right-radius: 30px;
 }
-.memo-pagenav-button_box-vertical:hover .memo-pagenav-button_cubes {
+.memo-pagenav-button_box-vertical.memo-pagenav-button_box-withhover:hover .memo-pagenav-button_cubes {
   border-radius: 0;
 }
-.memo-pagenav-button_box-vertical:hover .memo-pagenav-icon_rotated {
+.memo-pagenav-button_box-vertical.memo-pagenav-button_box-withhover:hover .memo-pagenav-icon_rotated {
   transform: translate(-50%, -50%) rotate(0deg);
 }
 .memo-pagenav-button_arrow {
@@ -1496,6 +1496,10 @@ a {
   .memo-menu__main::before, .memo-menu__education::before, .memo-menu__help::before, .memo-menu__non-education::before, .memo-menu__non-education::before, .memo-menu__digital-system::before {
     border-radius: 16px;
   }
+  .memo-pagenav-icon {
+    width: 25px;
+    height: 25px;
+  }
   .memo-pagenav-button {
     width: 44px;
     height: 44px;
@@ -1503,16 +1507,22 @@ a {
   .memo-pagenav-button_box {
     width: 44px;
     height: 44px;
+    cursor: pointer;
   }
-  .memo-pagenav-button_box-horizontal:hover {
+  .memo-pagenav-button_box.closed a {
+    pointer-events: none;
+  }
+  .memo-pagenav-button_box.opened {
+    border-radius: 30px;
+  }
+  .memo-pagenav-button_box.opened .memo-pagenav-button_arrow {
+    opacity: 1;
+  }
+  .memo-pagenav-button_box-horizontal.opened {
     width: 132px;
   }
-  .memo-pagenav-button_box-vertical:hover {
-    height: 132px;
-  }
-  .memo-pagenav-icon {
-    width: 25px;
-    height: 25px;
+  .memo-pagenav-button_box-horizontal.opened .memo-pagenav-icon_rotated {
+    transform: translate(-50%, -50%) rotate(0deg);
   }
 }
 @media (max-width: 400px) {
