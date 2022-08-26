@@ -806,6 +806,9 @@ a {
   margin: 0 0 32px 0;
   mix-blend-mode: darken;
 }
+.memo-article-block {
+  position: relative;
+}
 .memo-article-block__line {
   width: 100%;
   margin: 32px 0 0 0;
@@ -1193,6 +1196,115 @@ a {
   z-index: 10;
 }
 
+@media (max-width: 1145px) {
+  .memo-link-button_central {
+    display: none;
+  }
+  .memo-article-block__content-column {
+    margin: 0 auto;
+    max-width: 535px;
+    align-items: unset;
+  }
+}
+@media (max-width: 1100px) {
+  .memo-menu {
+    color: #ffffff !important;
+    margin: 8px 0 8px 0;
+    width: 100%;
+  }
+  .memo-menu__top-row, .memo-menu__bottom-row {
+    display: flex;
+    flex-direction: column !important;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  .memo-menu__top-row {
+    margin-bottom: 0;
+  }
+  .memo-menu__main, .memo-menu__education, .memo-menu__help, .memo-menu__non-education, .memo-menu__digital-system {
+    position: relative;
+    border-radius: 30px;
+    color: #ffffff !important;
+    background-size: 110%;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 50%;
+    margin: 0 auto 16px;
+  }
+  .memo-menu__main, .memo-menu__education, .memo-menu__help, .memo-menu__non-education, .memo-menu__digital-system {
+    font-size: 40px;
+    line-height: 38px;
+  }
+  .memo-menu__main, .memo-menu__education, .memo-menu__help, .memo-menu__non-education, .memo-menu__non-education, .memo-menu__digital-system {
+    padding: 45px 0 45px 30px;
+  }
+  .memo-menu__main::before, .memo-menu__education::before, .memo-menu__help::before, .memo-menu__non-education::before, .memo-menu__digital-system::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: 30px;
+    border: 3px solid transparent;
+    background: linear-gradient(92.93deg, rgba(247, 247, 247, 0.4) 0%, rgba(251, 251, 251, 0) 49.64%, rgba(255, 255, 255, 0.3) 100%) border-box;
+    -webkit-mask: linear-gradient(#fff 0 0) padding-box, linear-gradient(#fff 0 0);
+  }
+}
+@media (max-width: 1100px) {
+  .memo-header__buttons-section__row {
+    gap: 12px;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 0 8px 0;
+  }
+  .memo-content-block_small {
+    padding: 20px 22px;
+    border-radius: 16px;
+  }
+  .memo-content-block_small__title {
+    font-size: 21px;
+    line-height: 21px;
+  }
+}
+@media (max-width: 800px) {
+  .memo-header_blue {
+    padding: 32px 0 16px 0;
+    border-radius: 16px;
+  }
+  .memo-header__title_blue {
+    font-size: 32px;
+    line-height: 100%;
+  }
+  .memo-tip {
+    padding: 14px;
+  }
+  .memo-tip__icon {
+    margin-right: 14px;
+  }
+  .memo-tip__title {
+    font-weight: 800;
+    font-size: 24px;
+    line-height: 110%;
+  }
+  .memo-tip__small-icon {
+    margin-bottom: 1px;
+    padding: 0 2px;
+    height: 11px;
+  }
+  .memo-tip__text {
+    font-size: 14px;
+    line-height: 138%;
+  }
+  .memo-menu__main, .memo-menu__education, .memo-menu__help, .memo-menu__non-education, .memo-menu__non-education, .memo-menu__digital-system {
+    padding: 30px 0 30px 30px;
+    width: calc(100% - 30px);
+  }
+  .memo-menu__main, .memo-menu__education, .memo-menu__help, .memo-menu__non-education, .memo-menu__digital-system {
+    font-size: 34px;
+    line-height: 24px;
+  }
+}
 @media only screen and (max-width: 600px) {
   #memo-students-image {
     height: 222px;
@@ -1368,110 +1480,6 @@ a {
     padding: 16px 30px;
     border-radius: 16px;
     border-width: 1px;
-  }
-}
-@media (max-width: 1100px) {
-  .memo-menu {
-    color: #ffffff !important;
-    margin: 8px 0 8px 0;
-    width: 100%;
-  }
-  .memo-menu__top-row, .memo-menu__bottom-row {
-    display: flex;
-    flex-direction: column !important;
-    justify-content: space-between;
-    flex-wrap: wrap;
-  }
-  .memo-menu__top-row {
-    margin-bottom: 0;
-  }
-  .memo-menu__main, .memo-menu__education, .memo-menu__help, .memo-menu__non-education, .memo-menu__digital-system {
-    position: relative;
-    border-radius: 30px;
-    color: #ffffff !important;
-    background-size: 110%;
-    background-position: center;
-    background-repeat: no-repeat;
-    width: 50%;
-    margin: 0 auto 16px;
-  }
-  .memo-menu__main, .memo-menu__education, .memo-menu__help, .memo-menu__non-education, .memo-menu__digital-system {
-    font-size: 40px;
-    line-height: 38px;
-  }
-  .memo-menu__main, .memo-menu__education, .memo-menu__help, .memo-menu__non-education, .memo-menu__non-education, .memo-menu__digital-system {
-    padding: 45px 0 45px 30px;
-  }
-  .memo-menu__main::before, .memo-menu__education::before, .memo-menu__help::before, .memo-menu__non-education::before, .memo-menu__digital-system::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    border-radius: 30px;
-    border: 3px solid transparent;
-    background: linear-gradient(92.93deg, rgba(247, 247, 247, 0.4) 0%, rgba(251, 251, 251, 0) 49.64%, rgba(255, 255, 255, 0.3) 100%) border-box;
-    -webkit-mask: linear-gradient(#fff 0 0) padding-box, linear-gradient(#fff 0 0);
-  }
-}
-@media (max-width: 1100px) {
-  .memo-header__buttons-section__row {
-    gap: 12px;
-    flex-direction: column;
-    align-items: center;
-    margin: 0 0 8px 0;
-  }
-  .memo-article-block__content-column {
-    margin: 0 auto;
-    max-width: 535px;
-    align-items: unset;
-  }
-  .memo-content-block_small {
-    padding: 20px 22px;
-    border-radius: 16px;
-  }
-  .memo-content-block_small__title {
-    font-size: 21px;
-    line-height: 21px;
-  }
-}
-@media (max-width: 800px) {
-  .memo-header_blue {
-    padding: 32px 0 16px 0;
-    border-radius: 16px;
-  }
-  .memo-header__title_blue {
-    font-size: 32px;
-    line-height: 100%;
-  }
-  .memo-tip {
-    padding: 14px;
-  }
-  .memo-tip__icon {
-    margin-right: 14px;
-  }
-  .memo-tip__title {
-    font-weight: 800;
-    font-size: 24px;
-    line-height: 110%;
-  }
-  .memo-tip__small-icon {
-    margin-bottom: 1px;
-    padding: 0 2px;
-    height: 11px;
-  }
-  .memo-tip__text {
-    font-size: 14px;
-    line-height: 138%;
-  }
-  .memo-menu__main, .memo-menu__education, .memo-menu__help, .memo-menu__non-education, .memo-menu__non-education, .memo-menu__digital-system {
-    padding: 30px 0 30px 30px;
-    width: calc(100% - 30px);
-  }
-  .memo-menu__main, .memo-menu__education, .memo-menu__help, .memo-menu__non-education, .memo-menu__digital-system {
-    font-size: 34px;
-    line-height: 24px;
   }
 }
 @media (max-width: 600px) {
