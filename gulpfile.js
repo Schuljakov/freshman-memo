@@ -72,7 +72,7 @@ gulp.task('default',
 );
 
 gulp.task('replace', async function() {
-    gulp.src(["./src/**"]) // Any file globs are supported
+    gulp.src(["./build/*.css", "./src/*.html"]) // Any file globs are supported
       .pipe(replace('style.css', '/tips-for-students/style.css'))
       .pipe(replace('./index.html', '/tips-for-students/index'))
       .pipe(replace('./main.html', '/tips-for-students/main'))
