@@ -1521,7 +1521,7 @@ a {
     pointer-events: none;
   }
   .memo-pagenav-button_box.opened {
-    border-radius: 30px;
+    border-radius: 15px;
   }
   .memo-pagenav-button_box.opened .memo-pagenav-button_arrow {
     opacity: 1;
