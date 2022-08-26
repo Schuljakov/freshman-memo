@@ -1,0 +1,59 @@
+.memo- {
+    &container {
+        &_purpure {
+            @include container(".//tips-for-students/imgpage-backgrounds/non-education-background.svg")
+        }
+    }
+
+    &nav-button {
+        &_purpure {
+            background-image: $gradient-purpure;
+        }
+    }
+
+    &header {
+        &_purpure {
+            @include header($gradient-purpure, "./img/header-backgrounds/purpure-header-background.png")
+        }
+
+        &__title {
+            &_purpure {
+                @include header-title($gradient-purpure);
+            }
+        }
+    }
+
+    &title-block {
+        &__title {
+            &_purpure {
+                @include article-title($gradient-purpure);
+            }
+        }
+    }
+
+    &article-button {
+        &_purpure {
+            @include button($gradient-purpure);
+        }
+    }
+
+    &content-block {
+        &__title {
+            &_purpure {
+                @include content-title($gradient-purpure);
+            }
+        }
+    }
+
+    &content-block_transparent {
+        &_purpure::before {
+            @include transparent-content-block($gradient-purpure);
+        }
+    }
+
+    &footer {
+        &_purpure::before {
+            @include footer($gradient-purpure);
+        }
+    }
+}

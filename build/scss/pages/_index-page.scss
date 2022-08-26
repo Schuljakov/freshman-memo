@@ -1,0 +1,160 @@
+.memo-{
+    &header {
+        &_blue {
+            @include header($gradient-main, ".//tips-for-students/imgheader-backgrounds/blue-header-background.png")
+        }
+
+        &__title {
+            &_blue {
+                @include header-title($gradient-main);
+            }
+        }
+    }
+
+    &menu {
+        color: #ffffff !important;
+        margin: 30px 0 30px 0;
+
+        &__top-row,
+        &__bottom-row {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+
+        &__top-row {
+            margin-bottom: 30px;
+        }
+
+        &__main,
+        &__education,
+        &__help,
+        &__non-education,
+        &__digital-system {
+            position: relative;
+            @extend %Heading-Desktop-Middle;
+            border-radius: 30px;
+            color: #ffffff !important;
+
+            background-size: 110%;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+
+        &__main {
+            padding: 55px 0 55px 30px;
+            width: 290px;
+            background-image: url("./img/mesh/main-gradient.png");
+        }
+
+        &__education {
+            padding: 55px 0 55px 30px;
+            width: 370px;
+            background-image: url("./img/mesh/education-gradient.png");
+        }
+
+        &__help {
+            padding: 55px 0 55px 30px;
+            width: 290px;
+            background-image: url("./img/mesh/help-gradient.png");
+        }
+
+        &__non-education {
+            padding: 69px 0 71px 25px;
+            width: 497px;
+            background-image: url("./img/mesh/non-education-gradient.png");
+        }
+
+        &__digital-system {
+            padding: 69px 0 71px 25px;
+            width: 497px;
+            background-image: url("./img/mesh/digital-system-gradient.png");
+        }
+
+        &__main::before,
+        &__education::before,
+        &__help::before,
+        &__non-education::before,
+        &__digital-system::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            border-radius: 30px;
+            border: 3px solid transparent;
+            background: $gradient-white border-box;
+            -webkit-mask:
+                linear-gradient(#fff 0 0) padding-box,
+                linear-gradient(#fff 0 0);
+        }
+
+    }
+
+    &tip {
+        position: relative;
+
+        padding: 40px 40px 41px 40px;
+        border-radius: 30px;
+        margin-bottom: 300px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+
+        &__row {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+        }
+
+        &__icon {
+            margin-right: 35px;
+        }
+
+        &__title {
+            @extend %Heading-Desktop-Middle;
+            background: radial-gradient(100% 1051.94% at 93.45% 0%, #7CACFC 0%, rgba(124, 172, 252, 0) 100%), linear-gradient(90.33deg, #838CFC -0.11%, #618DFA 50.03%, #6092FA 101.23%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin-bottom: 6px;
+        }
+
+        &__text {
+            @extend %Paragraph-Desktop-Bold;
+            color: #1D1D1F;
+            max-width: 650px;
+        }
+
+        &__small-icon {
+            margin-bottom: -3px;
+            padding: 0 2px;
+        }
+
+        &__small-icon_wide {
+            padding: 0 5px;
+        }
+
+        .close-icon {
+            cursor: pointer;
+        }
+    }
+
+    &tip::before {
+        content: "";
+        z-index: -10;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        border-radius: 30px;
+        border: 1px solid transparent;
+        background: $gradient-main border-box;
+        -webkit-mask:
+            linear-gradient(#fff 0 0) padding-box,
+            linear-gradient(#fff 0 0);
+    }
+}

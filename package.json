@@ -17,9 +17,11 @@
   "scripts": {
     "build": "gulp",
     "dev": "gulp dev",
-    "include": "gulp fileinclude"
+    "include": "gulp fileinclude",
+    "change": "gulp change"
   },
   "dependencies": {
+    "gulp-change": "^1.0.2",
     "pump": "^3.0.0",
     "sass": "^1.54.0"
   }

@@ -8,7 +8,7 @@ const sass = require('gulp-sass')(require('sass'));
 const concat = require('gulp-concat');
 const browserSync = require('browser-sync');
 const fileinclude = require('gulp-file-include');
-
+var change = require('gulp-change');
 
 // For live-reloading
 const reload = browserSync.reload;
@@ -69,6 +69,18 @@ gulp.task('default',
         done();
     }
 );
+
+function performChange(content) {
+    return content.replace('/*.html', '*'),
+        content.replace('./', '/tips-for-students/'),
+        content.replace('img/', '/tips-for-students/img');
+}
+
+gulp.task('change', function() {
+    return gulp.src('src/**')
+        .pipe(change(performChange))
+        .pipe(gulp.dest('build/'))
+});
 
 // For developer
 gulp.task('dev', 
