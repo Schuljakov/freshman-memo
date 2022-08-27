@@ -1,5 +1,5 @@
 window.onload = () => {
-    const mediaQuery = window.matchMedia('(max-width: 1100px)');
+    const mediaQuery = window.matchMedia('(max-width: 1145px)');
     if (mediaQuery.matches) transformColumnView(mediaQuery);
     mediaQuery.addListener(transformColumnView);
 
@@ -72,5 +72,29 @@ window.onload = () => {
     document.getElementsByClassName("memo-nav-button_control")[0].addEventListener("click", function (e) {
         e.preventDefault();
         backToTop();
-    })
+    });
+
+
+    const mobileDevices = window.matchMedia("(max-width: 600px");
+    if (mobileDevices.matches) deleteHoverEffectsOnMobile();
+
+    function deleteHoverEffectsOnMobile() {
+        let navigationButtonList = document.getElementsByClassName("memo-pagenav-button_box");
+
+        for (let navigationButton of navigationButtonList) {
+            navigationButton.classList.remove("memo-pagenav-button_box-withhover");
+            navigationButton.classList.add("closed");
+            navigationButton.addEventListener("click", function(event) {
+                let button = this;
+                if (button.classList.contains("closed")) {
+                    button.classList.add("opened");
+                    button.classList.remove("closed");
+                    setInterval(() => {
+                        button.classList.remove("opened");
+                        button.classList.add("closed");
+                    }, 5000);
+                }
+            });
+        }
+    }
 }
