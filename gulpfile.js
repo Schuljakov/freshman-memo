@@ -101,7 +101,7 @@ gulp.task(
 gulp.task(
     "dev",
     gulp.series(
-        gulp.parallel("default", "watch", "browserSync"),
+        gulp.parallel("compiler", "imageCopy", "jsCopy", "fileinclude", "watch", "browserSync"),
         function (done) {
             done();
         }
