@@ -1,7 +1,11 @@
 .memo-{
     &header {
         &_blue {
+<<<<<<< HEAD
             @include header($gradient-main, ".//tips-for-students/imgheader-backgrounds/blue-header-background.png")
+=======
+            @include header($gradient-main, "/tips-for-students/img/header-backgrounds/blue-header-background.png")
+>>>>>>> a3214d82f3dc2c3152e201bb7e2d5e6850f5fe14
         }
 
         &__title {
@@ -45,31 +49,51 @@
         &__main {
             padding: 55px 0 55px 30px;
             width: 290px;
+<<<<<<< HEAD
             background-image: url("./img/mesh/main-gradient.png");
+=======
+            background-image: url("/tips-for-students/img/mesh/main-gradient.png");
+>>>>>>> a3214d82f3dc2c3152e201bb7e2d5e6850f5fe14
         }
 
         &__education {
             padding: 55px 0 55px 30px;
             width: 370px;
+<<<<<<< HEAD
             background-image: url("./img/mesh/education-gradient.png");
+=======
+            background-image: url("/tips-for-students/img/mesh/education-gradient.png");
+>>>>>>> a3214d82f3dc2c3152e201bb7e2d5e6850f5fe14
         }
 
         &__help {
             padding: 55px 0 55px 30px;
             width: 290px;
+<<<<<<< HEAD
             background-image: url("./img/mesh/help-gradient.png");
+=======
+            background-image: url("/tips-for-students/img/mesh/help-gradient.png");
+>>>>>>> a3214d82f3dc2c3152e201bb7e2d5e6850f5fe14
         }
 
         &__non-education {
             padding: 69px 0 71px 25px;
             width: 497px;
+<<<<<<< HEAD
             background-image: url("./img/mesh/non-education-gradient.png");
+=======
+            background-image: url("/tips-for-students/img/mesh/non-education-gradient.png");
+>>>>>>> a3214d82f3dc2c3152e201bb7e2d5e6850f5fe14
         }
 
         &__digital-system {
             padding: 69px 0 71px 25px;
             width: 497px;
+<<<<<<< HEAD
             background-image: url("./img/mesh/digital-system-gradient.png");
+=======
+            background-image: url("/tips-for-students/img/mesh/digital-system-gradient.png");
+>>>>>>> a3214d82f3dc2c3152e201bb7e2d5e6850f5fe14
         }
 
         &__main::before,

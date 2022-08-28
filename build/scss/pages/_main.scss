@@ -1,7 +1,11 @@
 .memo- {
     &container {
         &_main {
+<<<<<<< HEAD
             @include container(".//tips-for-students/imgpage-backgrounds/main-background.svg")
+=======
+            @include container("/tips-for-students/img/page-backgrounds/main-background.svg")
+>>>>>>> a3214d82f3dc2c3152e201bb7e2d5e6850f5fe14
         }
     }
 
@@ -13,7 +17,11 @@
 
     &header {
         &_main {
+<<<<<<< HEAD
             @include header($gradient-main, "./img/header-backgrounds/main-header-background.png")
+=======
+            @include header($gradient-main, "/tips-for-students/img/header-backgrounds/main-header-background.png")
+>>>>>>> a3214d82f3dc2c3152e201bb7e2d5e6850f5fe14
         }
 
         &__title {
