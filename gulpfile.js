@@ -26,7 +26,7 @@ gulp.task("compiler", function () {
 gulp.task("browserSync", function () {
     browserSync.init({
         server: {
-            baseDir: "./build",
+            baseDir: "./src",
         },
         open: false,
         notify: true,
@@ -35,10 +35,10 @@ gulp.task("browserSync", function () {
 
 // For recompilation
 gulp.task("watch", function () {
-    gulp.watch("src/**/*.scss", gulp.series("default")).on("change", reload),
-    gulp.watch("src/**/*.html", gulp.series("fileinclude")).on("change", reload);
-    gulp.watch("src/js/*.js", gulp.series("jsCopy")).on("change", reload);
-    gulp.watch("./src/img/**", gulp.series("imageCopy")).on("change", reload);
+    gulp.watch("src/**/*.scss", gulp.series("compiler")).on("change", reload),
+    gulp.watch("src/**/*.html").on("change", reload);
+    gulp.watch("src/js/*.js").on("change", reload);
+    gulp.watch("./src/img/**").on("change", reload);
 });
 
 // Copy img folder from ~ to build
@@ -75,7 +75,6 @@ gulp.task("replace", async function () {
         .pipe(replace("index.html", "/tips-for-students"))
         .pipe(replace("main.html", "/tips-for-students/main"))
         .pipe(replace("help.html", "/tips-for-students/help"))
-        .pipe(replace("education.html", "/tips-for-students/education"))
         .pipe(replace("digital-system.html", "/tips-for-students/digital-system"))
         .pipe(replace("non-education.html", "/tips-for-students/non-education"))
         .pipe(replace("./img", "/tips-for-students/img"))
@@ -97,7 +96,7 @@ gulp.task(
 gulp.task(
     "dev",
     gulp.series(
-        gulp.parallel("compiler", "imageCopy", "jsCopy", "fileinclude", "watch", "browserSync"),
+        gulp.parallel("compiler", "watch", "browserSync"),
         function (done) {
             done();
         }
