@@ -19,14 +19,14 @@ gulp.task("compiler", function () {
             }).on("error", sass.logError)
         )
         .pipe(concat("style.css"))
-        .pipe(dest("./src/"));
+        .pipe(dest("./build/"));
 });
 
 // Starting live-reload server
 gulp.task("browserSync", function () {
     browserSync.init({
         server: {
-            baseDir: "./src",
+            baseDir: "./build",
         },
         open: false,
         notify: true,
@@ -35,10 +35,10 @@ gulp.task("browserSync", function () {
 
 // For recompilation
 gulp.task("watch", function () {
-    gulp.watch("src/**/*.scss", gulp.series("compiler")).on("change", reload),
-    gulp.watch("src/**/*.html").on("change", reload);
-    gulp.watch("src/js/*.js").on("change", reload);
-    gulp.watch("./src/img/**").on("change", reload);
+    gulp.watch("src/**/*.scss", gulp.series("default")).on("change", reload),
+    gulp.watch("src/**/*.html", gulp.series("fileinclude")).on("change", reload);
+    gulp.watch("src/js/*.js", gulp.series("jsCopy")).on("change", reload);
+    gulp.watch("./src/img/**", gulp.series("imageCopy")).on("change", reload);
 });
 
 // Copy img folder from ~ to build
@@ -49,11 +49,6 @@ gulp.task("imageCopy", function () {
 // Copy index.html folder from ~ to build
 gulp.task("jsCopy", function () {
     return gulp.src("./src/js/*.js").pipe(gulp.dest("./build/js"));
-});
-
-// Copy index.html folder from ~ to build
-gulp.task("cssCopy", function () {
-    return gulp.src("./src/style.css").pipe(gulp.dest("./build/"));
 });
 
 // File include
@@ -85,35 +80,24 @@ gulp.task("replace", async function () {
         .pipe(replace("non-education.html", "/tips-for-students/non-education"))
         .pipe(replace("./img", "/tips-for-students/img"))
         .pipe(replace('src="img/', 'src="/tips-for-students/img/'))
+
         .pipe(gulp.dest("./build/"));
 });
 
 // The default task
 gulp.task(
     "default",
-    gulp.series("compiler", "imageCopy", "jsCopy", "cssCopy", "fileinclude", "replace"),
+    gulp.series("compiler", "imageCopy", "jsCopy", "fileinclude", "replace"),
     function (done) {
         done();
     }
 );
 
-function performChange(content) {
-    return content.replace('/*.html', '*'),
-        content.replace('./', '/tips-for-students/'),
-        content.replace('img/', '/tips-for-students/img');
-}
-
-gulp.task('change', function() {
-    return gulp.src('src/**')
-        .pipe(change(performChange))
-        .pipe(gulp.dest('build/'))
-});
-
 // For developer
 gulp.task(
     "dev",
     gulp.series(
-        gulp.parallel("compiler", "watch", "browserSync"),
+        gulp.parallel("compiler", "imageCopy", "jsCopy", "fileinclude", "watch", "browserSync"),
         function (done) {
             done();
         }
