@@ -75,21 +75,16 @@ gulp.task("replace", async function () {
         .pipe(replace("./main.html", "/tips-for-students/main"))
         .pipe(replace("./help.html", "/tips-for-students/help"))
         .pipe(replace("./education.html", "/tips-for-students/education"))
-        .pipe(
-            replace(
-                "./digital-system.html",
-                "/tips-for-students/digital-system"
-            )
-        )
-        .pipe(
-            replace("./non-education.html", "/tips-for-students/non-education")
-        )
-        .pipe(
-            replace("./non-education.html", "/tips-for-students/non-education")
-        )
+        .pipe(replace("./digital-system.html", "/tips-for-students/digital-system"))
+        .pipe(replace("./non-education.html", "/tips-for-students/non-education"))
+        .pipe(replace("index.html", "/tips-for-students"))
+        .pipe(replace("main.html", "/tips-for-students/main"))
+        .pipe(replace("help.html", "/tips-for-students/help"))
+        .pipe(replace("education.html", "/tips-for-students/education"))
+        .pipe(replace("digital-system.html", "/tips-for-students/digital-system"))
+        .pipe(replace("non-education.html", "/tips-for-students/non-education"))
         .pipe(replace("./img", "/tips-for-students/img"))
         .pipe(replace('src="img/', 'src="/tips-for-students/img/'))
-
         .pipe(gulp.dest("./build/"));
 });
 
