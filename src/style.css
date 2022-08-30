@@ -1444,13 +1444,13 @@ a {
   .memo-content-block__title_green, .memo-content-block__title_red, .memo-content-block__title_purpure, .memo-content-block__title_tiffany, .memo-content-block__title_main {
     font-style: normal;
     font-weight: 800;
-    font-size: 16px;
+    font-size: 1.2em;
     line-height: 22px;
     margin: 0;
   }
   .memo-content-block__text {
     font-weight: 400;
-    font-size: 14px;
+    font-size: 0.9em;
     line-height: 130%;
     letter-spacing: 0.03em;
   }
