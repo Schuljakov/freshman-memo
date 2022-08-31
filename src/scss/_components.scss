@@ -736,9 +736,6 @@
     font-weight: 700;
     font-size: 14px;
     line-height: 28px;
-    &_info {
-    }
-
     &_link {
         color: rgba(48, 183, 239);
     }
@@ -774,16 +771,17 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 170px;
     margin-bottom: 30px;
     &_button {
         background: radial-gradient(99.99% 203.31% at 0% 0%, #9891FC 0%, #5686F9 50%, #73A0FB 100%);
         border: none;
-        height: 100%;
         border-radius: 30px;
         font-weight: 800;
         font-size: 64px;
         line-height: 64px;
+        display: block;
+        text-align: center;
+        padding: 53px 0;
         color: #fff;
         cursor: pointer;
         &-first {
