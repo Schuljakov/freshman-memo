@@ -99,6 +99,16 @@
 
 }
 
+@media(max-width: 1000px) {
+    .memo-patchnotes-list_title {
+        font-size: 45px;
+        line-height: 45px;
+    }
+    .memo-patchnotes-list_item {
+        padding: 20px;
+    }
+}
+
 @media (max-width: 800px) {
     .memo-header_blue {
         padding: 32px 0 16px 0;
@@ -137,6 +147,23 @@
             font-size: 34px;
             line-height: 24px;
         }
+    }
+}
+
+@media(max-width: 700px) {
+    .memo-patchnotes-list_title {
+        font-size: 35px;
+        line-height: 35px;
+        margin-bottom: 8px;
+    }
+    .memo-patchnotes-list_point, .memo-patchnotes-list_point-extra-list {
+        margin-bottom: 2px;
+    }
+    .memo-patchnotes-list_points {
+        font-size: 18px;
+    }
+    .memo-patchnotes-list_item {
+        padding: 15px;
     }
 }
 
@@ -496,6 +523,10 @@
             }
         }
     }
+    .memo-patchnotes-list_title {
+        font-size: 28px;
+        line-height: 28px;
+    }
 }
 @media(min-width: 600px) {
     .memo-nav-button_control {
@@ -503,6 +534,22 @@
         width: 64px !important;
     }
 }
+
+@media(max-width: 500px) {
+    .memo-patchnotes-list_item {
+        padding: 10px;
+    }
+    .memo-patchnotes-list_title {
+        font-size: 25px;
+        line-height: 25px;
+    }
+    .memo-patchnotes-list_points {
+        font-size: 15px;
+        line-height: 26px;
+    }
+}
+
+
 @media(max-width: 400px) {
     .memo-article-block__content-column-double {
         justify-content: space-between;
@@ -523,6 +570,14 @@
     }
     .memo-header__subtitle {
         font-size: 13px;
+    }
+    .memo-patchnotes-list_title {
+        font-size: 22px;
+        line-height: 22px;
+    }
+    .memo-patchnotes-list_points {
+        font-size: 13px;
+        line-height: 24px;
     }
 }
 

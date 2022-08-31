@@ -1204,6 +1204,80 @@ a {
   z-index: 10;
 }
 
+.memo-patchnotes-list {
+  margin-top: 30px;
+}
+.memo-patchnotes-list_item {
+  background-color: #fff;
+  padding: 30px;
+  box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2);
+}
+.memo-patchnotes-list_item + .memo-patchnotes-list_item {
+  margin-top: 30px;
+}
+.memo-patchnotes-list_title {
+  color: rgb(94, 141, 250);
+  font-size: 64px;
+  line-height: 64px;
+  font-weight: 800;
+  margin-bottom: 12px;
+}
+.memo-patchnotes-list_points {
+  padding-left: 21px;
+  list-style-type: none;
+  font-size: 20px;
+  line-height: 28px;
+  color: #1D1D1F;
+  font-weight: 700;
+}
+.memo-patchnotes-list_point {
+  position: relative;
+}
+.memo-patchnotes-list_point::before {
+  content: "";
+  position: absolute;
+  left: -13.5px;
+  top: 14px;
+  transform: translateY(-50%);
+  width: 6px;
+  height: 6px;
+  background-color: #000;
+  border-radius: 50%;
+}
+.memo-patchnotes-list_point-extra-list {
+  list-style-type: none;
+  padding-left: 20px;
+}
+.memo-patchnotes-list_point-extra-item {
+  position: relative;
+}
+.memo-patchnotes-list_point-extra-item::before {
+  content: "";
+  position: absolute;
+  left: -11px;
+  top: 15px;
+  transform: translateY(-50%);
+  width: 3px;
+  height: 3px;
+  background-color: #000;
+  border-radius: 50%;
+}
+.memo-patchnotes-list_point, .memo-patchnotes-list_point-extra-list {
+  margin-bottom: 3px;
+}
+
+.memo-footer {
+  text-align: center;
+  padding: 32px 0 22px;
+  color: #8692A4;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 28px;
+}
+.memo-footer_link {
+  color: rgb(48, 183, 239);
+}
+
 @media (max-width: 1145px) {
   .memo-link-button_central {
     display: none;
@@ -1276,6 +1350,15 @@ a {
     line-height: 21px;
   }
 }
+@media (max-width: 1000px) {
+  .memo-patchnotes-list_title {
+    font-size: 45px;
+    line-height: 45px;
+  }
+  .memo-patchnotes-list_item {
+    padding: 20px;
+  }
+}
 @media (max-width: 800px) {
   .memo-header_blue {
     padding: 32px 0 16px 0;
@@ -1312,6 +1395,22 @@ a {
   .memo-menu__main, .memo-menu__education, .memo-menu__help, .memo-menu__non-education, .memo-menu__digital-system {
     font-size: 34px;
     line-height: 24px;
+  }
+}
+@media (max-width: 700px) {
+  .memo-patchnotes-list_title {
+    font-size: 35px;
+    line-height: 35px;
+    margin-bottom: 8px;
+  }
+  .memo-patchnotes-list_point, .memo-patchnotes-list_point-extra-list {
+    margin-bottom: 2px;
+  }
+  .memo-patchnotes-list_points {
+    font-size: 18px;
+  }
+  .memo-patchnotes-list_item {
+    padding: 15px;
   }
 }
 @media only screen and (max-width: 600px) {
@@ -1540,11 +1639,28 @@ a {
   .memo-pagenav-button_box-horizontal.opened .memo-pagenav-icon_rotated {
     transform: translate(-50%, -50%) rotate(0deg);
   }
+  .memo-patchnotes-list_title {
+    font-size: 28px;
+    line-height: 28px;
+  }
 }
 @media (min-width: 600px) {
   .memo-nav-button_control {
     height: 64px !important;
     width: 64px !important;
+  }
+}
+@media (max-width: 500px) {
+  .memo-patchnotes-list_item {
+    padding: 10px;
+  }
+  .memo-patchnotes-list_title {
+    font-size: 25px;
+    line-height: 25px;
+  }
+  .memo-patchnotes-list_points {
+    font-size: 15px;
+    line-height: 26px;
   }
 }
 @media (max-width: 400px) {
@@ -1567,5 +1683,13 @@ a {
   }
   .memo-header__subtitle {
     font-size: 13px;
+  }
+  .memo-patchnotes-list_title {
+    font-size: 22px;
+    line-height: 22px;
+  }
+  .memo-patchnotes-list_points {
+    font-size: 13px;
+    line-height: 24px;
   }
 }
