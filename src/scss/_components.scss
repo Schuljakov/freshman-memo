@@ -161,6 +161,7 @@
 
     &article-block {
         position: relative;
+        border-radius: 30px;
         &__line {
             width: 100%;
             margin: 32px 0 0 0;
@@ -664,9 +665,11 @@
 
 .memo-patchnotes-list {
     margin-top: 30px;
+    
     &_item {
         background-color: #fff;
         padding: 30px;
+        border-radius: 30px;
         box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2);
         & + & {
             margin-top: 30px;
@@ -876,5 +879,5 @@
 }
 
 .memo-container_updates {
-    @include container("./img/page-backgrounds/update-background.svg")
+    @include container("./img/page-backgrounds/updates-background.svg")
 }

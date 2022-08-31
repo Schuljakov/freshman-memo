@@ -807,6 +807,7 @@ a {
 }
 .memo-article-block {
   position: relative;
+  border-radius: 30px;
 }
 .memo-article-block__line {
   width: 100%;
@@ -1210,6 +1211,7 @@ a {
 .memo-patchnotes-list_item {
   background-color: #fff;
   padding: 30px;
+  border-radius: 30px;
   box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2);
 }
 .memo-patchnotes-list_item + .memo-patchnotes-list_item {
@@ -1408,7 +1410,7 @@ a {
   margin: auto;
   padding: 20px 15px 0 15px;
   padding-bottom: 10px;
-  background-image: url("./img/page-backgrounds/update-background.svg") !important;
+  background-image: url("./img/page-backgrounds/updates-background.svg") !important;
   background-size: contain;
   background-repeat: repeat-y;
   background-position: center;
