@@ -1392,6 +1392,28 @@ a {
   justify-content: space-between;
 }
 
+.memo-container_index {
+  max-width: 1110px;
+  margin: auto;
+  padding: 20px 15px 0 15px;
+  padding-bottom: 10px;
+  background-image: url("./img/page-backgrounds/index-background.svg") !important;
+  background-size: contain;
+  background-repeat: repeat-y;
+  background-position: center;
+}
+
+.memo-container_updates {
+  max-width: 1110px;
+  margin: auto;
+  padding: 20px 15px 0 15px;
+  padding-bottom: 10px;
+  background-image: url("./img/page-backgrounds/update-background.svg") !important;
+  background-size: contain;
+  background-repeat: repeat-y;
+  background-position: center;
+}
+
 @media (max-width: 1145px) {
   .memo-link-button_central {
     display: none;

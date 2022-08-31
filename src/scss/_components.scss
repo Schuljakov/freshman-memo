@@ -869,3 +869,12 @@
         }
     }
 }
+
+
+.memo-container_index {
+    @include container("./img/page-backgrounds/index-background.svg")
+}
+
+.memo-container_updates {
+    @include container("./img/page-backgrounds/update-background.svg")
+}
