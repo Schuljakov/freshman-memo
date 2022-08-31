@@ -5,11 +5,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Навигатор</title>
     <link rel="stylesheet" href="/tips-for-students/style.css">
-    <title>Памятка первокурсника</title>
     <!-- Yandex.Metrika counter -->
     <script type="text/javascript">
-        (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};;
+        (function (m, e, t, r, i, k, a) {
+            m[i] = m[i] || function () { (m[i].a = m[i].a || []).push(arguments) };;
             var z = null; m[i].l = 1 * new Date();
             for (var j = 0; j < document.scripts.length; j++) { if (document.scripts[j].src === r) { return; } }
             k = e.createElement(t), a = e.getElementsByTagName(t)[0], k.async = 1, k.src = r, a.parentNode.insertBefore(k, a)
@@ -29,61 +30,93 @@
     <!-- /Yandex.Metrika counter -->
 </head>
 
-<body class="memo-body">
+<body>
+    <section class="memo-container_index">
+        <!-- Page header -->
+        <section class="memo-header_main memo-header_main-wide" id="memo-page-header">
+            <a href="/tips-for-students" class="memo-nav-button memo-nav-button_main memo-nav-button_control">
+                <img class="memo-nav-icon memo-nav-icon_norotate" src="/tips-for-students/img/icons/nav/back.svg" alt="">
+            </a>
 
-    <!-- Container -->
-    <section class="memo-container">
-        <!-- Header -->
-        <section class="memo-header_blue">
-            <div class="memo-main-icon">
-                <img src="/tips-for-students/img/icons/big-main-icon.svg" alt="">
-            </div>
-            <div class="memo-header__title_blue" style="max-width: 378px;">Твой навигатор</div>
-            <div class="memo-header__subtitle">Нажми на плитку, чтобы быстро перейти к нужному разделу...</div>
+            <p class="memo-header__title_welcome">Добро пожаловать в <span class="memo-blue-text">навигатор
+                    студента</span></p>
+            <img class="memo-header_rotated-cubes" src="/tips-for-students/img/icons/big-main-icon-rotated.png" alt="">
+
         </section>
-        <!-- Menu -->
-        <div class="memo-menu">
-            <div class="memo-menu__top-row">
-                <a href="/tips-for-students/main" class="memo-menu__main">Главное</a>
-                <a href="/tips-for-students/education" class="memo-menu__education">Обучение</a>
-                <a href="/tips-for-students/help" class="memo-menu__help">Помощь</a>
-            </div>
-            <div class="memo-menu__bottom-row">
-                <a href="/tips-for-students/non-education" class="memo-menu__non-education">Внеучебная деятельность</a>
-                <a href="/tips-for-students/digital-system" class="memo-menu__digital-system">Цифровая система</a>
-            </div>
-        </div>
-        <!-- Tip -->
-        <div class="memo-tip">
-            <div class="memo-tip__row">
-                <div class="memo-tip__icon">
-                    <a href="/tips-for-students" class="memo-nav-button memo-nav-button_main">
-                        <img class="memo-nav-icon" src="/tips-for-students/img/icons/nav/cubes.svg" alt="">
-                    </a>
-                </div>
-                <div class="memo-tip__text-block">
-                    <div class="memo-tip__title">Навигатор</div>
-                    <div class="memo-tip__text">
-                        <!-- Мы сделали удобную навигацию, чтобы ты мог быстро перемещаться по студенческому навигатору.
-                        <br> <br>
-                        Используй «<img class="memo-tip__small-icon" src="/tips-for-students/img/icons/mini-nav/mini-nav.svg" alt="">» , чтобы
-                        быстро переходить к нужным
-                        разделам.
-                        С помощью «<img class="memo-tip__small-icon" src="/tips-for-students/img/icons/mini-nav/mini-arrow.svg" alt="">» перемещайся
-                        по разделам/категориям, <br>
-                        а нажав на «<img class="memo-tip__small-icon memo-tip__small-icon_wide"
-                            src="/tips-for-students/img/icons/mini-nav/mini-squares.svg" alt="">»
-                        возвращайся в начало навигатора. -->
-                        Используй «<img class="memo-tip__small-icon" src="/tips-for-students/img/icons/mini-nav/mini-nav.svg" alt="">»,
-                        чтобы вернуться на эту страницу
 
+        <div class="memo-buttons">
+            <a href="/tips-for-students" class="memo-buttons_button memo-buttons_button-first">Основное меню</a>
+            <a href="updates.html" class="memo-buttons_button memo-buttons_button-second">Обновления</a>
+        </div>
+
+        <!-- Article #1 -->
+        <section class="memo-article-block">
+            <div class="memo-article_inner">
+                <h2 class="memo-article_title">
+                    Навигатор —
+                </h2>
+                <p class="memo-article_text">
+                    это интерфейс, в котором ты сможешь найти информацию о <b>Тверском государственном университете.</b>
+                </p>
+                <p class="memo-article_text">
+                    Навигатор реглярно обновляется и улучшается, чтобы у студентов была возможность <b>получать актуальную
+                    информацию</b> о ТвГУ на любом устройстве.
+                </p>
+                <img class="memo-article_side-image" src="/tips-for-students/img/icons/big-main-icon-rotated-right-side-down.png" alt="">
+            </div>
+        </section>
+
+        <!-- Article #2 -->
+        <section class="memo-article-block">
+            <div class="memo-article_inner">
+                <h2 class="memo-article_title">
+                    Навигация
+                </h2>
+                <p class="memo-article_text">
+                    Навигитор состоит <b>разделов и категорий</b> между которыми ты можешь перемещаться с помощью Единого
+                    элемента управления (наведите на ромб из четырёх квадратов) и с помощью кнопок.
+                </p>
+                <div class="memo-buttons-preview">
+                    <div class="memo-buttons-preview_item">
+                        <img class="memo-buttons-preview_img" src="/tips-for-students/img/icons/preview-nav-button.svg" alt="">
+                        <p class="memo-buttons-preview_descr">
+                            <span>Элемент управления</span>
+                        </p>
                     </div>
-
+                    <div class="memo-buttons-preview_item">
+                        <img class="memo-buttons-preview_img" src="/tips-for-students/img/icons/preview-nav-button-opened.svg" alt="">
+                        <p class="memo-buttons-preview_descr">
+                            <span>Переход (разделы)</span>
+                            <span>Главное меню</span>
+                            <span>Переход (разделы)</span>
+                        </p>
+                    </div>
+                    <div class="memo-buttons-preview_item memo-buttons-preview_item-rotate">
+                        <img class="memo-buttons-preview_img" src="/tips-for-students/img/icons/preview-nav-button-opened-rotated.svg" alt="">
+                        <p class="memo-buttons-preview_descr">
+                            <span>Переход (категории)</span>
+                            <span>Переход (категории)</span>
+                        </p>
+                    </div>
+                    <div class="memo-buttons-preview_item memo-buttons-preview_item-rotate">
+                        <img class="memo-buttons-preview_img" src="/tips-for-students/img/icons/preview-control-button.svg" alt="">
+                        <p class="memo-buttons-preview_descr">
+                            <span></span>
+                            <span>Быстрое поднятие</span>
+                            <span></span>
+                        </p>
+                    </div>
                 </div>
+                <img class="memo-article_side-image" src="/tips-for-students/img/icons/big-main-icon-rotated-right-side-down.png" alt="">
             </div>
-        </div>
-    </section>
+        </section>
 
+        <footer class="memo-footer">
+            <p class="memo-footer_info">
+                v.0.9 (Лайт), сделано <a class="memo-footer_link" href="#">студентами</a> для студентов.
+            </p>
+        </footer>
+    </section>
 </body>
 
 </html>
