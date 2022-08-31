@@ -1278,6 +1278,119 @@ a {
   color: rgb(48, 183, 239);
 }
 
+.memo-header_rotated-cubes {
+  width: 100%;
+  max-width: 345px;
+}
+.memo-header__title_welcome {
+  font-weight: 800;
+  font-size: 72px;
+  line-height: 79px;
+  text-align: center;
+  margin-bottom: 25px;
+}
+.memo-header_main-wide {
+  padding: 78px 158px 0;
+  margin-bottom: 30px;
+}
+
+.memo-blue-text {
+  color: rgb(115, 160, 251);
+}
+
+.memo-buttons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 170px;
+  margin-bottom: 30px;
+}
+.memo-buttons_button {
+  background: radial-gradient(99.99% 203.31% at 0% 0%, #9891FC 0%, #5686F9 50%, #73A0FB 100%);
+  border: none;
+  height: 100%;
+  border-radius: 30px;
+  font-weight: 800;
+  font-size: 64px;
+  line-height: 64px;
+  color: #fff;
+  cursor: pointer;
+}
+.memo-buttons_button-first {
+  width: 100%;
+  max-width: 584px;
+}
+.memo-buttons_button-second {
+  width: 100%;
+  max-width: 489px;
+}
+
+.memo-article_title {
+  font-weight: 800;
+  font-size: 64px;
+  line-height: 64px;
+  color: #5E8DFA;
+  margin-bottom: 11px;
+}
+.memo-article_text {
+  font-size: 20px;
+  line-height: 28px;
+  color: #1D1D1F;
+  max-width: 800px;
+}
+.memo-article_inner {
+  background-color: #fff;
+  border-radius: 30px;
+  position: relative;
+  padding: 36px 27px;
+}
+.memo-article_side-image {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  max-width: 240px;
+  width: 100%;
+  border-bottom-right-radius: 30px;
+}
+
+.memo-buttons-preview {
+  margin-top: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 750px;
+}
+.memo-buttons-preview_item {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.memo-buttons-preview_img {
+  margin-bottom: 4px;
+}
+.memo-buttons-preview_descr {
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 14px;
+  color: #5E8DFA;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.memo-buttons-preview_descr span {
+  text-align: center;
+  max-width: 83px;
+  display: block;
+}
+.memo-buttons-preview_item-rotate {
+  flex-direction: row;
+}
+.memo-buttons-preview_item-rotate .memo-buttons-preview_descr {
+  height: 180px;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
 @media (max-width: 1145px) {
   .memo-link-button_central {
     display: none;
