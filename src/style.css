@@ -7,8 +7,7 @@
 
 a {
   text-decoration: none !important;
-  color: #000000 !important;
-  display: block;
+  color: #000000;
 }
 
 .memo-body {
@@ -143,7 +142,7 @@ a {
   letter-spacing: 0.03em;
 }
 
-.memo-file__size, .memo-file__name {
+.memo-center-text, .memo-file__size, .memo-file__name {
   font-family: "Manrope", sans-serif;
   font-style: normal;
   font-weight: 700;
@@ -1004,6 +1003,15 @@ a {
 }
 .memo-link-button_outlink-down {
   bottom: 154px;
+}
+.memo-center-text {
+  font-weight: 700;
+  color: #8692A4;
+  width: max-content;
+  margin: auto;
+}
+.memo-center-text_blue {
+  color: #30B7EF;
 }
 .memo-link-button::before {
   content: "";

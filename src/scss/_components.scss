@@ -427,6 +427,17 @@
 
     }
 
+    &center-text {
+        @extend %Other-Desktop-Bold-Ulta-Small;
+        font-weight: 700;
+        color: $color-gray;
+        width: max-content;
+        margin: auto;
+
+        &_blue {
+            color: $color-defee;
+        }
+    }
 
     &link-button::before {
         content: "";
