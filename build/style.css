@@ -163,7 +163,7 @@ a {
   border-radius: 64px;
   border: 2px solid transparent;
   padding: 32px 262px 32px 262px;
-  background: url("/tips-for-students/img/header-backgrounds/blue-header-background.png") padding-box, linear-gradient(#F6FAFF, #F6FAFF) padding-box, radial-gradient(99.99% 203.31% at 0% 0%, #9891FC 0%, #5686F9 50%, #73A0FB 100%) border-box;
+  background: url("./img/header-backgrounds/blue-header-background.png") padding-box, linear-gradient(#F6FAFF, #F6FAFF) padding-box, radial-gradient(99.99% 203.31% at 0% 0%, #9891FC 0%, #5686F9 50%, #73A0FB 100%) border-box;
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -199,27 +199,27 @@ a {
 .memo-menu__main {
   padding: 55px 0 55px 30px;
   width: 290px;
-  background-image: url("/tips-for-students/img/mesh/main-gradient.png");
+  background-image: url("./img/mesh/main-gradient.png");
 }
 .memo-menu__education {
   padding: 55px 0 55px 30px;
   width: 370px;
-  background-image: url("/tips-for-students/img/mesh/education-gradient.png");
+  background-image: url("./img/mesh/education-gradient.png");
 }
 .memo-menu__help {
   padding: 55px 0 55px 30px;
   width: 290px;
-  background-image: url("/tips-for-students/img/mesh/help-gradient.png");
+  background-image: url("./img/mesh/help-gradient.png");
 }
 .memo-menu__non-education {
   padding: 69px 0 71px 25px;
   width: 497px;
-  background-image: url("/tips-for-students/img/mesh/non-education-gradient.png");
+  background-image: url("./img/mesh/non-education-gradient.png");
 }
 .memo-menu__digital-system {
   padding: 69px 0 71px 25px;
   width: 497px;
-  background-image: url("/tips-for-students/img/mesh/digital-system-gradient.png");
+  background-image: url("./img/mesh/digital-system-gradient.png");
 }
 .memo-menu__main::before, .memo-menu__education::before, .memo-menu__help::before, .memo-menu__non-education::before, .memo-menu__digital-system::before {
   content: "";
@@ -290,7 +290,7 @@ a {
   margin: auto;
   padding: 20px 15px 0 15px;
   padding-bottom: 10px;
-  background-image: url("/tips-for-students/img/page-backgrounds/main-background.svg") !important;
+  background-image: url("./img/page-backgrounds/main-background.svg") !important;
   background-size: contain;
   background-repeat: repeat-y;
   background-position: center;
@@ -302,7 +302,7 @@ a {
   border-radius: 64px;
   border: 2px solid transparent;
   padding: 32px 262px 32px 262px;
-  background: url("/tips-for-students/img/header-backgrounds/main-header-background.png") padding-box, linear-gradient(#F6FAFF, #F6FAFF) padding-box, radial-gradient(99.99% 203.31% at 0% 0%, #9891FC 0%, #5686F9 50%, #73A0FB 100%) border-box;
+  background: url("./img/header-backgrounds/main-header-background.png") padding-box, linear-gradient(#F6FAFF, #F6FAFF) padding-box, radial-gradient(99.99% 203.31% at 0% 0%, #9891FC 0%, #5686F9 50%, #73A0FB 100%) border-box;
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -369,7 +369,7 @@ a {
   margin: auto;
   padding: 20px 15px 0 15px;
   padding-bottom: 10px;
-  background-image: url("/tips-for-students/img/page-backgrounds/education-background.svg") !important;
+  background-image: url("./img/page-backgrounds/education-background.svg") !important;
   background-size: contain;
   background-repeat: repeat-y;
   background-position: center;
@@ -381,7 +381,7 @@ a {
   border-radius: 64px;
   border: 2px solid transparent;
   padding: 32px 262px 32px 262px;
-  background: url("/tips-for-students/img/header-backgrounds/green-header-background.png") padding-box, linear-gradient(#F6FAFF, #F6FAFF) padding-box, radial-gradient(100% 187.2% at 100% 100%, #42D987 0%, #78CD59 69.85%, #7BC952 100%) border-box;
+  background: url("./img/header-backgrounds/green-header-background.png") padding-box, linear-gradient(#F6FAFF, #F6FAFF) padding-box, radial-gradient(100% 187.2% at 100% 100%, #42D987 0%, #78CD59 69.85%, #7BC952 100%) border-box;
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -448,7 +448,7 @@ a {
   margin: auto;
   padding: 20px 15px 0 15px;
   padding-bottom: 10px;
-  background-image: url("/tips-for-students/img/page-backgrounds/help-background.svg") !important;
+  background-image: url("./img/page-backgrounds/help-background.svg") !important;
   background-size: contain;
   background-repeat: repeat-y;
   background-position: center;
@@ -460,7 +460,7 @@ a {
   border-radius: 64px;
   border: 2px solid transparent;
   padding: 32px 262px 32px 262px;
-  background: url("/tips-for-students/img/header-backgrounds/red-header-background.png") padding-box, linear-gradient(#F6FAFF, #F6FAFF) padding-box, linear-gradient(116.19deg, #FF9F9D 0%, #F95D65 34.9%, #F5536F 62.5%, #B675D5 100%) border-box;
+  background: url("./img/header-backgrounds/red-header-background.png") padding-box, linear-gradient(#F6FAFF, #F6FAFF) padding-box, linear-gradient(116.19deg, #FF9F9D 0%, #F95D65 34.9%, #F5536F 62.5%, #B675D5 100%) border-box;
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -527,7 +527,7 @@ a {
   margin: auto;
   padding: 20px 15px 0 15px;
   padding-bottom: 10px;
-  background-image: url("/tips-for-students/img/page-backgrounds/digital-system-background.svg") !important;
+  background-image: url("./img/page-backgrounds/digital-system-background.svg") !important;
   background-size: contain;
   background-repeat: repeat-y;
   background-position: center;
@@ -539,7 +539,7 @@ a {
   border-radius: 64px;
   border: 2px solid transparent;
   padding: 32px 262px 32px 262px;
-  background: url("/tips-for-students/img/header-backgrounds/tiffany-header-background.png") padding-box, linear-gradient(#F6FAFF, #F6FAFF) padding-box, radial-gradient(47.76% 81.73% at 81.4% 18.33%, #1CDBEA 0%, rgba(27, 218, 232, 0) 100%), radial-gradient(20.56% 60.56% at 72.76% 100%, #3ED4B7 0%, rgba(60, 213, 183, 0) 100%), radial-gradient(39.53% 100.27% at 7.52% 91.67%, #3ED4B7 0%, rgba(60, 213, 183, 0) 100%), linear-gradient(97.62deg, #52AADE 0%, #36B1D5 48.96%, #48A8CD 100%) border-box;
+  background: url("./img/header-backgrounds/tiffany-header-background.png") padding-box, linear-gradient(#F6FAFF, #F6FAFF) padding-box, radial-gradient(47.76% 81.73% at 81.4% 18.33%, #1CDBEA 0%, rgba(27, 218, 232, 0) 100%), radial-gradient(20.56% 60.56% at 72.76% 100%, #3ED4B7 0%, rgba(60, 213, 183, 0) 100%), radial-gradient(39.53% 100.27% at 7.52% 91.67%, #3ED4B7 0%, rgba(60, 213, 183, 0) 100%), linear-gradient(97.62deg, #52AADE 0%, #36B1D5 48.96%, #48A8CD 100%) border-box;
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -606,7 +606,7 @@ a {
   margin: auto;
   padding: 20px 15px 0 15px;
   padding-bottom: 10px;
-  background-image: url("/tips-for-students/img/page-backgrounds/non-education-background.svg") !important;
+  background-image: url("./img/page-backgrounds/non-education-background.svg") !important;
   background-size: contain;
   background-repeat: repeat-y;
   background-position: center;
@@ -618,7 +618,7 @@ a {
   border-radius: 64px;
   border: 2px solid transparent;
   padding: 32px 262px 32px 262px;
-  background: url("/tips-for-students/img/header-backgrounds/purpure-header-background.png") padding-box, linear-gradient(#F6FAFF, #F6FAFF) padding-box, radial-gradient(99.35% 249.93% at 0% 0%, #BD98FE 0%, #9B89FE 34.38%, #98B0FE 69.27%, #85A0F8 100%) border-box;
+  background: url("./img/header-backgrounds/purpure-header-background.png") padding-box, linear-gradient(#F6FAFF, #F6FAFF) padding-box, radial-gradient(99.35% 249.93% at 0% 0%, #BD98FE 0%, #9B89FE 34.38%, #98B0FE 69.27%, #85A0F8 100%) border-box;
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -1444,7 +1444,7 @@ a {
   .memo-content-block__title_green, .memo-content-block__title_red, .memo-content-block__title_purpure, .memo-content-block__title_tiffany, .memo-content-block__title_main {
     font-style: normal;
     font-weight: 800;
-    font-size: 16px;
+    font-size: 20px;
     line-height: 22px;
     margin: 0;
   }

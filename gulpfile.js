@@ -19,7 +19,7 @@ gulp.task("compiler", function () {
             }).on("error", sass.logError)
         )
         .pipe(concat("style.css"))
-        .pipe(dest("./build/"));
+        .pipe(dest("./src/"));
 });
 
 // Starting live-reload server
@@ -49,6 +49,10 @@ gulp.task("imageCopy", function () {
 // Copy index.html folder from ~ to build
 gulp.task("jsCopy", function () {
     return gulp.src("./src/js/*.js").pipe(gulp.dest("./build/js"));
+});
+
+gulp.task("cssCopy", function (){
+    return gulp.src("./src/style.css").pipe(gulp.dest("./build/"));
 });
 
 // File include
@@ -86,7 +90,7 @@ gulp.task("replace", async function () {
 // The default task
 gulp.task(
     "default",
-    gulp.series("compiler", "imageCopy", "jsCopy", "fileinclude", "replace"),
+    gulp.series("compiler", "imageCopy", "jsCopy", "cssCopy", "fileinclude", "replace"),
     function (done) {
         done();
     }
