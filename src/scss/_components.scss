@@ -411,6 +411,10 @@
             background-color: $color-blue;
         }
 
+        &-main {
+            background-image: $gradient-main;
+        }
+
         &_inline {
             margin: 0;
         }

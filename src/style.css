@@ -980,6 +980,9 @@ a {
 .memo-link-button-vk {
   background-color: #8098F9;
 }
+.memo-link-button-main {
+  background-image: radial-gradient(99.99% 203.31% at 0% 0%, #9891FC 0%, #5686F9 50%, #73A0FB 100%);
+}
 .memo-link-button_inline {
   margin: 0;
 }
