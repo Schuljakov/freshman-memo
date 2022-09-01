@@ -980,6 +980,9 @@ a {
 .memo-link-button-vk {
   background-color: #8098F9;
 }
+.memo-link-button-main {
+  background-image: radial-gradient(99.99% 203.31% at 0% 0%, #9891FC 0%, #5686F9 50%, #73A0FB 100%);
+}
 .memo-link-button_inline {
   margin: 0;
 }
@@ -1414,6 +1417,15 @@ a {
   background-size: contain;
   background-repeat: repeat-y;
   background-position: center;
+}
+
+.memo-unselectable {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
 @media (max-width: 1145px) {
