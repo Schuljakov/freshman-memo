@@ -838,6 +838,9 @@ a {
 .memo-article-block__content-column + .memo-article-block__content-column {
   margin-left: 30px;
 }
+.memo-article-block_wrapper {
+  margin-top: 30px;
+}
 .memo-content-row {
   display: flex;
   flex-direction: row;
@@ -1961,6 +1964,7 @@ a {
   .memo-buttons_button {
     font-size: 17px;
     line-height: 24px;
+    border-radius: 16px;
   }
   .memo-article_title {
     margin-bottom: 4px;
