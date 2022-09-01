@@ -820,9 +820,7 @@
 
     &_main-wide {
         padding: 78px 158px 0;
-        margin-bottom: 30px;
         position: relative;
-        margin-bottom: 200px;
     }
 }
 
@@ -940,7 +938,7 @@
     &_item-rotate {
         flex-direction: row;
         justify-content: center;
-        
+
         & .memo-buttons-preview_descr{
             height: 180px;
             flex-direction: column;
