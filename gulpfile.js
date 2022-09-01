@@ -81,6 +81,8 @@ gulp.task("replace", async function () {
         .pipe(replace("help.html", "/tips-for-students/help"))
         .pipe(replace("digital-system.html", "/tips-for-students/digital-system"))
         .pipe(replace("non-education.html", "/tips-for-students/non-education"))
+        .pipe(replace("./menu.html", "/tips-for-students/menu"))
+        .pipe(replace("./updates.html", "/tips-for-students/updates"))
         .pipe(replace("./img", "/tips-for-students/img"))
         .pipe(replace('src="img/', 'src="/tips-for-students/img/'))
 
