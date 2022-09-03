@@ -1,4 +1,5 @@
 const { src, dest, watch, parallel, series} = require('gulp');
+const fs = require('fs');
 
 const pug          = require('gulp-pug');
 const autoprefixer = require('gulp-autoprefixer');
@@ -15,11 +16,13 @@ const gcmq         = require('gulp-group-css-media-queries');
 const browserSync  = require('browser-sync').create();
 
 
+const dataForPug = JSON.parse(fs.readFileSync('./src/data/data.json'));
 function pug2html() {
     return src('src/pages/*.pug')
         .pipe(plumber())
         .pipe(pug({
-            pretty: true
+            pretty: true,
+            locals: dataForPug || {}
         }))
         .pipe(dest('build'))
         .pipe(browserSync.stream());
