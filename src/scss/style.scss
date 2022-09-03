@@ -1,8 +1,9 @@
 @import "reset";
+@import "normalize";
 @import "vars";
+@import "global";
 @import "../components/components";
 @import "fonts";
-@import "global";
 
 h1 {
   color: red;
