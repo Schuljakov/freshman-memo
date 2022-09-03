@@ -14,15 +14,29 @@ const plumber      = require('gulp-plumber');
 const gcmq         = require('gulp-group-css-media-queries');
 
 const browserSync  = require('browser-sync').create();
+const path         = require('path');
+const data         = {};
 
+function json() {
+    try {
+        const modules = fs.readdirSync('src/data/');
+        modules.forEach(json => {
+            const name = path.basename(json, path.extname(json));
+            const file = path.join('./src/data', json);
+            return data[name] = JSON.parse(fs.readFileSync(file));
+        })
+        console.log(data);
+    } catch(e) {
+        console.log(e);
+    }
+}
 
-const dataForPug = JSON.parse(fs.readFileSync('./src/data/data.json'));
 function pug2html() {
     return src('src/pages/*.pug')
         .pipe(plumber())
         .pipe(pug({
             pretty: true,
-            locals: dataForPug || {}
+            locals: { data : data }
         }))
         .pipe(dest('build'))
         .pipe(browserSync.stream());
@@ -99,10 +113,11 @@ function imagesBuild() {
 
 function watching() {
     watch(['src/pages/*.pug'], pug2html);
+    watch('src/data/*.json', json, pug2html);
     watch(['src/components/**/*.scss', '!src/components/**/media.scss'], collectComponentsSCSS, styles);
     watch(['src/components/**/media.scss'], collectComponentMediaSCSS, styles);
     watch(['src/scss/**/*.scss'], styles);
-    watch(['src/components/**/*.js', 'src/js/main.js'], scripts)
+    watch(['src/components/**/*.js', 'src/js/main.js'], scripts);
 }
 
 function cleanBuild() {
@@ -110,6 +125,7 @@ function cleanBuild() {
 }
 
 exports.pug2html = pug2html;
+exports.json = json;
 exports.styles = styles;
 exports.collectComponentsSCSS = collectComponentsSCSS;
 exports.collectComponentsMediaSCSS = collectComponentMediaSCSS;
@@ -120,4 +136,4 @@ exports.del = cleanBuild;
 
 exports.startGulp = series(pug2html, collectComponentsSCSS, collectComponentMediaSCSS, styles, scripts);
 exports.buildImages = series(imagemin);
-exports.default = parallel(browsersync, watching);
+exports.default = parallel(json, browsersync, watching);
