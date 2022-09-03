@@ -3,20 +3,7 @@
   "version": "1.0.0",
   "description": "build for tvgu environment develope",
   "main": "index.js",
-  "scripts": {
-    "stylelint": "stylelint *.scss",
-    "stylelint:fix": "stylelint *.scss --fix"
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "lint-staged"
-    }
-  },
-  "lint-staged": {
-    "*.scss": [
-      "stylelint"
-    ]
-  },
+  "scripts": {},
   "author": "",
   "license": "ISC",
   "devDependencies": {
@@ -26,6 +13,7 @@
     "gulp-autoprefixer": "^8.0.0",
     "gulp-clean-css": "^4.3.0",
     "gulp-concat": "^2.6.1",
+    "gulp-group-css-media-queries": "^1.2.2",
     "gulp-imagemin": "^7.1.0",
     "gulp-plumber": "^1.2.1",
     "gulp-pug": "^5.0.0",

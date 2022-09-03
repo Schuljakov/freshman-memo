@@ -1,4 +1,4 @@
-const {src, dest, watch, parallel, series} = require('gulp');
+const { src, dest, watch, parallel, series} = require('gulp');
 
 const pug          = require('gulp-pug');
 const autoprefixer = require('gulp-autoprefixer');
@@ -10,6 +10,7 @@ const concat       = require('gulp-concat');
 const del          = require('del');
 const cleanCss     = require('gulp-clean-css');
 const plumber      = require('gulp-plumber');
+const gcmq         = require('gulp-group-css-media-queries');
 
 const browserSync  = require('browser-sync').create();
 
@@ -32,6 +33,7 @@ function collectComponentsSCSS() {
 
 function collectComponentMediaSCSS() {
     return src('src/components/**/media.scss')
+        .pipe(gcmq())
         .pipe(concat('_media.scss'))
         .pipe(dest('src/components'));
 }
