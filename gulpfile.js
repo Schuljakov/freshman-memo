@@ -1,110 +1,118 @@
-const gulp = require("gulp");
+const {src, dest, watch, parallel, series} = require('gulp');
 
-const { src, dest } = require("gulp");
-const sass = require("gulp-sass")(require("sass"));
-const concat = require("gulp-concat");
-const browserSync = require("browser-sync");
-const fileinclude = require("gulp-file-include");
-const replace = require("gulp-string-replace");
+const pug          = require('gulp-pug');
+const autoprefixer = require('gulp-autoprefixer');
+const scss         = require('gulp-sass')(require('sass'));
+const uglify       = require('gulp-uglify-es').default;
+const imagemin     = require('gulp-imagemin');
 
-// For live-reloading
-const reload = browserSync.reload;
+const concat       = require('gulp-concat');
+const del          = require('del');
+const cleanCss     = require('gulp-clean-css');
+const plumber      = require('gulp-plumber');
 
-// Compile scss
-gulp.task("compiler", function () {
-    return src("src/scss/**/*.scss")
-        .pipe(
-            sass({
-                outputStyle: "expanded",
-            }).on("error", sass.logError)
-        )
-        .pipe(concat("style.css"))
-        .pipe(dest("./src/"));
-});
+const browserSync  = require('browser-sync').create();
 
-// Starting live-reload server
-gulp.task("browserSync", function () {
+
+function pug2html() {
+    return src('src/pages/*.pug')
+        .pipe(plumber())
+        .pipe(pug({
+            pretty: true
+        }))
+        .pipe(dest('build'))
+        .pipe(browserSync.stream());
+}
+
+function collectComponentsSCSS() {
+    return src('src/components/**/*.scss')
+        .pipe(concat('_components.scss'))
+        .pipe(dest('src/components'));
+}
+
+function collectComponentMediaSCSS() {
+    return src('src/components/**/media.scss')
+        .pipe(concat('_media.scss'))
+        .pipe(dest('src/components'));
+}
+
+function styles() {
+    return src('src/scss/style.scss')
+        .pipe(scss({outputStyle: 'compressed'}))
+        .pipe(concat('style.min.css'))
+        .pipe(autoprefixer({
+            overrideBrowserslist: ['last 12 version'],
+            grid: true
+        }))
+        .pipe(cleanCss({compatibility: 'ie8', level: 2}))
+        .pipe(dest('build/css'))
+        .pipe(browserSync.stream());
+}
+
+function scripts() {
+    return src([
+        'src/components/**/*.js',
+        'src/js/main.js'
+    ])
+    .pipe(concat('index.min.js'))
+    .pipe(uglify())
+    .pipe(dest('build/js'))
+    .pipe(browserSync.stream());
+}
+
+function browsersync() {
     browserSync.init({
         server: {
-            baseDir: "./src",
-        },
-        open: false,
-        notify: true,
-    });
-});
-
-// For recompilation
-gulp.task("watch", function () {
-    gulp.watch("src/**/*.scss", gulp.series("compiler")).on("change", reload),
-    gulp.watch("src/**/*.html").on("change", reload);
-    gulp.watch("src/js/*.js").on("change", reload);
-    gulp.watch("./src/img/**").on("change", reload);
-});
-
-// Copy img folder from ~ to build
-gulp.task("imageCopy", function () {
-    return gulp.src("./src/img/**").pipe(gulp.dest("./build/img"));
-});
-
-// Copy index.html folder from ~ to build
-gulp.task("jsCopy", function () {
-    return gulp.src("./src/js/*.js").pipe(gulp.dest("./build/js"));
-});
-
-gulp.task("cssCopy", function (){
-    return gulp.src("./src/style.css").pipe(gulp.dest("./build/"));
-});
-
-// File include
-gulp.task("fileinclude", async function () {
-    gulp.src(["./src/**/*.html"])
-        .pipe(
-            fileinclude({
-                prefix: "@@",
-                basepath: "@file",
-            })
-        )
-        .pipe(gulp.dest("./build/"));
-});
-
-gulp.task("replace", async function () {
-    gulp.src(["./build/*.css", "./src/*.html"]) // Any file globs are supported
-        .pipe(replace("style.css", "/tips-for-students/style.css"))
-        .pipe(replace("./index.html", "/tips-for-students"))
-        .pipe(replace("./main.html", "/tips-for-students/main"))
-        .pipe(replace("./help.html", "/tips-for-students/help"))
-        .pipe(replace("./education.html", "/tips-for-students/education"))
-        .pipe(replace("./digital-system.html", "/tips-for-students/digital-system"))
-        .pipe(replace("./non-education.html", "/tips-for-students/non-education"))
-        .pipe(replace("index.html", "/tips-for-students"))
-        .pipe(replace("main.html", "/tips-for-students/main"))
-        .pipe(replace("help.html", "/tips-for-students/help"))
-        .pipe(replace("digital-system.html", "/tips-for-students/digital-system"))
-        .pipe(replace("non-education.html", "/tips-for-students/non-education"))
-        .pipe(replace("./menu.html", "/tips-for-students/menu"))
-        .pipe(replace("./updates.html", "/tips-for-students/updates"))
-        .pipe(replace("./img", "/tips-for-students/img"))
-        .pipe(replace('src="img/', 'src="/tips-for-students/img/'))
-
-        .pipe(gulp.dest("./build/"));
-});
-
-// The default task
-gulp.task(
-    "default",
-    gulp.series("compiler", "imageCopy", "jsCopy", "cssCopy", "fileinclude", "replace"),
-    function (done) {
-        done();
-    }
-);
-
-// For developer
-gulp.task(
-    "dev",
-    gulp.series(
-        gulp.parallel("compiler", "watch", "browserSync"),
-        function (done) {
-            done();
+            baseDir: 'build/'
         }
-    )
-);
+    });
+}
+
+function imagesBuild() {
+    return src(['src/images/**/*', 'src/components/**/*'])
+        .pipe(imagemin([
+            imagemin.gifsicle({interlaced: true}),
+            imagemin.mozjpeg({quality: 80, progressive: true}),
+            imagemin.optipng({optimizationLevel: 5}),
+            imagemin.svgo({
+                plugins: [
+                    {removeViewBox: true},
+                    {cleanupIDs: false}
+                ]
+            })
+        ]))
+        .pipe(dest('build/images'));
+}
+
+// function imagesConvert() {
+//     return src(['build/images/*.{jpg, jpeg, png}'])
+//         .pipe(imageminWebp({
+//             quality: 80
+//         }))
+//         .pipe(dest("build/images"));
+// }
+
+function watching() {
+    watch(['src/pages/*.pug'], pug2html);
+    watch(['src/components/**/*.scss', '!src/components/**/media.scss'], collectComponentsSCSS, styles);
+    watch(['src/components/**/media.scss'], collectComponentMediaSCSS, styles);
+    watch(['src/scss/**/*.scss'], styles);
+    watch(['src/components/**/*.js', 'src/js/main.js'], scripts)
+}
+
+function cleanBuild() {
+    return del('build');
+}
+
+exports.pug2html = pug2html;
+exports.styles = styles;
+exports.collectComponentsSCSS = collectComponentsSCSS;
+exports.collectComponentsMediaSCSS = collectComponentMediaSCSS;
+exports.browsersync = browsersync;
+exports.watching = watching;
+exports.scripts = scripts;
+exports.del = cleanBuild;
+
+exports.startGulp = series(pug2html, collectComponentsSCSS, collectComponentMediaSCSS, styles, scripts);
+exports.buildImages = series(imagemin);
+exports.default = parallel(browsersync, watching);

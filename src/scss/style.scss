@@ -1,0 +1,13 @@
+@import "reset";
+@import "vars";
+@import "../components/components";
+@import "fonts";
+@import "global";
+
+h1 {
+    color: red;
+    font-size: 10px;
+}
+
+@import "../components/media";
+@import "mediaCommon";
