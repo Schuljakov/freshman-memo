@@ -33,7 +33,6 @@ export const json = async () => {
   }
 }
 
-
 export const pug2html = () => {
     return gulp.src('src/pages/*.pug')
         .pipe(plumber())
