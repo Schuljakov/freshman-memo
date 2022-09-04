@@ -3,11 +3,10 @@
 @import "vars";
 @import "global";
 @import "../components/components";
-@import "fonts";
 
 h1 {
   color: red;
-  font-size: 10px;
+  font-size: 40px;
 }
 
 @import "../components/media";
