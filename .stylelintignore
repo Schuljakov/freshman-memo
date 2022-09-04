@@ -1,0 +1,6 @@
+src/components/_components.scss
+src/components/_media.scss
+src/scss/_normalize.scss
+src/scss/_reset.scss
+src/scss/_vars.scss
+src/scss/SCSS-ORDERS.scss
