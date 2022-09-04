@@ -15,6 +15,7 @@ import plumber from 'gulp-plumber';
 import gcmq from 'gulp-group-css-media-queries';
 import browserSync from 'browser-sync';
 import path from 'path';
+import rename from 'gulp-rename';
 
 const sass = gulpSass(dartSass);
 const data = {};
@@ -80,7 +81,7 @@ export const scripts = () => {
         'src/js/main.js'
     ])
     .pipe(concat('index.min.js'))
-    .pipe(uglify())
+    .pipe(uglify.default())
     .pipe(gulp.dest('build/js'))
     .pipe(browserSync.stream());
 }
@@ -101,7 +102,7 @@ export const browsersync = () => {
 }
 
 export const imageBuild = () => {
-    return gulp.src(['src/images/**/*', 'src/components/**/*'])
+    return gulp.src(['src/images/**/*.{jpg, jpeg, png, gif}', 'src/components/**/*.{jpg, jpeg, png, gif}'])
         .pipe(imagemin([
             imagemin.gifsicle({interlaced: true}),
             imagemin.mozjpeg({quality: 80, progressive: true}),
@@ -118,8 +119,11 @@ export const imageBuild = () => {
 
 export const imagesConvertToWebp = () => {
     return gulp.src(['build/images/*.{jpg, jpeg, png}'])
-        .pipe(imagemin_webp({
-            quality: 80
+        .pipe(imagemin([
+          imagemin_webp({quality: 100})
+        ]))
+        .pipe(rename({
+          extname: '.webp'
         }))
         .pipe(gulp.dest("build/images"));
 }
