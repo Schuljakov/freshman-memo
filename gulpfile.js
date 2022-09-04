@@ -19,18 +19,20 @@ import path from 'path';
 const sass = gulpSass(dartSass);
 const data = {};
 
-export const json = () => {
-    try {
-        const modules = fs.readdirSync('src/data/');
-        modules.forEach(json => {
-            const name = path.basename(json, path.extname(json));
-            const file = path.join('./src/data', json);
-            return data[name] = JSON.parse(fs.readFileSync(file));
-        })
-    } catch(e) {
-        console.log(e);
-    }
+export const json = async () => {
+  try {
+    const modules = fs.readdirSync('src/data/');
+    modules.forEach(json => {
+        const name = path.basename(json, path.extname(json));
+        const file = path.join('./src/data', json);
+        return data[name] = JSON.parse(fs.readFileSync(file));
+    });
+  }
+  catch(exception) {
+    console.log(exception);
+  }
 }
+
 
 export const pug2html = () => {
     return gulp.src('src/pages/*.pug')
