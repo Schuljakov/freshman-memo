@@ -1,4 +1,5 @@
 {
+  "type": "module",
   "name": "tvgu",
   "version": "1.0.0",
   "description": "build for tvgu environment develope",
@@ -13,6 +14,7 @@
     "gulp-autoprefixer": "^8.0.0",
     "gulp-clean-css": "^4.3.0",
     "gulp-concat": "^2.6.1",
+    "gulp-csso": "^4.0.1",
     "gulp-group-css-media-queries": "^1.2.2",
     "gulp-imagemin": "^7.1.0",
     "gulp-plumber": "^1.2.1",
