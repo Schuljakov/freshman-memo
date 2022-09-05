@@ -28,6 +28,7 @@ export const json = async () => {
         const file = path.join('./src/data', json);
         return data[name] = JSON.parse(fs.readFileSync(file));
     });
+    console.log(data);
   }
   catch(exception) {
     console.log(exception);

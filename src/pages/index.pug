@@ -1,8 +1,6 @@
-html(lang="ru")
-  head
-    meta(charset="utf-8")
-    link(rel='stylesheet', href='css/style.min.css')
-    title= "Index Page"
-  body
+extends layout.pug
 
-    img(src='images/slide-1.webp')
+block append headIncludes
+  title Твой навигатор
+
+block mainContent
